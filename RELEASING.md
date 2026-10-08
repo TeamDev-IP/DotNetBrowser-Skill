@@ -27,7 +27,14 @@ repository after every release so it always holds the latest one.
    claude plugin validate .
    ```
 
-5. Commit and merge to `main`. The Claude directory picks up the new commit,
+5. Commit, merge to `main`, and tag the commit with the version:
+
+   ```bash
+   git tag -a v<version> -m "DotNetBrowser <version> agent skill"
+   git push origin v<version>
+   ```
+
+   The Claude directory picks up the new commit,
    scans it, and the new version is published from the
    [developer portal](https://claude.ai/directory/manage). skills.sh serves the
    `main` branch directly.
