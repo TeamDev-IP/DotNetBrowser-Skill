@@ -9,6 +9,11 @@
   },
   "homepage": "https://teamdev.com/dotnetbrowser/docs/guides/installation/agent-skill/",
   "repository": "https://github.com/TeamDev-IP/DotNetBrowser-Skill",
+  "icon": "./assets/icon.svg",
+  "documentationUrl": "https://teamdev.com/dotnetbrowser/docs/guides/installation/agent-skill/",
+  "supportUrl": "https://dotnetbrowser.support.teamdev.com/support/home",
+  "termsOfServiceUrl": "https://www.teamdev.com/terms-and-privacy",
+  "privacyPolicyUrl": "https://www.teamdev.com/terms-and-privacy",
   "keywords": [
     "dotnetbrowser",
     "chromium",
