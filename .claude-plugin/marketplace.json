@@ -12,7 +12,6 @@
       "name": "dotnetbrowser",
       "source": "./",
       "description": "Official TeamDev skill for DotNetBrowser 4.3.3, the Chromium-based browser component for .NET (WPF, Windows Forms, WinUI 3, Avalonia UI, console). Coding guidance, full API reference, and offline docs, release notes, and migration guides.",
-      "version": "4.3.3",
       "author": {
         "name": "TeamDev"
       },
