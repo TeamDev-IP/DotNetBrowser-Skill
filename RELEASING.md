@@ -14,7 +14,8 @@ repository after every release so it always holds the latest one.
 
 3. Bump the version to `<version>` in:
    - `.claude-plugin/plugin.json`: `version` and `description`
-   - `.claude-plugin/marketplace.json`: `version` and `description`
+   - `.claude-plugin/marketplace.json`: `description` (the version is set only
+     in `plugin.json`)
    - `README.md`: the "DotNetBrowser x.y.z" mention
 
    Clients only receive an update when `version` changes. For a fix to this
@@ -26,6 +27,11 @@ repository after every release so it always holds the latest one.
    ```bash
    claude plugin validate .
    ```
+
+   The `Check` workflow runs on every pull request, on `main`, and on tags. It
+   validates the plugin, checks the directory limits below, and checks that
+   the version matches in every place listed in step 3, in `SKILL.md`, and in
+   the tag.
 
 5. Commit, merge to `main`, and tag the commit with the version:
 
