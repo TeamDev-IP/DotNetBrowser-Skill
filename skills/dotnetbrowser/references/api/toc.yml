@@ -1,0 +1,1609 @@
+### YamlMime:TableOfContent
+- name: DotNetBrowser
+  href: DotNetBrowser.md
+  items:
+  - name: Interfaces
+  - name: IAutoDisposable
+    href: DotNetBrowser.IAutoDisposable.md
+  - name: IAutoDisposable<TArgs>
+    href: DotNetBrowser.IAutoDisposable-1.md
+- name: DotNetBrowser.AvaloniaUi
+  href: DotNetBrowser.AvaloniaUi.md
+  items:
+  - name: Classes
+  - name: BitmapExtensions
+    href: DotNetBrowser.AvaloniaUi.BitmapExtensions.md
+  - name: BrowserView
+    href: DotNetBrowser.AvaloniaUi.BrowserView.md
+- name: DotNetBrowser.AvaloniaUi.Dialogs
+  href: DotNetBrowser.AvaloniaUi.Dialogs.md
+  items:
+  - name: Classes
+  - name: DefaultAuthenticationHandler
+    href: DotNetBrowser.AvaloniaUi.Dialogs.DefaultAuthenticationHandler.md
+  - name: DialogHandlerBase
+    href: DotNetBrowser.AvaloniaUi.Dialogs.DialogHandlerBase.md
+- name: DotNetBrowser.AvaloniaUi.Extensions
+  href: DotNetBrowser.AvaloniaUi.Extensions.md
+  items:
+  - name: Classes
+  - name: DefaultOpenExtensionActionPopupHandler
+    href: DotNetBrowser.AvaloniaUi.Extensions.DefaultOpenExtensionActionPopupHandler.md
+  - name: DefaultOpenExtensionPopupHandler
+    href: DotNetBrowser.AvaloniaUi.Extensions.DefaultOpenExtensionPopupHandler.md
+- name: DotNetBrowser.Browser
+  href: DotNetBrowser.Browser.md
+  items:
+  - name: Classes
+  - name: BitmapTimeoutException
+    href: DotNetBrowser.Browser.BitmapTimeoutException.md
+  - name: BrowserDisposeOptions
+    href: DotNetBrowser.Browser.BrowserDisposeOptions.md
+  - name: BrowserViewExtensions
+    href: DotNetBrowser.Browser.BrowserViewExtensions.md
+  - name: CspParameters
+    href: DotNetBrowser.Browser.CspParameters.md
+  - name: UserAgentBrandVersion
+    href: DotNetBrowser.Browser.UserAgentBrandVersion.md
+  - name: UserAgentBrandVersion.Builder
+    href: DotNetBrowser.Browser.UserAgentBrandVersion.Builder.md
+  - name: UserAgentMetadata
+    href: DotNetBrowser.Browser.UserAgentMetadata.md
+  - name: UserAgentMetadata.Builder
+    href: DotNetBrowser.Browser.UserAgentMetadata.Builder.md
+  - name: Interfaces
+  - name: IBrowser
+    href: DotNetBrowser.Browser.IBrowser.md
+  - name: IBrowserSettings
+    href: DotNetBrowser.Browser.IBrowserSettings.md
+  - name: IBrowserView
+    href: DotNetBrowser.Browser.IBrowserView.md
+  - name: IDefaultFonts
+    href: DotNetBrowser.Browser.IDefaultFonts.md
+  - name: IOffScreenRenderProvider
+    href: DotNetBrowser.Browser.IOffScreenRenderProvider.md
+  - name: Enums
+  - name: PreferredColorScheme
+    href: DotNetBrowser.Browser.PreferredColorScheme.md
+  - name: SavePageType
+    href: DotNetBrowser.Browser.SavePageType.md
+  - name: WebRtcIpHandlingPolicy
+    href: DotNetBrowser.Browser.WebRtcIpHandlingPolicy.md
+- name: DotNetBrowser.Browser.Dialogs
+  href: DotNetBrowser.Browser.Dialogs.md
+  items:
+  - name: Interfaces
+  - name: IDialogs
+    href: DotNetBrowser.Browser.Dialogs.IDialogs.md
+  - name: IJsDialogs
+    href: DotNetBrowser.Browser.Dialogs.IJsDialogs.md
+- name: DotNetBrowser.Browser.Dialogs.Handlers
+  href: DotNetBrowser.Browser.Dialogs.Handlers.md
+  items:
+  - name: Classes
+  - name: AlertParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.AlertParameters.md
+  - name: BeforeUnloadParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.BeforeUnloadParameters.md
+  - name: BeforeUnloadResponse
+    href: DotNetBrowser.Browser.Dialogs.Handlers.BeforeUnloadResponse.md
+  - name: CommonDialogParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.CommonDialogParameters.md
+  - name: ConfirmParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.ConfirmParameters.md
+  - name: ConfirmResponse
+    href: DotNetBrowser.Browser.Dialogs.Handlers.ConfirmResponse.md
+  - name: DialogParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.DialogParameters.md
+  - name: FileChooserParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.FileChooserParameters.md
+  - name: FilteredFileChooserParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.FilteredFileChooserParameters.md
+  - name: OpenDirectoryParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.OpenDirectoryParameters.md
+  - name: OpenDirectoryResponse
+    href: DotNetBrowser.Browser.Dialogs.Handlers.OpenDirectoryResponse.md
+  - name: OpenExternalAppParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.OpenExternalAppParameters.md
+  - name: OpenExternalAppResponse
+    href: DotNetBrowser.Browser.Dialogs.Handlers.OpenExternalAppResponse.md
+  - name: OpenFileParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.OpenFileParameters.md
+  - name: OpenFileResponse
+    href: DotNetBrowser.Browser.Dialogs.Handlers.OpenFileResponse.md
+  - name: OpenMultipleFilesParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.OpenMultipleFilesParameters.md
+  - name: OpenMultipleFilesResponse
+    href: DotNetBrowser.Browser.Dialogs.Handlers.OpenMultipleFilesResponse.md
+  - name: PromptParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.PromptParameters.md
+  - name: PromptResponse
+    href: DotNetBrowser.Browser.Dialogs.Handlers.PromptResponse.md
+  - name: RepostFormParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.RepostFormParameters.md
+  - name: RepostFormResponse
+    href: DotNetBrowser.Browser.Dialogs.Handlers.RepostFormResponse.md
+  - name: SaveAsPdfParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.SaveAsPdfParameters.md
+  - name: SaveAsPdfResponse
+    href: DotNetBrowser.Browser.Dialogs.Handlers.SaveAsPdfResponse.md
+  - name: SaveFileParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.SaveFileParameters.md
+  - name: SaveFileResponse
+    href: DotNetBrowser.Browser.Dialogs.Handlers.SaveFileResponse.md
+  - name: SelectCertificateParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.SelectCertificateParameters.md
+  - name: SelectCertificateResponse
+    href: DotNetBrowser.Browser.Dialogs.Handlers.SelectCertificateResponse.md
+  - name: SelectColorParameters
+    href: DotNetBrowser.Browser.Dialogs.Handlers.SelectColorParameters.md
+  - name: SelectColorResponse
+    href: DotNetBrowser.Browser.Dialogs.Handlers.SelectColorResponse.md
+  - name: Enums
+  - name: BeforeUnloadCause
+    href: DotNetBrowser.Browser.Dialogs.Handlers.BeforeUnloadCause.md
+- name: DotNetBrowser.Browser.Events
+  href: DotNetBrowser.Browser.Events.md
+  items:
+  - name: Classes
+  - name: BrowserBecameResponsiveEventArgs
+    href: DotNetBrowser.Browser.Events.BrowserBecameResponsiveEventArgs.md
+  - name: BrowserBecameUnresponsiveEventArgs
+    href: DotNetBrowser.Browser.Events.BrowserBecameUnresponsiveEventArgs.md
+  - name: BrowserEventArgs
+    href: DotNetBrowser.Browser.Events.BrowserEventArgs.md
+  - name: ConsoleMessageReceivedEventArgs
+    href: DotNetBrowser.Browser.Events.ConsoleMessageReceivedEventArgs.md
+  - name: CursorChangedEventArgs
+    href: DotNetBrowser.Browser.Events.CursorChangedEventArgs.md
+  - name: FaviconChangedEventArgs
+    href: DotNetBrowser.Browser.Events.FaviconChangedEventArgs.md
+  - name: FocusGainedEventArgs
+    href: DotNetBrowser.Browser.Events.FocusGainedEventArgs.md
+  - name: FocusLostEventArgs
+    href: DotNetBrowser.Browser.Events.FocusLostEventArgs.md
+  - name: FocusRequestedEventArgs
+    href: DotNetBrowser.Browser.Events.FocusRequestedEventArgs.md
+  - name: FrameCreatedEventArgs
+    href: DotNetBrowser.Browser.Events.FrameCreatedEventArgs.md
+  - name: FrameDeletedEventArgs
+    href: DotNetBrowser.Browser.Events.FrameDeletedEventArgs.md
+  - name: FrameEventArgs
+    href: DotNetBrowser.Browser.Events.FrameEventArgs.md
+  - name: MediaStreamCaptureStartedEventArgs
+    href: DotNetBrowser.Browser.Events.MediaStreamCaptureStartedEventArgs.md
+  - name: MediaStreamCaptureStoppedEventArgs
+    href: DotNetBrowser.Browser.Events.MediaStreamCaptureStoppedEventArgs.md
+  - name: MediaStreamEventArgs
+    href: DotNetBrowser.Browser.Events.MediaStreamEventArgs.md
+  - name: PdfDocumentLoadFailedEventArgs
+    href: DotNetBrowser.Browser.Events.PdfDocumentLoadFailedEventArgs.md
+  - name: PdfDocumentLoadedEventArgs
+    href: DotNetBrowser.Browser.Events.PdfDocumentLoadedEventArgs.md
+  - name: PrintPreviewClosedEventArgs
+    href: DotNetBrowser.Browser.Events.PrintPreviewClosedEventArgs.md
+  - name: PrintPreviewOpenedEventArgs
+    href: DotNetBrowser.Browser.Events.PrintPreviewOpenedEventArgs.md
+  - name: RenderProcessTerminatedEventArgs
+    href: DotNetBrowser.Browser.Events.RenderProcessTerminatedEventArgs.md
+  - name: SessionStartedEventArgs
+    href: DotNetBrowser.Browser.Events.SessionStartedEventArgs.md
+  - name: SpellCheckCompletedEventArgs
+    href: DotNetBrowser.Browser.Events.SpellCheckCompletedEventArgs.md
+  - name: StatusChangedEventArgs
+    href: DotNetBrowser.Browser.Events.StatusChangedEventArgs.md
+  - name: TitleChangedEventArgs
+    href: DotNetBrowser.Browser.Events.TitleChangedEventArgs.md
+  - name: UpdateBoundsRequestedEventArgs
+    href: DotNetBrowser.Browser.Events.UpdateBoundsRequestedEventArgs.md
+  - name: Enums
+  - name: ConsoleMessageReceivedEventArgs.MessageLevel
+    href: DotNetBrowser.Browser.Events.ConsoleMessageReceivedEventArgs.MessageLevel.md
+  - name: MediaStreamType
+    href: DotNetBrowser.Browser.Events.MediaStreamType.md
+  - name: TerminationStatus
+    href: DotNetBrowser.Browser.Events.TerminationStatus.md
+- name: DotNetBrowser.Browser.FullScreen
+  href: DotNetBrowser.Browser.FullScreen.md
+  items:
+  - name: Interfaces
+  - name: IFullScreen
+    href: DotNetBrowser.Browser.FullScreen.IFullScreen.md
+- name: DotNetBrowser.Browser.FullScreen.Events
+  href: DotNetBrowser.Browser.FullScreen.Events.md
+  items:
+  - name: Classes
+  - name: FullScreenEnteredEventArgs
+    href: DotNetBrowser.Browser.FullScreen.Events.FullScreenEnteredEventArgs.md
+  - name: FullScreenExitedEventArgs
+    href: DotNetBrowser.Browser.FullScreen.Events.FullScreenExitedEventArgs.md
+- name: DotNetBrowser.Browser.Handlers
+  href: DotNetBrowser.Browser.Handlers.md
+  items:
+  - name: Classes
+  - name: BrowserParameters
+    href: DotNetBrowser.Browser.Handlers.BrowserParameters.md
+  - name: CreatePopupParameters
+    href: DotNetBrowser.Browser.Handlers.CreatePopupParameters.md
+  - name: CreatePopupResponse
+    href: DotNetBrowser.Browser.Handlers.CreatePopupResponse.md
+  - name: FrameParameters
+    href: DotNetBrowser.Browser.Handlers.FrameParameters.md
+  - name: InjectCssParameters
+    href: DotNetBrowser.Browser.Handlers.InjectCssParameters.md
+  - name: InjectCssResponse
+    href: DotNetBrowser.Browser.Handlers.InjectCssResponse.md
+  - name: InjectJsParameters
+    href: DotNetBrowser.Browser.Handlers.InjectJsParameters.md
+  - name: OpenExtensionActionPopupParameters
+    href: DotNetBrowser.Browser.Handlers.OpenExtensionActionPopupParameters.md
+  - name: OpenPopupParameters
+    href: DotNetBrowser.Browser.Handlers.OpenPopupParameters.md
+  - name: RequestPdfDocumentPasswordParameters
+    href: DotNetBrowser.Browser.Handlers.RequestPdfDocumentPasswordParameters.md
+  - name: RequestPdfDocumentPasswordResponse
+    href: DotNetBrowser.Browser.Handlers.RequestPdfDocumentPasswordResponse.md
+  - name: RequestPrintParameters
+    href: DotNetBrowser.Browser.Handlers.RequestPrintParameters.md
+  - name: RequestPrintResponse
+    href: DotNetBrowser.Browser.Handlers.RequestPrintResponse.md
+  - name: ShowContextMenuParameters
+    href: DotNetBrowser.Browser.Handlers.ShowContextMenuParameters.md
+  - name: ShowContextMenuResponse
+    href: DotNetBrowser.Browser.Handlers.ShowContextMenuResponse.md
+- name: DotNetBrowser.Cache
+  href: DotNetBrowser.Cache.md
+  items:
+  - name: Interfaces
+  - name: IHttpAuthCache
+    href: DotNetBrowser.Cache.IHttpAuthCache.md
+  - name: IHttpCache
+    href: DotNetBrowser.Cache.IHttpCache.md
+- name: DotNetBrowser.Capture
+  href: DotNetBrowser.Capture.md
+  items:
+  - name: Classes
+  - name: Source
+    href: DotNetBrowser.Capture.Source.md
+  - name: Sources
+    href: DotNetBrowser.Capture.Sources.md
+  - name: Interfaces
+  - name: ICapture
+    href: DotNetBrowser.Capture.ICapture.md
+  - name: ISession
+    href: DotNetBrowser.Capture.ISession.md
+  - name: Enums
+  - name: AudioMode
+    href: DotNetBrowser.Capture.AudioMode.md
+  - name: NotificationVisibility
+    href: DotNetBrowser.Capture.NotificationVisibility.md
+  - name: SourceType
+    href: DotNetBrowser.Capture.SourceType.md
+- name: DotNetBrowser.Capture.Events
+  href: DotNetBrowser.Capture.Events.md
+  items:
+  - name: Classes
+  - name: SessionStoppedEventArgs
+    href: DotNetBrowser.Capture.Events.SessionStoppedEventArgs.md
+- name: DotNetBrowser.Capture.Handlers
+  href: DotNetBrowser.Capture.Handlers.md
+  items:
+  - name: Classes
+  - name: StartSessionParameters
+    href: DotNetBrowser.Capture.Handlers.StartSessionParameters.md
+  - name: StartSessionResponse
+    href: DotNetBrowser.Capture.Handlers.StartSessionResponse.md
+- name: DotNetBrowser.Card
+  href: DotNetBrowser.Card.md
+  items:
+  - name: Classes
+  - name: CreditCard
+    href: DotNetBrowser.Card.CreditCard.md
+  - name: CreditCard.Builder
+    href: DotNetBrowser.Card.CreditCard.Builder.md
+  - name: Interfaces
+  - name: ICreditCardStore
+    href: DotNetBrowser.Card.ICreditCardStore.md
+  - name: ICreditCards
+    href: DotNetBrowser.Card.ICreditCards.md
+  - name: Enums
+  - name: CreditCardNetworkType
+    href: DotNetBrowser.Card.CreditCardNetworkType.md
+- name: DotNetBrowser.Card.Handlers
+  href: DotNetBrowser.Card.Handlers.md
+  items:
+  - name: Classes
+  - name: SaveCreditCardParameters
+    href: DotNetBrowser.Card.Handlers.SaveCreditCardParameters.md
+  - name: SaveCreditCardResponse
+    href: DotNetBrowser.Card.Handlers.SaveCreditCardResponse.md
+- name: DotNetBrowser.Cast
+  href: DotNetBrowser.Cast.md
+  items:
+  - name: Classes
+  - name: CastSessionStartFailedException
+    href: DotNetBrowser.Cast.CastSessionStartFailedException.md
+  - name: MediaRoutingException
+    href: DotNetBrowser.Cast.MediaRoutingException.md
+  - name: PresentationRequest
+    href: DotNetBrowser.Cast.PresentationRequest.md
+  - name: ReceiverDisconnectedException
+    href: DotNetBrowser.Cast.ReceiverDisconnectedException.md
+  - name: ReceiverNotDiscoveredException
+    href: DotNetBrowser.Cast.ReceiverNotDiscoveredException.md
+  - name: Screen
+    href: DotNetBrowser.Cast.Screen.md
+  - name: ScreenCastOptions
+    href: DotNetBrowser.Cast.ScreenCastOptions.md
+  - name: Interfaces
+  - name: ICast
+    href: DotNetBrowser.Cast.ICast.md
+  - name: ICastSession
+    href: DotNetBrowser.Cast.ICastSession.md
+  - name: ICastSessions
+    href: DotNetBrowser.Cast.ICastSessions.md
+  - name: IMediaCasting
+    href: DotNetBrowser.Cast.IMediaCasting.md
+  - name: IMediaReceiver
+    href: DotNetBrowser.Cast.IMediaReceiver.md
+  - name: IMediaReceivers
+    href: DotNetBrowser.Cast.IMediaReceivers.md
+  - name: IScreens
+    href: DotNetBrowser.Cast.IScreens.md
+  - name: Enums
+  - name: AudioMode
+    href: DotNetBrowser.Cast.AudioMode.md
+  - name: CastMode
+    href: DotNetBrowser.Cast.CastMode.md
+  - name: MediaReceiverState
+    href: DotNetBrowser.Cast.MediaReceiverState.md
+  - name: ResultCode
+    href: DotNetBrowser.Cast.ResultCode.md
+- name: DotNetBrowser.Cast.Events
+  href: DotNetBrowser.Cast.Events.md
+  items:
+  - name: Classes
+  - name: CastSessionDiscoveredEventArgs
+    href: DotNetBrowser.Cast.Events.CastSessionDiscoveredEventArgs.md
+  - name: CastSessionStartFailedEventArgs
+    href: DotNetBrowser.Cast.Events.CastSessionStartFailedEventArgs.md
+  - name: CastSessionStoppedEventArgs
+    href: DotNetBrowser.Cast.Events.CastSessionStoppedEventArgs.md
+  - name: MediaReceiverDisconnectedEventArgs
+    href: DotNetBrowser.Cast.Events.MediaReceiverDisconnectedEventArgs.md
+  - name: MediaReceiverDiscoveredEventArgs
+    href: DotNetBrowser.Cast.Events.MediaReceiverDiscoveredEventArgs.md
+- name: DotNetBrowser.Cast.Handlers
+  href: DotNetBrowser.Cast.Handlers.md
+  items:
+  - name: Classes
+  - name: StartPresentationParameters
+    href: DotNetBrowser.Cast.Handlers.StartPresentationParameters.md
+  - name: StartPresentationResponse
+    href: DotNetBrowser.Cast.Handlers.StartPresentationResponse.md
+- name: DotNetBrowser.Chromium
+  href: DotNetBrowser.Chromium.md
+  items:
+  - name: Classes
+  - name: ChromiumBinariesExtractor
+    href: DotNetBrowser.Chromium.ChromiumBinariesExtractor.md
+  - name: ChromiumInfo
+    href: DotNetBrowser.Chromium.ChromiumInfo.md
+- name: DotNetBrowser.ContextMenu
+  href: DotNetBrowser.ContextMenu.md
+  items:
+  - name: Classes
+  - name: ContextMenuItem
+    href: DotNetBrowser.ContextMenu.ContextMenuItem.md
+  - name: Enums
+  - name: ContextMenuItemType
+    href: DotNetBrowser.ContextMenu.ContextMenuItemType.md
+- name: DotNetBrowser.Cookies
+  href: DotNetBrowser.Cookies.md
+  items:
+  - name: Classes
+  - name: Cookie
+    href: DotNetBrowser.Cookies.Cookie.md
+  - name: Cookie.Builder
+    href: DotNetBrowser.Cookies.Cookie.Builder.md
+  - name: Interfaces
+  - name: ICookieStore
+    href: DotNetBrowser.Cookies.ICookieStore.md
+  - name: Enums
+  - name: SameSite
+    href: DotNetBrowser.Cookies.SameSite.md
+- name: DotNetBrowser.DevTools
+  href: DotNetBrowser.DevTools.md
+  items:
+  - name: Interfaces
+  - name: IDevTools
+    href: DotNetBrowser.DevTools.IDevTools.md
+- name: DotNetBrowser.Dom
+  href: DotNetBrowser.Dom.md
+  items:
+  - name: Classes
+  - name: DomException
+    href: DotNetBrowser.Dom.DomException.md
+  - name: PointInspection
+    href: DotNetBrowser.Dom.PointInspection.md
+  - name: Interfaces
+  - name: IAttribute
+    href: DotNetBrowser.Dom.IAttribute.md
+  - name: IAttributes
+    href: DotNetBrowser.Dom.IAttributes.md
+  - name: IDocument
+    href: DotNetBrowser.Dom.IDocument.md
+  - name: IElement
+    href: DotNetBrowser.Dom.IElement.md
+  - name: IFormControlElement
+    href: DotNetBrowser.Dom.IFormControlElement.md
+  - name: IFormElement
+    href: DotNetBrowser.Dom.IFormElement.md
+  - name: IFrameElement
+    href: DotNetBrowser.Dom.IFrameElement.md
+  - name: IImageElement
+    href: DotNetBrowser.Dom.IImageElement.md
+  - name: IInputElement
+    href: DotNetBrowser.Dom.IInputElement.md
+  - name: INode
+    href: DotNetBrowser.Dom.INode.md
+  - name: INodeCollection
+    href: DotNetBrowser.Dom.INodeCollection.md
+  - name: IOptionElement
+    href: DotNetBrowser.Dom.IOptionElement.md
+  - name: ISearchContext
+    href: DotNetBrowser.Dom.ISearchContext.md
+  - name: ISelectElement
+    href: DotNetBrowser.Dom.ISelectElement.md
+  - name: ITextAreaElement
+    href: DotNetBrowser.Dom.ITextAreaElement.md
+  - name: Enums
+  - name: AlignTo
+    href: DotNetBrowser.Dom.AlignTo.md
+  - name: DocumentPosition
+    href: DotNetBrowser.Dom.DocumentPosition.md
+  - name: NodeType
+    href: DotNetBrowser.Dom.NodeType.md
+- name: DotNetBrowser.Dom.Events
+  href: DotNetBrowser.Dom.Events.md
+  items:
+  - name: Classes
+  - name: DomEventArgs
+    href: DotNetBrowser.Dom.Events.DomEventArgs.md
+  - name: Event
+    href: DotNetBrowser.Dom.Events.Event.md
+  - name: EventParameters
+    href: DotNetBrowser.Dom.Events.EventParameters.md
+  - name: EventParameters.Builder
+    href: DotNetBrowser.Dom.Events.EventParameters.Builder.md
+  - name: EventType
+    href: DotNetBrowser.Dom.Events.EventType.md
+  - name: KeyEventParameters
+    href: DotNetBrowser.Dom.Events.KeyEventParameters.md
+  - name: MouseEventParameters
+    href: DotNetBrowser.Dom.Events.MouseEventParameters.md
+  - name: UiEventModifierParameters
+    href: DotNetBrowser.Dom.Events.UiEventModifierParameters.md
+  - name: Interfaces
+  - name: IEvent
+    href: DotNetBrowser.Dom.Events.IEvent.md
+  - name: IEventTarget
+    href: DotNetBrowser.Dom.Events.IEventTarget.md
+  - name: IEvents
+    href: DotNetBrowser.Dom.Events.IEvents.md
+  - name: IKeyEvent
+    href: DotNetBrowser.Dom.Events.IKeyEvent.md
+  - name: IMouseEvent
+    href: DotNetBrowser.Dom.Events.IMouseEvent.md
+  - name: ITouchEvent
+    href: DotNetBrowser.Dom.Events.ITouchEvent.md
+  - name: IUiKeyEventModifier
+    href: DotNetBrowser.Dom.Events.IUiKeyEventModifier.md
+  - name: IWheelEvent
+    href: DotNetBrowser.Dom.Events.IWheelEvent.md
+  - name: Enums
+  - name: DeltaMode
+    href: DotNetBrowser.Dom.Events.DeltaMode.md
+  - name: DomKeyCode
+    href: DotNetBrowser.Dom.Events.DomKeyCode.md
+  - name: DomMouseButton
+    href: DotNetBrowser.Dom.Events.DomMouseButton.md
+  - name: EventPhase
+    href: DotNetBrowser.Dom.Events.EventPhase.md
+- name: DotNetBrowser.Dom.XPath
+  href: DotNetBrowser.Dom.XPath.md
+  items:
+  - name: Classes
+  - name: XPathException
+    href: DotNetBrowser.Dom.XPath.XPathException.md
+  - name: Interfaces
+  - name: IXPathResult
+    href: DotNetBrowser.Dom.XPath.IXPathResult.md
+  - name: Enums
+  - name: XPathResultType
+    href: DotNetBrowser.Dom.XPath.XPathResultType.md
+- name: DotNetBrowser.Downloads
+  href: DotNetBrowser.Downloads.md
+  items:
+  - name: Classes
+  - name: DownloadInfo
+    href: DotNetBrowser.Downloads.DownloadInfo.md
+  - name: Interfaces
+  - name: IDownload
+    href: DotNetBrowser.Downloads.IDownload.md
+  - name: IDownloads
+    href: DotNetBrowser.Downloads.IDownloads.md
+  - name: Enums
+  - name: DownloadState
+    href: DotNetBrowser.Downloads.DownloadState.md
+- name: DotNetBrowser.Downloads.Events
+  href: DotNetBrowser.Downloads.Events.md
+  items:
+  - name: Classes
+  - name: CanceledEventArgs
+    href: DotNetBrowser.Downloads.Events.CanceledEventArgs.md
+  - name: DownloadEventArgs
+    href: DotNetBrowser.Downloads.Events.DownloadEventArgs.md
+  - name: FinishedEventArgs
+    href: DotNetBrowser.Downloads.Events.FinishedEventArgs.md
+  - name: InterruptedEventArgs
+    href: DotNetBrowser.Downloads.Events.InterruptedEventArgs.md
+  - name: PausedEventArgs
+    href: DotNetBrowser.Downloads.Events.PausedEventArgs.md
+  - name: UpdatedEventArgs
+    href: DotNetBrowser.Downloads.Events.UpdatedEventArgs.md
+  - name: Enums
+  - name: DownloadInterruptionReason
+    href: DotNetBrowser.Downloads.Events.DownloadInterruptionReason.md
+- name: DotNetBrowser.Downloads.Handlers
+  href: DotNetBrowser.Downloads.Handlers.md
+  items:
+  - name: Classes
+  - name: StartDownloadParameters
+    href: DotNetBrowser.Downloads.Handlers.StartDownloadParameters.md
+  - name: StartDownloadResponse
+    href: DotNetBrowser.Downloads.Handlers.StartDownloadResponse.md
+- name: DotNetBrowser.Engine
+  href: DotNetBrowser.Engine.md
+  items:
+  - name: Classes
+  - name: BinariesExtractionOptions
+    href: DotNetBrowser.Engine.BinariesExtractionOptions.md
+  - name: ChromiumBinariesMissingException
+    href: DotNetBrowser.Engine.ChromiumBinariesMissingException.md
+  - name: ConnectionClosedException
+    href: DotNetBrowser.Engine.ConnectionClosedException.md
+  - name: EngineFactory
+    href: DotNetBrowser.Engine.EngineFactory.md
+  - name: EngineInitializationException
+    href: DotNetBrowser.Engine.EngineInitializationException.md
+  - name: EngineOptions
+    href: DotNetBrowser.Engine.EngineOptions.md
+  - name: EngineOptions.Builder
+    href: DotNetBrowser.Engine.EngineOptions.Builder.md
+  - name: InvalidLicenseException
+    href: DotNetBrowser.Engine.InvalidLicenseException.md
+  - name: LicenseException
+    href: DotNetBrowser.Engine.LicenseException.md
+  - name: MissingDependencyException
+    href: DotNetBrowser.Engine.MissingDependencyException.md
+  - name: NoLicenseException
+    href: DotNetBrowser.Engine.NoLicenseException.md
+  - name: PasswordStore
+    href: DotNetBrowser.Engine.PasswordStore.md
+  - name: SandboxNotSupportedException
+    href: DotNetBrowser.Engine.SandboxNotSupportedException.md
+  - name: UserDataCreationException
+    href: DotNetBrowser.Engine.UserDataCreationException.md
+  - name: UserDataInUseException
+    href: DotNetBrowser.Engine.UserDataInUseException.md
+  - name: Interfaces
+  - name: IEngine
+    href: DotNetBrowser.Engine.IEngine.md
+  - name: IWidevine
+    href: DotNetBrowser.Engine.IWidevine.md
+  - name: Enums
+  - name: BinariesVerificationLevel
+    href: DotNetBrowser.Engine.BinariesVerificationLevel.md
+  - name: ProprietaryFeatures
+    href: DotNetBrowser.Engine.ProprietaryFeatures.md
+  - name: RenderingMode
+    href: DotNetBrowser.Engine.RenderingMode.md
+  - name: Theme
+    href: DotNetBrowser.Engine.Theme.md
+  - name: WidevineActivationStatus
+    href: DotNetBrowser.Engine.WidevineActivationStatus.md
+- name: DotNetBrowser.Engine.Events
+  href: DotNetBrowser.Engine.Events.md
+  items:
+  - name: Classes
+  - name: EngineDisposedEventArgs
+    href: DotNetBrowser.Engine.Events.EngineDisposedEventArgs.md
+- name: DotNetBrowser.Extensions
+  href: DotNetBrowser.Extensions.md
+  items:
+  - name: Classes
+  - name: ExtensionInstallationException
+    href: DotNetBrowser.Extensions.ExtensionInstallationException.md
+  - name: Interfaces
+  - name: IExtension
+    href: DotNetBrowser.Extensions.IExtension.md
+  - name: IExtensionAction
+    href: DotNetBrowser.Extensions.IExtensionAction.md
+  - name: IExtensions
+    href: DotNetBrowser.Extensions.IExtensions.md
+  - name: Enums
+  - name: ExtensionActionType
+    href: DotNetBrowser.Extensions.ExtensionActionType.md
+  - name: ExtensionPermission
+    href: DotNetBrowser.Extensions.ExtensionPermission.md
+- name: DotNetBrowser.Extensions.Events
+  href: DotNetBrowser.Extensions.Events.md
+  items:
+  - name: Classes
+  - name: ExtensionActionUpdatedEventArgs
+    href: DotNetBrowser.Extensions.Events.ExtensionActionUpdatedEventArgs.md
+  - name: ExtensionEventArgs
+    href: DotNetBrowser.Extensions.Events.ExtensionEventArgs.md
+  - name: ExtensionInstalledEventArgs
+    href: DotNetBrowser.Extensions.Events.ExtensionInstalledEventArgs.md
+  - name: ExtensionUninstalledEventArgs
+    href: DotNetBrowser.Extensions.Events.ExtensionUninstalledEventArgs.md
+  - name: ExtensionUpdatedEventArgs
+    href: DotNetBrowser.Extensions.Events.ExtensionUpdatedEventArgs.md
+- name: DotNetBrowser.Extensions.Handlers
+  href: DotNetBrowser.Extensions.Handlers.md
+  items:
+  - name: Classes
+  - name: InstallExtensionParameters
+    href: DotNetBrowser.Extensions.Handlers.InstallExtensionParameters.md
+  - name: InstallExtensionResponse
+    href: DotNetBrowser.Extensions.Handlers.InstallExtensionResponse.md
+  - name: OpenExtensionPopupParameters
+    href: DotNetBrowser.Extensions.Handlers.OpenExtensionPopupParameters.md
+  - name: UninstallExtensionParameters
+    href: DotNetBrowser.Extensions.Handlers.UninstallExtensionParameters.md
+  - name: UninstallExtensionResponse
+    href: DotNetBrowser.Extensions.Handlers.UninstallExtensionResponse.md
+- name: DotNetBrowser.Frames
+  href: DotNetBrowser.Frames.md
+  items:
+  - name: Classes
+  - name: EditorCommand
+    href: DotNetBrowser.Frames.EditorCommand.md
+  - name: WebStorageException
+    href: DotNetBrowser.Frames.WebStorageException.md
+  - name: WebStorageOverflowException
+    href: DotNetBrowser.Frames.WebStorageOverflowException.md
+  - name: WebStorageSecurityException
+    href: DotNetBrowser.Frames.WebStorageSecurityException.md
+  - name: Interfaces
+  - name: IFrame
+    href: DotNetBrowser.Frames.IFrame.md
+  - name: IWebStorage
+    href: DotNetBrowser.Frames.IWebStorage.md
+- name: DotNetBrowser.Frames.Handlers
+  href: DotNetBrowser.Frames.Handlers.md
+  items:
+  - name: Classes
+  - name: ConvertJsNameParameters
+    href: DotNetBrowser.Frames.Handlers.ConvertJsNameParameters.md
+  - name: ConvertJsNameResponse
+    href: DotNetBrowser.Frames.Handlers.ConvertJsNameResponse.md
+- name: DotNetBrowser.Geometry
+  href: DotNetBrowser.Geometry.md
+  items:
+  - name: Classes
+  - name: Ellipse
+    href: DotNetBrowser.Geometry.Ellipse.md
+  - name: Point
+    href: DotNetBrowser.Geometry.Point.md
+  - name: Rectangle
+    href: DotNetBrowser.Geometry.Rectangle.md
+  - name: Size
+    href: DotNetBrowser.Geometry.Size.md
+- name: DotNetBrowser.Handlers
+  href: DotNetBrowser.Handlers.md
+  items:
+  - name: Classes
+  - name: AsyncHandler<TParameters, TResponse>
+    href: DotNetBrowser.Handlers.AsyncHandler-2.md
+  - name: Handler<TParameters, TResponse>
+    href: DotNetBrowser.Handlers.Handler-2.md
+  - name: Handler<TParameters>
+    href: DotNetBrowser.Handlers.Handler-1.md
+  - name: Interfaces
+  - name: IHandler<TParameters, TResponse>
+    href: DotNetBrowser.Handlers.IHandler-2.md
+  - name: IHandler<TParameters>
+    href: DotNetBrowser.Handlers.IHandler-1.md
+- name: DotNetBrowser.Input
+  href: DotNetBrowser.Input.md
+  items:
+  - name: Interfaces
+  - name: IInputEvent<TIInputEventArgs, TInputEventArgs>
+    href: DotNetBrowser.Input.IInputEvent-2.md
+  - name: IInterceptableEvent<TIInputEventArgs>
+    href: DotNetBrowser.Input.IInterceptableEvent-1.md
+  - name: IInterceptableInputEvent<TIInputEventArgs, TInputEventArgs>
+    href: DotNetBrowser.Input.IInterceptableInputEvent-2.md
+  - name: Enums
+  - name: InputEventResponse
+    href: DotNetBrowser.Input.InputEventResponse.md
+- name: DotNetBrowser.Input.DragAndDrop
+  href: DotNetBrowser.Input.DragAndDrop.md
+  items:
+  - name: Interfaces
+  - name: IDragAndDrop
+    href: DotNetBrowser.Input.DragAndDrop.IDragAndDrop.md
+- name: DotNetBrowser.Input.DragAndDrop.Handlers
+  href: DotNetBrowser.Input.DragAndDrop.Handlers.md
+  items:
+  - name: Classes
+  - name: DragAndDropParameters
+    href: DotNetBrowser.Input.DragAndDrop.Handlers.DragAndDropParameters.md
+  - name: DragEvent
+    href: DotNetBrowser.Input.DragAndDrop.Handlers.DragEvent.md
+  - name: DropParameters
+    href: DotNetBrowser.Input.DragAndDrop.Handlers.DropParameters.md
+  - name: EnterDragParameters
+    href: DotNetBrowser.Input.DragAndDrop.Handlers.EnterDragParameters.md
+- name: DotNetBrowser.Input.Keyboard
+  href: DotNetBrowser.Input.Keyboard.md
+  items:
+  - name: Interfaces
+  - name: IKeyboard
+    href: DotNetBrowser.Input.Keyboard.IKeyboard.md
+- name: DotNetBrowser.Input.Keyboard.Events
+  href: DotNetBrowser.Input.Keyboard.Events.md
+  items:
+  - name: Classes
+  - name: KeyCharEventArgs
+    href: DotNetBrowser.Input.Keyboard.Events.KeyCharEventArgs.md
+  - name: KeyEventArgs
+    href: DotNetBrowser.Input.Keyboard.Events.KeyEventArgs.md
+  - name: KeyModifiers
+    href: DotNetBrowser.Input.Keyboard.Events.KeyModifiers.md
+  - name: KeyPressedEventArgs
+    href: DotNetBrowser.Input.Keyboard.Events.KeyPressedEventArgs.md
+  - name: KeyReleasedEventArgs
+    href: DotNetBrowser.Input.Keyboard.Events.KeyReleasedEventArgs.md
+  - name: KeyTypedEventArgs
+    href: DotNetBrowser.Input.Keyboard.Events.KeyTypedEventArgs.md
+  - name: Interfaces
+  - name: IKeyCharEventArgs
+    href: DotNetBrowser.Input.Keyboard.Events.IKeyCharEventArgs.md
+  - name: IKeyEventArgs
+    href: DotNetBrowser.Input.Keyboard.Events.IKeyEventArgs.md
+  - name: IKeyModifiers
+    href: DotNetBrowser.Input.Keyboard.Events.IKeyModifiers.md
+  - name: IKeyPressedEventArgs
+    href: DotNetBrowser.Input.Keyboard.Events.IKeyPressedEventArgs.md
+  - name: IKeyReleasedEventArgs
+    href: DotNetBrowser.Input.Keyboard.Events.IKeyReleasedEventArgs.md
+  - name: IKeyTypedEventArgs
+    href: DotNetBrowser.Input.Keyboard.Events.IKeyTypedEventArgs.md
+  - name: Enums
+  - name: KeyCode
+    href: DotNetBrowser.Input.Keyboard.Events.KeyCode.md
+  - name: KeyLocation
+    href: DotNetBrowser.Input.Keyboard.Events.KeyLocation.md
+- name: DotNetBrowser.Input.Mouse
+  href: DotNetBrowser.Input.Mouse.md
+  items:
+  - name: Classes
+  - name: MouseExtensions
+    href: DotNetBrowser.Input.Mouse.MouseExtensions.md
+  - name: Interfaces
+  - name: IMouse
+    href: DotNetBrowser.Input.Mouse.IMouse.md
+- name: DotNetBrowser.Input.Mouse.Events
+  href: DotNetBrowser.Input.Mouse.Events.md
+  items:
+  - name: Classes
+  - name: MouseButtonEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.MouseButtonEventArgs.md
+  - name: MouseDraggedEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.MouseDraggedEventArgs.md
+  - name: MouseEnteredEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.MouseEnteredEventArgs.md
+  - name: MouseEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.MouseEventArgs.md
+  - name: MouseExitedEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.MouseExitedEventArgs.md
+  - name: MouseModifiers
+    href: DotNetBrowser.Input.Mouse.Events.MouseModifiers.md
+  - name: MouseMovedEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.MouseMovedEventArgs.md
+  - name: MousePressedEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.MousePressedEventArgs.md
+  - name: MouseReleasedEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.MouseReleasedEventArgs.md
+  - name: MouseWheelMovedEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.MouseWheelMovedEventArgs.md
+  - name: Interfaces
+  - name: IMouseButtonEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.IMouseButtonEventArgs.md
+  - name: IMouseDraggedEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.IMouseDraggedEventArgs.md
+  - name: IMouseEnteredEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.IMouseEnteredEventArgs.md
+  - name: IMouseEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.IMouseEventArgs.md
+  - name: IMouseExitedEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.IMouseExitedEventArgs.md
+  - name: IMouseModifiers
+    href: DotNetBrowser.Input.Mouse.Events.IMouseModifiers.md
+  - name: IMouseMovedEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.IMouseMovedEventArgs.md
+  - name: IMousePressedEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.IMousePressedEventArgs.md
+  - name: IMouseReleasedEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.IMouseReleasedEventArgs.md
+  - name: IMouseWheelMovedEventArgs
+    href: DotNetBrowser.Input.Mouse.Events.IMouseWheelMovedEventArgs.md
+  - name: Enums
+  - name: MouseButton
+    href: DotNetBrowser.Input.Mouse.Events.MouseButton.md
+  - name: MouseScrollType
+    href: DotNetBrowser.Input.Mouse.Events.MouseScrollType.md
+- name: DotNetBrowser.Input.Touch
+  href: DotNetBrowser.Input.Touch.md
+  items:
+  - name: Interfaces
+  - name: ITouch
+    href: DotNetBrowser.Input.Touch.ITouch.md
+- name: DotNetBrowser.Input.Touch.Events
+  href: DotNetBrowser.Input.Touch.Events.md
+  items:
+  - name: Classes
+  - name: TouchCanceledEventArgs
+    href: DotNetBrowser.Input.Touch.Events.TouchCanceledEventArgs.md
+  - name: TouchEndedEventArgs
+    href: DotNetBrowser.Input.Touch.Events.TouchEndedEventArgs.md
+  - name: TouchEventArgs
+    href: DotNetBrowser.Input.Touch.Events.TouchEventArgs.md
+  - name: TouchMovedEventArgs
+    href: DotNetBrowser.Input.Touch.Events.TouchMovedEventArgs.md
+  - name: TouchPoint
+    href: DotNetBrowser.Input.Touch.Events.TouchPoint.md
+  - name: TouchStartedEventArgs
+    href: DotNetBrowser.Input.Touch.Events.TouchStartedEventArgs.md
+  - name: Interfaces
+  - name: ITouchEventArgs
+    href: DotNetBrowser.Input.Touch.Events.ITouchEventArgs.md
+  - name: ITouchPoint
+    href: DotNetBrowser.Input.Touch.Events.ITouchPoint.md
+  - name: Enums
+  - name: TouchState
+    href: DotNetBrowser.Input.Touch.Events.TouchState.md
+- name: DotNetBrowser.Js
+  href: DotNetBrowser.Js.md
+  items:
+  - name: Classes
+  - name: JsException
+    href: DotNetBrowser.Js.JsException.md
+  - name: JsonExtensions
+    href: DotNetBrowser.Js.JsonExtensions.md
+  - name: PropertyUpdateException
+    href: DotNetBrowser.Js.PropertyUpdateException.md
+  - name: Interfaces
+  - name: IJsFunction
+    href: DotNetBrowser.Js.IJsFunction.md
+  - name: IJsObject
+    href: DotNetBrowser.Js.IJsObject.md
+  - name: IJsObjectPropertyCollection
+    href: DotNetBrowser.Js.IJsObjectPropertyCollection.md
+  - name: IJsPromise
+    href: DotNetBrowser.Js.IJsPromise.md
+  - name: IJsSymbol
+    href: DotNetBrowser.Js.IJsSymbol.md
+- name: DotNetBrowser.Js.Collections
+  href: DotNetBrowser.Js.Collections.md
+  items:
+  - name: Interfaces
+  - name: IJsArray
+    href: DotNetBrowser.Js.Collections.IJsArray.md
+  - name: IJsArrayBuffer
+    href: DotNetBrowser.Js.Collections.IJsArrayBuffer.md
+  - name: IJsMap
+    href: DotNetBrowser.Js.Collections.IJsMap.md
+  - name: IJsSet
+    href: DotNetBrowser.Js.Collections.IJsSet.md
+- name: DotNetBrowser.Logging
+  href: DotNetBrowser.Logging.md
+  items:
+  - name: Classes
+  - name: LoggerProvider
+    href: DotNetBrowser.Logging.LoggerProvider.md
+- name: DotNetBrowser.Media
+  href: DotNetBrowser.Media.md
+  items:
+  - name: Classes
+  - name: MediaDevice
+    href: DotNetBrowser.Media.MediaDevice.md
+  - name: Interfaces
+  - name: IAudio
+    href: DotNetBrowser.Media.IAudio.md
+  - name: IMediaDevices
+    href: DotNetBrowser.Media.IMediaDevices.md
+  - name: Enums
+  - name: MediaDeviceType
+    href: DotNetBrowser.Media.MediaDeviceType.md
+  - name: MediaType
+    href: DotNetBrowser.Media.MediaType.md
+- name: DotNetBrowser.Media.Events
+  href: DotNetBrowser.Media.Events.md
+  items:
+  - name: Classes
+  - name: AudioEventArgs
+    href: DotNetBrowser.Media.Events.AudioEventArgs.md
+  - name: AudioPlaybackStartedEventArgs
+    href: DotNetBrowser.Media.Events.AudioPlaybackStartedEventArgs.md
+  - name: AudioPlaybackStoppedEventArgs
+    href: DotNetBrowser.Media.Events.AudioPlaybackStoppedEventArgs.md
+- name: DotNetBrowser.Media.Handlers
+  href: DotNetBrowser.Media.Handlers.md
+  items:
+  - name: Classes
+  - name: SelectMediaDeviceParameters
+    href: DotNetBrowser.Media.Handlers.SelectMediaDeviceParameters.md
+  - name: SelectMediaDeviceResponse
+    href: DotNetBrowser.Media.Handlers.SelectMediaDeviceResponse.md
+- name: DotNetBrowser.Navigation
+  href: DotNetBrowser.Navigation.md
+  items:
+  - name: Classes
+  - name: LoadUrlParameters
+    href: DotNetBrowser.Navigation.LoadUrlParameters.md
+  - name: NavigationResult
+    href: DotNetBrowser.Navigation.NavigationResult.md
+  - name: Interfaces
+  - name: INavigation
+    href: DotNetBrowser.Navigation.INavigation.md
+  - name: INavigationEntry
+    href: DotNetBrowser.Navigation.INavigationEntry.md
+  - name: Enums
+  - name: LoadResult
+    href: DotNetBrowser.Navigation.LoadResult.md
+  - name: PageType
+    href: DotNetBrowser.Navigation.PageType.md
+- name: DotNetBrowser.Navigation.Events
+  href: DotNetBrowser.Navigation.Events.md
+  items:
+  - name: Classes
+  - name: FrameDocumentLoadFinishedEventArgs
+    href: DotNetBrowser.Navigation.Events.FrameDocumentLoadFinishedEventArgs.md
+  - name: FrameLoadFailedEventArgs
+    href: DotNetBrowser.Navigation.Events.FrameLoadFailedEventArgs.md
+  - name: FrameLoadFinishedEventArgs
+    href: DotNetBrowser.Navigation.Events.FrameLoadFinishedEventArgs.md
+  - name: FrameNavigationEventArgs
+    href: DotNetBrowser.Navigation.Events.FrameNavigationEventArgs.md
+  - name: LoadFinishedEventArgs
+    href: DotNetBrowser.Navigation.Events.LoadFinishedEventArgs.md
+  - name: LoadProgressChangedEventArgs
+    href: DotNetBrowser.Navigation.Events.LoadProgressChangedEventArgs.md
+  - name: LoadStartedEventArgs
+    href: DotNetBrowser.Navigation.Events.LoadStartedEventArgs.md
+  - name: NavigationEventArgs
+    href: DotNetBrowser.Navigation.Events.NavigationEventArgs.md
+  - name: NavigationFinishedEventArgs
+    href: DotNetBrowser.Navigation.Events.NavigationFinishedEventArgs.md
+  - name: NavigationRedirectedEventArgs
+    href: DotNetBrowser.Navigation.Events.NavigationRedirectedEventArgs.md
+  - name: NavigationStartedEventArgs
+    href: DotNetBrowser.Navigation.Events.NavigationStartedEventArgs.md
+  - name: NavigationStoppedEventArgs
+    href: DotNetBrowser.Navigation.Events.NavigationStoppedEventArgs.md
+- name: DotNetBrowser.Navigation.Handlers
+  href: DotNetBrowser.Navigation.Handlers.md
+  items:
+  - name: Classes
+  - name: NavigationParameters
+    href: DotNetBrowser.Navigation.Handlers.NavigationParameters.md
+  - name: ShowHttpErrorPageParameters
+    href: DotNetBrowser.Navigation.Handlers.ShowHttpErrorPageParameters.md
+  - name: ShowHttpErrorPageResponse
+    href: DotNetBrowser.Navigation.Handlers.ShowHttpErrorPageResponse.md
+  - name: ShowNetErrorPageParameters
+    href: DotNetBrowser.Navigation.Handlers.ShowNetErrorPageParameters.md
+  - name: ShowNetErrorPageResponse
+    href: DotNetBrowser.Navigation.Handlers.ShowNetErrorPageResponse.md
+  - name: StartNavigationParameters
+    href: DotNetBrowser.Navigation.Handlers.StartNavigationParameters.md
+  - name: StartNavigationResponse
+    href: DotNetBrowser.Navigation.Handlers.StartNavigationResponse.md
+- name: DotNetBrowser.Net
+  href: DotNetBrowser.Net.md
+  items:
+  - name: Classes
+  - name: BytesData
+    href: DotNetBrowser.Net.BytesData.md
+  - name: FileValue
+    href: DotNetBrowser.Net.FileValue.md
+  - name: FormData
+    href: DotNetBrowser.Net.FormData.md
+  - name: HostPortPair
+    href: DotNetBrowser.Net.HostPortPair.md
+  - name: HttpHeader
+    href: DotNetBrowser.Net.HttpHeader.md
+  - name: MimeType
+    href: DotNetBrowser.Net.MimeType.md
+  - name: MultipartFormData
+    href: DotNetBrowser.Net.MultipartFormData.md
+  - name: MultipartFormDataKeyValuePair
+    href: DotNetBrowser.Net.MultipartFormDataKeyValuePair.md
+  - name: Scheme
+    href: DotNetBrowser.Net.Scheme.md
+  - name: TextData
+    href: DotNetBrowser.Net.TextData.md
+  - name: UploadData
+    href: DotNetBrowser.Net.UploadData.md
+  - name: UrlRequest
+    href: DotNetBrowser.Net.UrlRequest.md
+  - name: UrlRequestJob
+    href: DotNetBrowser.Net.UrlRequestJob.md
+  - name: UrlRequestJobExtensions
+    href: DotNetBrowser.Net.UrlRequestJobExtensions.md
+  - name: Interfaces
+  - name: IFileValue
+    href: DotNetBrowser.Net.IFileValue.md
+  - name: IHttpAuthPreferences
+    href: DotNetBrowser.Net.IHttpAuthPreferences.md
+  - name: IHttpHeader
+    href: DotNetBrowser.Net.IHttpHeader.md
+  - name: INetwork
+    href: DotNetBrowser.Net.INetwork.md
+  - name: IUploadData
+    href: DotNetBrowser.Net.IUploadData.md
+  - name: IUploadData<T>
+    href: DotNetBrowser.Net.IUploadData-1.md
+  - name: Enums
+  - name: NetError
+    href: DotNetBrowser.Net.NetError.md
+  - name: RequestStatus
+    href: DotNetBrowser.Net.RequestStatus.md
+  - name: SslVersion
+    href: DotNetBrowser.Net.SslVersion.md
+- name: DotNetBrowser.Net.Certificates
+  href: DotNetBrowser.Net.Certificates.md
+  items:
+  - name: Classes
+  - name: Certificate
+    href: DotNetBrowser.Net.Certificates.Certificate.md
+  - name: CertificateVerificationError
+    href: DotNetBrowser.Net.Certificates.CertificateVerificationError.md
+  - name: ExtendedKeyUsage
+    href: DotNetBrowser.Net.Certificates.ExtendedKeyUsage.md
+  - name: Enums
+  - name: CertificateVerificationStatus
+    href: DotNetBrowser.Net.Certificates.CertificateVerificationStatus.md
+- name: DotNetBrowser.Net.Events
+  href: DotNetBrowser.Net.Events.md
+  items:
+  - name: Classes
+  - name: ConnectionTypeChangedEventArgs
+    href: DotNetBrowser.Net.Events.ConnectionTypeChangedEventArgs.md
+  - name: NetworkEventArgs
+    href: DotNetBrowser.Net.Events.NetworkEventArgs.md
+  - name: PacScriptErrorEventArgs
+    href: DotNetBrowser.Net.Events.PacScriptErrorEventArgs.md
+  - name: RedirectResponseCodeReceivedEventArgs
+    href: DotNetBrowser.Net.Events.RedirectResponseCodeReceivedEventArgs.md
+  - name: RequestCompletedEventArgs
+    href: DotNetBrowser.Net.Events.RequestCompletedEventArgs.md
+  - name: RequestDestroyedEventArgs
+    href: DotNetBrowser.Net.Events.RequestDestroyedEventArgs.md
+  - name: ResponseBytesReceivedEventArgs
+    href: DotNetBrowser.Net.Events.ResponseBytesReceivedEventArgs.md
+  - name: ResponseStartedEventArgs
+    href: DotNetBrowser.Net.Events.ResponseStartedEventArgs.md
+  - name: Enums
+  - name: ConnectionType
+    href: DotNetBrowser.Net.Events.ConnectionType.md
+- name: DotNetBrowser.Net.Handlers
+  href: DotNetBrowser.Net.Handlers.md
+  items:
+  - name: Classes
+  - name: AuthenticateParameters
+    href: DotNetBrowser.Net.Handlers.AuthenticateParameters.md
+  - name: AuthenticateResponse
+    href: DotNetBrowser.Net.Handlers.AuthenticateResponse.md
+  - name: CanAccessFileParameters
+    href: DotNetBrowser.Net.Handlers.CanAccessFileParameters.md
+  - name: CanAccessFileResponse
+    href: DotNetBrowser.Net.Handlers.CanAccessFileResponse.md
+  - name: CanGetCookiesParameters
+    href: DotNetBrowser.Net.Handlers.CanGetCookiesParameters.md
+  - name: CanGetCookiesResponse
+    href: DotNetBrowser.Net.Handlers.CanGetCookiesResponse.md
+  - name: CanSetCookieParameters
+    href: DotNetBrowser.Net.Handlers.CanSetCookieParameters.md
+  - name: CanSetCookieResponse
+    href: DotNetBrowser.Net.Handlers.CanSetCookieResponse.md
+  - name: InterceptRequestParameters
+    href: DotNetBrowser.Net.Handlers.InterceptRequestParameters.md
+  - name: InterceptRequestResponse
+    href: DotNetBrowser.Net.Handlers.InterceptRequestResponse.md
+  - name: NetworkParameters
+    href: DotNetBrowser.Net.Handlers.NetworkParameters.md
+  - name: ReceiveHeadersParameters
+    href: DotNetBrowser.Net.Handlers.ReceiveHeadersParameters.md
+  - name: ReceiveHeadersResponse
+    href: DotNetBrowser.Net.Handlers.ReceiveHeadersResponse.md
+  - name: SendUploadDataParameters
+    href: DotNetBrowser.Net.Handlers.SendUploadDataParameters.md
+  - name: SendUploadDataResponse
+    href: DotNetBrowser.Net.Handlers.SendUploadDataResponse.md
+  - name: SendUrlRequestParameters
+    href: DotNetBrowser.Net.Handlers.SendUrlRequestParameters.md
+  - name: SendUrlRequestResponse
+    href: DotNetBrowser.Net.Handlers.SendUrlRequestResponse.md
+  - name: StartTransactionParameters
+    href: DotNetBrowser.Net.Handlers.StartTransactionParameters.md
+  - name: StartTransactionResponse
+    href: DotNetBrowser.Net.Handlers.StartTransactionResponse.md
+  - name: UrlRequestJobOptions
+    href: DotNetBrowser.Net.Handlers.UrlRequestJobOptions.md
+  - name: UrlRequestParameters
+    href: DotNetBrowser.Net.Handlers.UrlRequestParameters.md
+  - name: VerifyCertificateParameters
+    href: DotNetBrowser.Net.Handlers.VerifyCertificateParameters.md
+  - name: VerifyCertificateResponse
+    href: DotNetBrowser.Net.Handlers.VerifyCertificateResponse.md
+  - name: Enums
+  - name: ResourceType
+    href: DotNetBrowser.Net.Handlers.ResourceType.md
+- name: DotNetBrowser.Net.Proxy
+  href: DotNetBrowser.Net.Proxy.md
+  items:
+  - name: Classes
+  - name: AutoDetectProxySettings
+    href: DotNetBrowser.Net.Proxy.AutoDetectProxySettings.md
+  - name: CustomProxySettings
+    href: DotNetBrowser.Net.Proxy.CustomProxySettings.md
+  - name: DirectProxySettings
+    href: DotNetBrowser.Net.Proxy.DirectProxySettings.md
+  - name: PacProxySettings
+    href: DotNetBrowser.Net.Proxy.PacProxySettings.md
+  - name: ProxySettings
+    href: DotNetBrowser.Net.Proxy.ProxySettings.md
+  - name: SystemProxySettings
+    href: DotNetBrowser.Net.Proxy.SystemProxySettings.md
+  - name: Interfaces
+  - name: IProxy
+    href: DotNetBrowser.Net.Proxy.IProxy.md
+  - name: Enums
+  - name: ProxyType
+    href: DotNetBrowser.Net.Proxy.ProxyType.md
+- name: DotNetBrowser.Passwords
+  href: DotNetBrowser.Passwords.md
+  items:
+  - name: Classes
+  - name: PasswordRecord
+    href: DotNetBrowser.Passwords.PasswordRecord.md
+  - name: PasswordRecord.Builder
+    href: DotNetBrowser.Passwords.PasswordRecord.Builder.md
+  - name: PasswordStoreExtensions
+    href: DotNetBrowser.Passwords.PasswordStoreExtensions.md
+  - name: Interfaces
+  - name: IPasswordStore
+    href: DotNetBrowser.Passwords.IPasswordStore.md
+  - name: IPasswords
+    href: DotNetBrowser.Passwords.IPasswords.md
+- name: DotNetBrowser.Passwords.Handlers
+  href: DotNetBrowser.Passwords.Handlers.md
+  items:
+  - name: Classes
+  - name: SavePasswordParameters
+    href: DotNetBrowser.Passwords.Handlers.SavePasswordParameters.md
+  - name: SavePasswordResponse
+    href: DotNetBrowser.Passwords.Handlers.SavePasswordResponse.md
+  - name: UpdatePasswordParameters
+    href: DotNetBrowser.Passwords.Handlers.UpdatePasswordParameters.md
+  - name: UpdatePasswordResponse
+    href: DotNetBrowser.Passwords.Handlers.UpdatePasswordResponse.md
+- name: DotNetBrowser.Permissions
+  href: DotNetBrowser.Permissions.md
+  items:
+  - name: Interfaces
+  - name: IPermissions
+    href: DotNetBrowser.Permissions.IPermissions.md
+  - name: Enums
+  - name: PermissionType
+    href: DotNetBrowser.Permissions.PermissionType.md
+- name: DotNetBrowser.Permissions.Handlers
+  href: DotNetBrowser.Permissions.Handlers.md
+  items:
+  - name: Classes
+  - name: RequestPermissionParameters
+    href: DotNetBrowser.Permissions.Handlers.RequestPermissionParameters.md
+  - name: RequestPermissionResponse
+    href: DotNetBrowser.Permissions.Handlers.RequestPermissionResponse.md
+- name: DotNetBrowser.Plugins
+  href: DotNetBrowser.Plugins.md
+  items:
+  - name: Classes
+  - name: Plugin
+    href: DotNetBrowser.Plugins.Plugin.md
+  - name: Interfaces
+  - name: IPluginSettings
+    href: DotNetBrowser.Plugins.IPluginSettings.md
+  - name: IPlugins
+    href: DotNetBrowser.Plugins.IPlugins.md
+  - name: Enums
+  - name: PluginType
+    href: DotNetBrowser.Plugins.PluginType.md
+- name: DotNetBrowser.Plugins.Handlers
+  href: DotNetBrowser.Plugins.Handlers.md
+  items:
+  - name: Classes
+  - name: AllowPluginParameters
+    href: DotNetBrowser.Plugins.Handlers.AllowPluginParameters.md
+  - name: AllowPluginResponse
+    href: DotNetBrowser.Plugins.Handlers.AllowPluginResponse.md
+- name: DotNetBrowser.Print
+  href: DotNetBrowser.Print.md
+  items:
+  - name: Classes
+  - name: Capabilities
+    href: DotNetBrowser.Print.Capabilities.md
+  - name: PageMargins
+    href: DotNetBrowser.Print.PageMargins.md
+  - name: PageRange
+    href: DotNetBrowser.Print.PageRange.md
+  - name: PaperSize
+    href: DotNetBrowser.Print.PaperSize.md
+  - name: PdfPrinter
+    href: DotNetBrowser.Print.PdfPrinter.md
+  - name: PdfPrinter<TPrintSettings>
+    href: DotNetBrowser.Print.PdfPrinter-1.md
+  - name: Printer<TPrintSettings>
+    href: DotNetBrowser.Print.Printer-1.md
+  - name: Scaling
+    href: DotNetBrowser.Print.Scaling.md
+  - name: SystemPrinter
+    href: DotNetBrowser.Print.SystemPrinter.md
+  - name: SystemPrinter<TPrintSettings>
+    href: DotNetBrowser.Print.SystemPrinter-1.md
+  - name: Interfaces
+  - name: IPrintJob<TPrintSettings>
+    href: DotNetBrowser.Print.IPrintJob-1.md
+  - name: IPrinters<TPrintSettings, TPdfPrintSettings>
+    href: DotNetBrowser.Print.IPrinters-2.md
+  - name: PdfPrinter.IHtmlSettings
+    href: DotNetBrowser.Print.PdfPrinter.IHtmlSettings.md
+  - name: PdfPrinter.IPdfSettings
+    href: DotNetBrowser.Print.PdfPrinter.IPdfSettings.md
+  - name: PdfPrinter.ISettings<T>
+    href: DotNetBrowser.Print.PdfPrinter.ISettings-1.md
+  - name: SystemPrinter.IHtmlSettings
+    href: DotNetBrowser.Print.SystemPrinter.IHtmlSettings.md
+  - name: SystemPrinter.IPdfSettings
+    href: DotNetBrowser.Print.SystemPrinter.IPdfSettings.md
+  - name: SystemPrinter.ISettings<T>
+    href: DotNetBrowser.Print.SystemPrinter.ISettings-1.md
+  - name: Enums
+  - name: ColorModel
+    href: DotNetBrowser.Print.ColorModel.md
+  - name: DuplexMode
+    href: DotNetBrowser.Print.DuplexMode.md
+  - name: Fit
+    href: DotNetBrowser.Print.Fit.md
+  - name: Orientation
+    href: DotNetBrowser.Print.Orientation.md
+  - name: PagesPerSheet
+    href: DotNetBrowser.Print.PagesPerSheet.md
+  - name: PaperSize.Unit
+    href: DotNetBrowser.Print.PaperSize.Unit.md
+- name: DotNetBrowser.Print.Events
+  href: DotNetBrowser.Print.Events.md
+  items:
+  - name: Classes
+  - name: PageCountUpdatedEventArgs<TPrintSettings>
+    href: DotNetBrowser.Print.Events.PageCountUpdatedEventArgs-1.md
+  - name: PrintCompletedEventArgs<TPrintSettings>
+    href: DotNetBrowser.Print.Events.PrintCompletedEventArgs-1.md
+- name: DotNetBrowser.Print.Handlers
+  href: DotNetBrowser.Print.Handlers.md
+  items:
+  - name: Classes
+  - name: PrintContentParameters<TPrintSettings, TPdfPrintSettings>
+    href: DotNetBrowser.Print.Handlers.PrintContentParameters-2.md
+  - name: PrintHtmlContentParameters
+    href: DotNetBrowser.Print.Handlers.PrintHtmlContentParameters.md
+  - name: PrintHtmlContentResponse
+    href: DotNetBrowser.Print.Handlers.PrintHtmlContentResponse.md
+  - name: PrintPdfContentParameters
+    href: DotNetBrowser.Print.Handlers.PrintPdfContentParameters.md
+  - name: PrintPdfContentResponse
+    href: DotNetBrowser.Print.Handlers.PrintPdfContentResponse.md
+- name: DotNetBrowser.Print.Settings
+  href: DotNetBrowser.Print.Settings.md
+  items:
+  - name: Classes
+  - name: CollateExtensions
+    href: DotNetBrowser.Print.Settings.CollateExtensions.md
+  - name: ColorModelExtensions
+    href: DotNetBrowser.Print.Settings.ColorModelExtensions.md
+  - name: CopiesExtensions
+    href: DotNetBrowser.Print.Settings.CopiesExtensions.md
+  - name: DuplexModeExtensions
+    href: DotNetBrowser.Print.Settings.DuplexModeExtensions.md
+  - name: FitExtensions
+    href: DotNetBrowser.Print.Settings.FitExtensions.md
+  - name: FooterTemplateExtensions
+    href: DotNetBrowser.Print.Settings.FooterTemplateExtensions.md
+  - name: HeaderTemplateExtensions
+    href: DotNetBrowser.Print.Settings.HeaderTemplateExtensions.md
+  - name: OrientationExtensions
+    href: DotNetBrowser.Print.Settings.OrientationExtensions.md
+  - name: PageMarginsExtensions
+    href: DotNetBrowser.Print.Settings.PageMarginsExtensions.md
+  - name: PageRangesExtensions
+    href: DotNetBrowser.Print.Settings.PageRangesExtensions.md
+  - name: PagesPerSheetExtensions
+    href: DotNetBrowser.Print.Settings.PagesPerSheetExtensions.md
+  - name: PaperSizeExtensions
+    href: DotNetBrowser.Print.Settings.PaperSizeExtensions.md
+  - name: PdfFilePathExtensions
+    href: DotNetBrowser.Print.Settings.PdfFilePathExtensions.md
+  - name: PrintBackgroundsExtensions
+    href: DotNetBrowser.Print.Settings.PrintBackgroundsExtensions.md
+  - name: PrintHeaderFooterExtensions
+    href: DotNetBrowser.Print.Settings.PrintHeaderFooterExtensions.md
+  - name: PrintSelectionOnlyExtensions
+    href: DotNetBrowser.Print.Settings.PrintSelectionOnlyExtensions.md
+  - name: PrintSettingsExtensions
+    href: DotNetBrowser.Print.Settings.PrintSettingsExtensions.md
+  - name: ScalingExtensions
+    href: DotNetBrowser.Print.Settings.ScalingExtensions.md
+  - name: Interfaces
+  - name: ICollate<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.ICollate-1.md
+  - name: IColorModel<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IColorModel-1.md
+  - name: ICopies<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.ICopies-1.md
+  - name: IDuplexMode<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IDuplexMode-1.md
+  - name: IFit<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IFit-1.md
+  - name: IFooterTemplate<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IFooterTemplate-1.md
+  - name: IHeaderTemplate<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IHeaderTemplate-1.md
+  - name: IOrientation<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IOrientation-1.md
+  - name: IPageMargins<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IPageMargins-1.md
+  - name: IPageRanges<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IPageRanges-1.md
+  - name: IPagesPerSheet<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IPagesPerSheet-1.md
+  - name: IPaperSize<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IPaperSize-1.md
+  - name: IPdfFilePath<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IPdfFilePath-1.md
+  - name: IPrintBackgrounds<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IPrintBackgrounds-1.md
+  - name: IPrintHeaderFooter<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IPrintHeaderFooter-1.md
+  - name: IPrintSelectionOnly<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IPrintSelectionOnly-1.md
+  - name: IPrintSettings
+    href: DotNetBrowser.Print.Settings.IPrintSettings.md
+  - name: IScaling<TPrintSettings>
+    href: DotNetBrowser.Print.Settings.IScaling-1.md
+- name: DotNetBrowser.Profile
+  href: DotNetBrowser.Profile.md
+  items:
+  - name: Interfaces
+  - name: IProfile
+    href: DotNetBrowser.Profile.IProfile.md
+  - name: IProfilePreferences
+    href: DotNetBrowser.Profile.IProfilePreferences.md
+  - name: IProfiles
+    href: DotNetBrowser.Profile.IProfiles.md
+  - name: Enums
+  - name: CookieControlsMode
+    href: DotNetBrowser.Profile.CookieControlsMode.md
+  - name: ProfileType
+    href: DotNetBrowser.Profile.ProfileType.md
+- name: DotNetBrowser.Search
+  href: DotNetBrowser.Search.md
+  items:
+  - name: Classes
+  - name: FindOptions
+    href: DotNetBrowser.Search.FindOptions.md
+  - name: FindResult
+    href: DotNetBrowser.Search.FindResult.md
+  - name: Interfaces
+  - name: ITextFinder
+    href: DotNetBrowser.Search.ITextFinder.md
+  - name: Enums
+  - name: Direction
+    href: DotNetBrowser.Search.Direction.md
+  - name: StopFindAction
+    href: DotNetBrowser.Search.StopFindAction.md
+- name: DotNetBrowser.Search.Handlers
+  href: DotNetBrowser.Search.Handlers.md
+  items:
+  - name: Classes
+  - name: FindResultReceivedParameters
+    href: DotNetBrowser.Search.Handlers.FindResultReceivedParameters.md
+- name: DotNetBrowser.SpellCheck
+  href: DotNetBrowser.SpellCheck.md
+  items:
+  - name: Classes
+  - name: Language
+    href: DotNetBrowser.SpellCheck.Language.md
+  - name: LanguageNotAvailableException
+    href: DotNetBrowser.SpellCheck.LanguageNotAvailableException.md
+  - name: SpellCheckMenu
+    href: DotNetBrowser.SpellCheck.SpellCheckMenu.md
+  - name: SpellCheckingResult
+    href: DotNetBrowser.SpellCheck.SpellCheckingResult.md
+  - name: Interfaces
+  - name: ILanguages
+    href: DotNetBrowser.SpellCheck.ILanguages.md
+  - name: ISpellCheckDictionary
+    href: DotNetBrowser.SpellCheck.ISpellCheckDictionary.md
+  - name: ISpellChecker
+    href: DotNetBrowser.SpellCheck.ISpellChecker.md
+- name: DotNetBrowser.Ui
+  href: DotNetBrowser.Ui.md
+  items:
+  - name: Classes
+  - name: Bitmap
+    href: DotNetBrowser.Ui.Bitmap.md
+  - name: Color
+    href: DotNetBrowser.Ui.Color.md
+  - name: Font
+    href: DotNetBrowser.Ui.Font.md
+  - name: FontSize
+    href: DotNetBrowser.Ui.FontSize.md
+  - name: Language
+    href: DotNetBrowser.Ui.Language.md
+- name: DotNetBrowser.Ui.Cursors
+  href: DotNetBrowser.Ui.Cursors.md
+  items:
+  - name: Enums
+  - name: CursorType
+    href: DotNetBrowser.Ui.Cursors.CursorType.md
+- name: DotNetBrowser.UserData
+  href: DotNetBrowser.UserData.md
+  items:
+  - name: Classes
+  - name: Address
+    href: DotNetBrowser.UserData.Address.md
+  - name: Address.Builder
+    href: DotNetBrowser.UserData.Address.Builder.md
+  - name: UserDataProfile
+    href: DotNetBrowser.UserData.UserDataProfile.md
+  - name: UserDataProfile.Builder
+    href: DotNetBrowser.UserData.UserDataProfile.Builder.md
+  - name: Interfaces
+  - name: IUserDataProfileStore
+    href: DotNetBrowser.UserData.IUserDataProfileStore.md
+  - name: IUserDataProfiles
+    href: DotNetBrowser.UserData.IUserDataProfiles.md
+- name: DotNetBrowser.UserData.Handlers
+  href: DotNetBrowser.UserData.Handlers.md
+  items:
+  - name: Classes
+  - name: SaveUserDataProfileParameters
+    href: DotNetBrowser.UserData.Handlers.SaveUserDataProfileParameters.md
+  - name: SaveUserDataProfileResponse
+    href: DotNetBrowser.UserData.Handlers.SaveUserDataProfileResponse.md
+  - name: UpdateUserDataProfileParameters
+    href: DotNetBrowser.UserData.Handlers.UpdateUserDataProfileParameters.md
+  - name: UpdateUserDataProfileResponse
+    href: DotNetBrowser.UserData.Handlers.UpdateUserDataProfileResponse.md
+- name: DotNetBrowser.WinForms
+  href: DotNetBrowser.WinForms.md
+  items:
+  - name: Classes
+  - name: BitmapExtensions
+    href: DotNetBrowser.WinForms.BitmapExtensions.md
+  - name: BrowserView
+    href: DotNetBrowser.WinForms.BrowserView.md
+- name: DotNetBrowser.WinForms.Dialogs
+  href: DotNetBrowser.WinForms.Dialogs.md
+  items:
+  - name: Classes
+  - name: ColorExtensions
+    href: DotNetBrowser.WinForms.Dialogs.ColorExtensions.md
+  - name: DefaultAuthenticationHandler
+    href: DotNetBrowser.WinForms.Dialogs.DefaultAuthenticationHandler.md
+  - name: DefaultStartDownloadHandler
+    href: DotNetBrowser.WinForms.Dialogs.DefaultStartDownloadHandler.md
+  - name: DialogHandlerBase
+    href: DotNetBrowser.WinForms.Dialogs.DialogHandlerBase.md
+- name: DotNetBrowser.WinForms.Extensions
+  href: DotNetBrowser.WinForms.Extensions.md
+  items:
+  - name: Classes
+  - name: DefaultOpenExtensionPopupHandler
+    href: DotNetBrowser.WinForms.Extensions.DefaultOpenExtensionPopupHandler.md
+- name: DotNetBrowser.WinUi3
+  href: DotNetBrowser.WinUi3.md
+  items:
+  - name: Classes
+  - name: BitmapExtensions
+    href: DotNetBrowser.WinUi3.BitmapExtensions.md
+  - name: BrowserView
+    href: DotNetBrowser.WinUi3.BrowserView.md
+- name: DotNetBrowser.WinUi3.ContextMenu
+  href: DotNetBrowser.WinUi3.ContextMenu.md
+  items:
+  - name: Classes
+  - name: MenuItemViewModel
+    href: DotNetBrowser.WinUi3.ContextMenu.MenuItemViewModel.md
+- name: DotNetBrowser.WinUi3.Dialogs
+  href: DotNetBrowser.WinUi3.Dialogs.md
+  items:
+  - name: Classes
+  - name: DefaultAuthenticationHandler
+    href: DotNetBrowser.WinUi3.Dialogs.DefaultAuthenticationHandler.md
+  - name: DialogHandlerBase
+    href: DotNetBrowser.WinUi3.Dialogs.DialogHandlerBase.md
+- name: DotNetBrowser.WinUi3.Extensions
+  href: DotNetBrowser.WinUi3.Extensions.md
+  items:
+  - name: Classes
+  - name: DefaultOpenExtensionPopupHandler
+    href: DotNetBrowser.WinUi3.Extensions.DefaultOpenExtensionPopupHandler.md
+- name: DotNetBrowser.Wpf
+  href: DotNetBrowser.Wpf.md
+  items:
+  - name: Classes
+  - name: BitmapExtensions
+    href: DotNetBrowser.Wpf.BitmapExtensions.md
+  - name: BrowserView
+    href: DotNetBrowser.Wpf.BrowserView.md
+- name: DotNetBrowser.Wpf.ContextMenu
+  href: DotNetBrowser.Wpf.ContextMenu.md
+  items:
+  - name: Classes
+  - name: MenuItemViewModel
+    href: DotNetBrowser.Wpf.ContextMenu.MenuItemViewModel.md
+- name: DotNetBrowser.Wpf.Dialogs
+  href: DotNetBrowser.Wpf.Dialogs.md
+  items:
+  - name: Classes
+  - name: ColorExtensions
+    href: DotNetBrowser.Wpf.Dialogs.ColorExtensions.md
+  - name: DefaultAuthenticationHandler
+    href: DotNetBrowser.Wpf.Dialogs.DefaultAuthenticationHandler.md
+  - name: DefaultStartDownloadHandler
+    href: DotNetBrowser.Wpf.Dialogs.DefaultStartDownloadHandler.md
+  - name: DialogHandlerBase
+    href: DotNetBrowser.Wpf.Dialogs.DialogHandlerBase.md
+- name: DotNetBrowser.Wpf.Extensions
+  href: DotNetBrowser.Wpf.Extensions.md
+  items:
+  - name: Classes
+  - name: DefaultOpenExtensionPopupHandler
+    href: DotNetBrowser.Wpf.Extensions.DefaultOpenExtensionPopupHandler.md
+- name: DotNetBrowser.Zoom
+  href: DotNetBrowser.Zoom.md
+  items:
+  - name: Classes
+  - name: Level
+    href: DotNetBrowser.Zoom.Level.md
+  - name: Interfaces
+  - name: IZoom
+    href: DotNetBrowser.Zoom.IZoom.md
+  - name: IZoomLevels
+    href: DotNetBrowser.Zoom.IZoomLevels.md
+  - name: Enums
+  - name: ZoomMode
+    href: DotNetBrowser.Zoom.ZoomMode.md
+- name: DotNetBrowser.Zoom.Events
+  href: DotNetBrowser.Zoom.Events.md
+  items:
+  - name: Classes
+  - name: LevelChangedEventArgs
+    href: DotNetBrowser.Zoom.Events.LevelChangedEventArgs.md

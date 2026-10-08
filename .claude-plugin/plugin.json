@@ -1,0 +1,23 @@
+{
+  "name": "dotnetbrowser",
+  "displayName": "DotNetBrowser",
+  "version": "4.3.3",
+  "description": "Official TeamDev skill for DotNetBrowser 4.3.3, the Chromium-based browser component for .NET (WPF, Windows Forms, WinUI 3, Avalonia UI, console). Coding guidance, full API reference, and offline docs, release notes, and migration guides.",
+  "author": {
+    "name": "TeamDev",
+    "url": "https://teamdev.com/dotnetbrowser"
+  },
+  "homepage": "https://teamdev.com/dotnetbrowser/docs/guides/installation/agent-skill/",
+  "repository": "https://github.com/TeamDev-IP/DotNetBrowser-Skill",
+  "keywords": [
+    "dotnetbrowser",
+    "chromium",
+    "dotnet",
+    "csharp",
+    "wpf",
+    "winforms",
+    "avalonia",
+    "winui",
+    "browser"
+  ]
+}
