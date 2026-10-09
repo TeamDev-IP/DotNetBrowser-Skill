@@ -1,5 +1,8 @@
 # DotNetBrowser skill for AI coding agents
 
+[![skills.sh](https://skills.sh/b/TeamDev-IP/DotNetBrowser-Skill)](https://skills.sh/TeamDev-IP/DotNetBrowser-Skill)
+[![Security: A — Skills Directory](https://www.skillsdirectory.com/api/skills/teamdev-ip-dotnetbrowser/badge)](https://www.skillsdirectory.com/skills/teamdev-ip-dotnetbrowser)
+
 The official [Agent Skill](https://agentskills.io) for
 [DotNetBrowser](https://teamdev.com/dotnetbrowser), TeamDev's Chromium-based
 browser component for .NET applications built with WPF, Windows Forms, WinUI 3,
