@@ -1,0 +1,86 @@
+name: Check
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate the plugin and marketplace
+        run: |
+          npm install --global @anthropic-ai/claude-code
+          claude plugin validate .
+
+      - name: Check directory limits
+        run: |
+          status=0
+
+          # Every non-image file must stay under 256 KiB.
+          large=$(git ls-files -z \
+            | grep -zviE '\.(png|jpe?g|gif|webp|svg|ico)$' \
+            | xargs -0 stat -c '%s %n' \
+            | awk '$1 >= 262144')
+          if [ -n "$large" ]; then
+            echo "::error::Files of 256 KiB or more:"; echo "$large"; status=1
+          fi
+
+          forbidden=$(git ls-files \
+            | grep -E '(^|/)(\.DS_Store|Thumbs\.db|desktop\.ini|__MACOSX)(/|$)' || true)
+          if [ -n "$forbidden" ]; then
+            echo "::error::Files the directory rejects:"; echo "$forbidden"; status=1
+          fi
+
+          links=$(git ls-files -s | awk '$1 == "120000" { print $4 }')
+          if [ -n "$links" ]; then
+            echo "::error::Symbolic links:"; echo "$links"; status=1
+          fi
+
+          if git ls-files -z | xargs -0 git check-attr filter export-ignore -- \
+              | grep -vE ': (unspecified|unset)$'; then
+            echo "::error::Remove filter or export-ignore attributes (including Git LFS)."
+            status=1
+          fi
+
+          exit $status
+
+      - name: Check version consistency
+        run: |
+          status=0
+          fail() { echo "::error::$1"; status=1; }
+
+          version=$(jq -r .version .claude-plugin/plugin.json)
+          # A repository-only fix uses a suffix such as 4.3.3-1; the
+          # DotNetBrowser version is the part before it.
+          product=${version%%-*}
+          echo "Plugin version: $version (DotNetBrowser $product)"
+
+          if [ "$(jq -r '.plugins[0] | has("version")' .claude-plugin/marketplace.json)" = true ]; then
+            fail "Remove 'version' from marketplace.json; plugin.json is the only source."
+          fi
+          jq -r .description .claude-plugin/plugin.json | grep -qF "DotNetBrowser $product," \
+            || fail "plugin.json description does not name DotNetBrowser $product."
+          jq -r '.plugins[0].description' .claude-plugin/marketplace.json | grep -qF "DotNetBrowser $product," \
+            || fail "marketplace.json description does not name DotNetBrowser $product."
+          grep -qF "DotNetBrowser $product**" README.md \
+            || fail "README.md does not name DotNetBrowser $product."
+          grep -qE "^  product-version: \"$product\"$" skills/dotnetbrowser/SKILL.md \
+            || fail "SKILL.md product-version is not $product; replace the skill folder."
+
+          if [ "$GITHUB_REF_TYPE" = tag ] && [ "$GITHUB_REF_NAME" != "v$version" ]; then
+            fail "Tag $GITHUB_REF_NAME does not match plugin version $version."
+          fi
+
+          exit $status
