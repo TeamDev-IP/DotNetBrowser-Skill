@@ -9,6 +9,7 @@ This page provides the links to the official automatically-generated API referen
 For information on the API changes, refer to the [Release Notes](https://teamdev.com/dotnetbrowser/releases/) page.
 
 
+- [4.3.4](https://api.dotnetbrowser.dev/4.3.4/api/DotNetBrowser.html)
 - [4.3.3](https://api.dotnetbrowser.dev/4.3.3/api/DotNetBrowser.html)
 - [4.3.2](https://api.dotnetbrowser.dev/4.3.2/api/DotNetBrowser.html)
 - [4.3.1](https://api.dotnetbrowser.dev/4.3.1/api/DotNetBrowser.html)
@@ -40,24 +41,4 @@ For information on the API changes, refer to the [Release Notes](https://teamdev
 - [3.0.1](https://api.dotnetbrowser.dev/3.0.1/api/DotNetBrowser.html)
 - [3.0.0](https://api.dotnetbrowser.dev/3.0.0/api/DotNetBrowser.html)
 - [2.27.20](https://api.dotnetbrowser.dev/2.27.20/)
-- [2.27.19](https://api.dotnetbrowser.dev/2.27.19/)
-- [2.27.18](https://api.dotnetbrowser.dev/2.27.18/)
-- [2.27.17](https://api.dotnetbrowser.dev/2.27.17/)
-- [2.27.16](https://api.dotnetbrowser.dev/2.27.16/)
-- [2.27.15](https://api.dotnetbrowser.dev/2.27.15/)
-- [2.27.14](https://api.dotnetbrowser.dev/2.27.14/)
-- [2.27.13](https://api.dotnetbrowser.dev/2.27.13/)
-- [2.27.12](https://api.dotnetbrowser.dev/2.27.12/)
-- [2.27.11](https://api.dotnetbrowser.dev/2.27.11/)
-- [2.27.10](https://api.dotnetbrowser.dev/2.27.10/)
-- [2.27.9](https://api.dotnetbrowser.dev/2.27.9/)
-- [2.27.8](https://api.dotnetbrowser.dev/2.27.8/)
-- [2.27.7](https://api.dotnetbrowser.dev/2.27.7/)
-- [2.27.6](https://api.dotnetbrowser.dev/2.27.6/)
-- [2.27.5](https://api.dotnetbrowser.dev/2.27.5/)
-- [2.27.4](https://api.dotnetbrowser.dev/2.27.4/)
-- [2.27.3](https://api.dotnetbrowser.dev/2.27.3/)
-- [2.27.2](https://api.dotnetbrowser.dev/2.27.2/)
-- [2.27.1](https://api.dotnetbrowser.dev/2.27.1/)
-- [2.27.0](https://api.dotnetbrowser.dev/2.27.0/)
 

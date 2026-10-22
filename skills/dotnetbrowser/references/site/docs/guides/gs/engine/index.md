@@ -99,7 +99,7 @@ Read [more](https://teamdev.com/dotnetbrowser/docs/guides/gs/browser-view/#off-s
 
 ### Language
 
-This option configures the language used on the default error pages and message [dialogs](https://teamdev.com/dotnetbrowser/docs/guides/gs/dialogs/). By default, the language is dynamically configured according to the default locale of your .NET application. If the list of [supported languages](https://api.dotnetbrowser.dev/4.3.3/api/DotNetBrowser.Ui.Language) does not contain the language obtained from the .NET application locale, American English is used.
+This option configures the language used on the default error pages and message [dialogs](https://teamdev.com/dotnetbrowser/docs/guides/gs/dialogs/). By default, the language is dynamically configured according to the default locale of your .NET application. If the list of [supported languages](https://api.dotnetbrowser.dev/4.3.4/api/DotNetBrowser.Ui.Language) does not contain the language obtained from the .NET application locale, American English is used.
 
 Current option allows to override the default behavior and configure the Chromium engine with the given language. See the code sample below:
 
@@ -387,7 +387,7 @@ Do not open the remote debugging URL in other web browser applications such as M
 
 
 **Note**
-The remote debugging feature is compatible only with the Chromium version used by DotNetBrowser library. For example, if you use DotNetBrowser 4.3.3 based on Chromium 155.0.8059.40, you can open the remote debugging URL only in the same Chromium/Google Chrome.
+The remote debugging feature is compatible only with the Chromium version used by DotNetBrowser library. For example, if you use DotNetBrowser 4.3.4 based on Chromium 156.0.8078.48, you can open the remote debugging URL only in the same Chromium/Google Chrome.
 <br>
 <br>
 We recommend loading the remote debugging URL in an `IBrowser` instance instead of Google Chrome.
