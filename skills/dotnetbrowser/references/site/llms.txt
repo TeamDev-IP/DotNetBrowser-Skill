@@ -1,8 +1,8 @@
-<!-- Excerpt of https://teamdev.com/llms.txt (DotNetBrowser section), fetched 2026-10-08. -->
+<!-- Excerpt of https://teamdev.com/llms.txt (DotNetBrowser section), fetched 2026-10-22. -->
 
 ## DotNetBrowser
 
-Current version: 4.3.3. Chromium build: 155.0.8059.40. Release date: 2026-10-08.
+Current version: 4.3.4. Chromium build: 156.0.8078.48. Release date: 2026-10-22.
 
 - [DotNetBrowser | .NET web browser for WPF, Avalonia UI, and WinForms apps](https://teamdev.com/dotnetbrowser/): Add Chromium web browser to your .NET app. Display modern web pages in WPF,  Avalonia UI, WinUI 3, and WinForms. Work with DOM, JS, network, printing, etc.
 
@@ -90,6 +90,7 @@ Current version: 4.3.3. Chromium build: 155.0.8059.40. Release date: 2026-10-08.
 
 ### Releases
 
+- [DotNetBrowser 4.3.4](https://teamdev.com/dotnetbrowser/releases/2026/v4-3-4/index.md): DotNetBrowser 4.3.4 - Chromium 156 with text input and image fixes.
 - [DotNetBrowser 4.3.3](https://teamdev.com/dotnetbrowser/releases/2026/v4-3-3/index.md): DotNetBrowser 4.3.3 - Chromium 155 with screen capture fixes.
 - [DotNetBrowser 4.3.2](https://teamdev.com/dotnetbrowser/releases/2026/v4-3-2/index.md): DotNetBrowser 4.3.2 - Memory management and stability fixes.
 - [DotNetBrowser 4.3.1](https://teamdev.com/dotnetbrowser/releases/2026/v4-3-1/index.md): DotNetBrowser 4.3.1 - Chromium 153 with rendering and stability fixes.
@@ -131,6 +132,7 @@ Current version: 4.3.3. Chromium build: 155.0.8059.40. Release date: 2026-10-08.
 - [Blazor and DotNetBrowser](https://teamdev.com/dotnetbrowser/blog/blazor-and-dotnetbrowser/index.md): Learn the difference between DotNetBrowser and Blazor,  and how to use them together in Blazor Hybrid apps.
 - [Blazor hybrid apps in Avalonia UI](https://teamdev.com/dotnetbrowser/blog/blazor-hybrid-apps-in-avalonia-ui/index.md): Create Blazor Hybrid apps that work on Linux with Avalonia UI and DotNetBrowser.
 - [Browser control for WinForms](https://teamdev.com/dotnetbrowser/blog/browser-control-for-winforms/index.md): Learn how to use DotNetBrowser, a browser control for WinForms.
+- [Building a guard-railed browser for an AI assistant in a WPF app](https://teamdev.com/dotnetbrowser/blog/guard-railed-browser-for-ai-assistant/index.md): This article shows how to give an AI assistant inside a WPF app a browser that stays within the limits you set.
 - [C# desktop app with Angular UI](https://teamdev.com/dotnetbrowser/blog/csharp-desktop-app-with-angular-ui/index.md): This article shows how to build a desktop app with Angular UI.
 - [C# desktop app with Shadcn UI](https://teamdev.com/dotnetbrowser/blog/c-sharp-desktop-app-with-shadcn-ui/index.md): The article about building .NET desktop apps with web user interfaces.
 - [Chrome extensions in DotNetBrowser](https://teamdev.com/dotnetbrowser/blog/chrome-extensions-in-dotnetbrowser/index.md): Install and use Chrome extensions in DotNetBrowser.
@@ -151,6 +153,7 @@ Current version: 4.3.3. Chromium build: 155.0.8059.40. Release date: 2026-10-08.
 - [Kiosk app on Raspberry Pi with Avalonia and DotNetBrowser](https://teamdev.com/dotnetbrowser/blog/kiosk-on-raspberry-with-avalonia-dotnetbrowser/index.md): A practical tutorial on building a kiosk app for Raspberry Pi with Avalonia and DotNetBrowser.
 - [Kiosk-App auf dem Raspberry Pi mit Avalonia und DotNetBrowser](https://teamdev.com/dotnetbrowser/blog/kiosk-auf-dem-raspberry-mit-avalonia-dotnetbrowser/index.md): Praxis-Tutorial zur Kiosk-App auf dem Raspberry Pi mit Avalonia und DotNetBrowser.
 - [Migrating from CefSharp to DotNetBrowser](https://teamdev.com/dotnetbrowser/blog/migrating-from-cefsharp-to-dotnetbrowser/index.md): A migration guide from CefSharp to DotNetBrowser.
+- [Simulating mouse and keyboard input with DotNetBrowser](https://teamdev.com/dotnetbrowser/blog/simulate-mouse-and-keyboard-input/index.md): How to automate a web page from C# by simulating keyboard and mouse input with DotNetBrowser, compared with CefSharp and WebView2.
 - [Taking screenshots of web pages](https://teamdev.com/dotnetbrowser/blog/taking-screenshots-of-web-pages/index.md): Our journey to a perfect web page screenshot.
 - [Web view for WPF](https://teamdev.com/dotnetbrowser/blog/web-view-for-wpf/index.md): Learn how to use DotNetBrowser, an advanced web view for WPF.
 - [Why So Many, Microsoft?](https://teamdev.com/dotnetbrowser/blog/why-so-many-ui-frameworks-microsoft/index.md): This article explains why Microsoft ended up with so many desktop UI frameworks.

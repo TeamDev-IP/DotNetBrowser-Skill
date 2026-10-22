@@ -1,6 +1,6 @@
 # DotNetBrowser API index
 
-DotNetBrowser 4.3.3, generated 2026-10-08. 587 types in 93 namespaces. Every file in this directory is one public type with all of its members. Find the type below and open the file from the last column; the namespace page lists the same types with their summaries.
+DotNetBrowser 4.3.4, generated 2026-10-22. 587 types in 93 namespaces. Every file in this directory is one public type with all of its members. Find the type below and open the file from the last column; the namespace page lists the same types with their summaries.
 
 ## DotNetBrowser
 

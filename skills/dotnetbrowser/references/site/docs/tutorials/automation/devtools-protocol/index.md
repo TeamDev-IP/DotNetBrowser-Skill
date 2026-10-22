@@ -100,8 +100,8 @@ guaranteed — match on the page URL rather than taking the first entry.
 How closely the client has to track Chromium depends on the tool.
 
 ChromeDriver is versioned against Chromium directly and refuses to attach to a
-build it does not recognize. DotNetBrowser 4.3.3 is based on Chromium
-155.0.8059.40, so the
+build it does not recognize. DotNetBrowser 4.3.4 is based on Chromium
+156.0.8078.48, so the
 `Selenium.WebDriver.ChromeDriver` package has to be built for that Chromium
 release. A mismatch is the most common reason a Selenium connection fails.
 

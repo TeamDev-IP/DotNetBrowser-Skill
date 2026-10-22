@@ -1,6 +1,6 @@
 # DotNetBrowser documentation index
 
-Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-10-08 for DotNetBrowser 4.3.3. Local files are relative to this file. Entries without a local file exist only online. Links inside the pages point to the live site; see ../lookup.md for how to resolve them to local files.
+Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-10-22 for DotNetBrowser 4.3.4. Local files are relative to this file. Entries without a local file exist only online. Links inside the pages point to the live site; see ../lookup.md for how to resolve them to local files.
 
 ## Overview
 
@@ -96,6 +96,7 @@ Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-10-08 for DotNetBrowse
 
 | Title | Description | Local file | Live URL |
 |---|---|---|---|
+| DotNetBrowser 4.3.4 | DotNetBrowser 4.3.4 - Chromium 156 with text input and image fixes. | releases/2026/v4-3-4/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-4/index.md |
 | DotNetBrowser 4.3.3 | DotNetBrowser 4.3.3 - Chromium 155 with screen capture fixes. | releases/2026/v4-3-3/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-3/index.md |
 | DotNetBrowser 4.3.2 | DotNetBrowser 4.3.2 - Memory management and stability fixes. | releases/2026/v4-3-2/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-2/index.md |
 | DotNetBrowser 4.3.1 | DotNetBrowser 4.3.1 - Chromium 153 with rendering and stability fixes. | releases/2026/v4-3-1/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-1/index.md |
@@ -141,6 +142,7 @@ Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-10-08 for DotNetBrowse
 | Blazor and DotNetBrowser | Learn the difference between DotNetBrowser and Blazor, and how to use them together in Blazor Hybrid apps. | blog/blazor-and-dotnetbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/blazor-and-dotnetbrowser/index.md |
 | Blazor hybrid apps in Avalonia UI | Create Blazor Hybrid apps that work on Linux with Avalonia UI and DotNetBrowser. | blog/blazor-hybrid-apps-in-avalonia-ui/index.md | https://teamdev.com/dotnetbrowser/blog/blazor-hybrid-apps-in-avalonia-ui/index.md |
 | Browser control for WinForms | Learn how to use DotNetBrowser, a browser control for WinForms. | blog/browser-control-for-winforms/index.md | https://teamdev.com/dotnetbrowser/blog/browser-control-for-winforms/index.md |
+| Building a guard-railed browser for an AI assistant in a WPF app | This article shows how to give an AI assistant inside a WPF app a browser that stays within the limits you set. | blog/guard-railed-browser-for-ai-assistant/index.md | https://teamdev.com/dotnetbrowser/blog/guard-railed-browser-for-ai-assistant/index.md |
 | C# desktop app with Angular UI | This article shows how to build a desktop app with Angular UI. | blog/csharp-desktop-app-with-angular-ui/index.md | https://teamdev.com/dotnetbrowser/blog/csharp-desktop-app-with-angular-ui/index.md |
 | C# desktop app with Shadcn UI | The article about building .NET desktop apps with web user interfaces. | blog/c-sharp-desktop-app-with-shadcn-ui/index.md | https://teamdev.com/dotnetbrowser/blog/c-sharp-desktop-app-with-shadcn-ui/index.md |
 | Chrome extensions in DotNetBrowser | Install and use Chrome extensions in DotNetBrowser. | blog/chrome-extensions-in-dotnetbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/chrome-extensions-in-dotnetbrowser/index.md |
@@ -161,6 +163,7 @@ Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-10-08 for DotNetBrowse
 | Kiosk app on Raspberry Pi with Avalonia and DotNetBrowser | A practical tutorial on building a kiosk app for Raspberry Pi with Avalonia and DotNetBrowser. | blog/kiosk-on-raspberry-with-avalonia-dotnetbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/kiosk-on-raspberry-with-avalonia-dotnetbrowser/index.md |
 | Kiosk-App auf dem Raspberry Pi mit Avalonia und DotNetBrowser | Praxis-Tutorial zur Kiosk-App auf dem Raspberry Pi mit Avalonia und DotNetBrowser. | blog/kiosk-auf-dem-raspberry-mit-avalonia-dotnetbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/kiosk-auf-dem-raspberry-mit-avalonia-dotnetbrowser/index.md |
 | Migrating from CefSharp to DotNetBrowser | A migration guide from CefSharp to DotNetBrowser. | blog/migrating-from-cefsharp-to-dotnetbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/migrating-from-cefsharp-to-dotnetbrowser/index.md |
+| Simulating mouse and keyboard input with DotNetBrowser | How to automate a web page from C# by simulating keyboard and mouse input with DotNetBrowser, compared with CefSharp and WebView2. | blog/simulate-mouse-and-keyboard-input/index.md | https://teamdev.com/dotnetbrowser/blog/simulate-mouse-and-keyboard-input/index.md |
 | Taking screenshots of web pages | Our journey to a perfect web page screenshot. | blog/taking-screenshots-of-web-pages/index.md | https://teamdev.com/dotnetbrowser/blog/taking-screenshots-of-web-pages/index.md |
 | Web view for WPF | Learn how to use DotNetBrowser, an advanced web view for WPF. | blog/web-view-for-wpf/index.md | https://teamdev.com/dotnetbrowser/blog/web-view-for-wpf/index.md |
 | Why So Many, Microsoft? | This article explains why Microsoft ended up with so many desktop UI frameworks. | blog/why-so-many-ui-frameworks-microsoft/index.md | https://teamdev.com/dotnetbrowser/blog/why-so-many-ui-frameworks-microsoft/index.md |

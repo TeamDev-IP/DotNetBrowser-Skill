@@ -13,7 +13,7 @@ DotNetBrowser code: choosing NuGet packages, engine and browser lifecycle,
 `BrowserView`, handlers and events, navigation, DOM access, the JavaScript bridge,
 printing, network interception, deployment, and licensing. It bundles the full
 API reference and an offline copy of the guides, release notes, migration guides,
-and blog for **DotNetBrowser 4.3.3**, so the agent answers from documentation that
+and blog for **DotNetBrowser 4.3.4**, so the agent answers from documentation that
 matches the version rather than from memory.
 
 ## Install
