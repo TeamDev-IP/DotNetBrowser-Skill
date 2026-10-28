@@ -34,7 +34,7 @@ We're aware of two factors that influence that:
 
 * The [remote debugging][remote-debugging] is enabled. Google may block a login attempt if the browser
   exposes the remote debugging port.
-* An outdated browser version. Consider upgrading to the latest DotNetBrowser 4.3.4.
+* An outdated browser version. Consider upgrading to the latest DotNetBrowser 4.3.5.
 
 ## User data is not stored
 

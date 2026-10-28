@@ -40,8 +40,8 @@ Here's how to get the demo application:
 If you already use DotNetBrowser, you can get the latest build from NuGet:
 
 ```shell
-dotnet add package DotNetBrowser -v "4.3.4"
-dotnet add package DotNetBrowser.WPF -v "4.3.4"
+dotnet add package DotNetBrowser -v "4.3.5"
+dotnet add package DotNetBrowser.WPF -v "4.3.5"
 ```
 
 ## Install the extension

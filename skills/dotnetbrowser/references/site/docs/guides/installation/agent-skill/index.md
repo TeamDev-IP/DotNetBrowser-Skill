@@ -20,8 +20,8 @@ Each DotNetBrowser release has its own skill, so the API reference matches the
 version you build against. The agent reads the skill on its own when a task
 involves DotNetBrowser.
 
-The skill is installed in the `dotnetbrowser` subdirectory of the agent's
-skills directory:
+For NuGet and ZIP installations, the skill is installed in the `dotnetbrowser`
+subdirectory of the agent's skills directory:
 
 | Agent | Skills directory in the project |
 | --- | --- |
@@ -33,10 +33,11 @@ skills directory:
 Agents look for skills in the repository root, and some also in the directory
 where you start them.
 
-You can install the skill in three ways:
+You can install the skill in four ways:
 
 * from NuGet, in an existing project;
 * from a ZIP archive, copied into a project or into your home directory;
+* from the public GitHub repository, for the latest DotNetBrowser release;
 * with a project template, in a new project.
 
 ## Installing in an existing project
@@ -54,7 +55,7 @@ dotnet add package DotNetBrowser.AgentSkills --version <version>
 ```
 
 Replace `<version>` with the version of your DotNetBrowser packages, for
-example `4.3.4`. The command adds the package with
+example `4.3.5`. The command adds the package with
 `PrivateAssets="all"`, so it does not flow to projects that reference yours.
 In Visual Studio, you can add the package with the NuGet Package Manager
 instead, as described in [Installing from NuGet][guides-nuget]. This also works
@@ -155,7 +156,7 @@ Keep in mind:
 
 ### From ZIP
 
-[Download the DotNetBrowser 4.3.4 agent skill][docs-skill-zip]
+[Download the DotNetBrowser 4.3.5 agent skill][docs-skill-zip]
 and unpack it. The archive contains the `dotnetbrowser` folder.
 
 Copy this folder, as is, into the agent's skills directory in the repository
@@ -166,6 +167,15 @@ your home directory instead: `~/.claude/skills/` for Claude Code,
 For an agent that does not read the Agent Skills format, keep the folder
 anywhere in the repository and reference `dotnetbrowser/SKILL.md` from the
 agent's rules or instructions file.
+
+### From GitHub
+
+The skill is also available in the public
+[DotNetBrowser-Skill repository][docs-skill-github]. Follow the installation
+instructions in its README for your agent.
+
+The repository tracks the latest DotNetBrowser release. To get the skill for
+a specific DotNetBrowser version, use NuGet or ZIP as described above.
 
 ## Creating a project with the skill
 
@@ -220,7 +230,8 @@ directory. To remove a skill installed from ZIP, delete the `dotnetbrowser`
 folder.
 
 [docs-agent-skills]: https://agentskills.io
-[docs-skill-zip]: https://teamdev.download/downloads/dotnetbrowser/4.3.4/dotnetbrowser-4.3.4-agent-skill.zip
+[docs-skill-github]: https://github.com/TeamDev-IP/DotNetBrowser-Skill
+[docs-skill-zip]: https://teamdev.download/downloads/dotnetbrowser/4.3.5/dotnetbrowser-4.3.5-agent-skill.zip
 [guides-from-nuget]: #from-nuget
 [guides-nuget]: https://teamdev.com/dotnetbrowser/docs/guides/installation/nuget/
 [guides-quickstart]: https://teamdev.com/dotnetbrowser/docs/quickstart/

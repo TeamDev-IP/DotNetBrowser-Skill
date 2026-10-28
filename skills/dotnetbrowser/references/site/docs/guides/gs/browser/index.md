@@ -226,7 +226,7 @@ Dim userAgent As String = browser.UserAgent
 
 ## User-Agent Client Hints
 
-You can override the default [User-Agent Client Hints](https://api.dotnetbrowser.dev/4.3.4/api/DotNetBrowser.Profile.IProfile.UserAgentMetadata) string and configure `IBrowser` to use a custom set of values. See the code sample below:
+You can override the default [User-Agent Client Hints](https://api.dotnetbrowser.dev/4.3.5/api/DotNetBrowser.Profile.IProfile.UserAgentMetadata) string and configure `IBrowser` to use a custom set of values. See the code sample below:
 
 **C#**
 ```csharp

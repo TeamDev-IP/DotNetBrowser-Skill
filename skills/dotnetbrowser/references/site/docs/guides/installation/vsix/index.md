@@ -9,7 +9,7 @@ This guide describes how to add DotNetBrowser BrowserView control to Visual Stud
 
 To add the DotNetBrowser BrowserView control to the Visual Studio Toolbox, download and install the VSIX package:
 
-[DotNetBrowser](https://teamdev.download/downloads/dotnetbrowser/4.3.4/vsix/DotNetBrowser.WinForms.Package.vsix)
+[DotNetBrowser](https://teamdev.download/downloads/dotnetbrowser/4.3.5/vsix/DotNetBrowser.WinForms.Package.vsix)
 
 After completing installation, the BrowserView control will appear in the VS ToolBox and can be dragged and dropped onto the form:
 

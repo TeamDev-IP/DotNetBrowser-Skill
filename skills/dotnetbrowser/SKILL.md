@@ -1,11 +1,11 @@
 ---
 name: dotnetbrowser
-description: Use when writing, reviewing, or debugging .NET code that embeds a Chromium browser with DotNetBrowser (WPF, Windows Forms, WinUI 3, Avalonia UI, or headless/console) - choosing NuGet packages, engine and browser lifecycle, BrowserView, handlers and events, navigation, DOM, JavaScript bridge, printing, network interception, deployment, licensing, and API lookups. Bundles API references and an offline snapshot of the guides, release notes, migration guides, and blog for DotNetBrowser 4.3.4.
+description: Use when writing, reviewing, or debugging .NET code that embeds a Chromium browser with DotNetBrowser (WPF, Windows Forms, WinUI 3, Avalonia UI, or headless/console) - choosing NuGet packages, engine and browser lifecycle, BrowserView, handlers and events, navigation, DOM, JavaScript bridge, printing, network interception, deployment, licensing, and API lookups. Bundles API references and an offline snapshot of the guides, release notes, migration guides, and blog for DotNetBrowser 4.3.5.
 metadata:
   product: DotNetBrowser
-  product-version: "4.3.4"
-  chromium-version: "156.0.8078.48"
-  generated: "2026-10-22"
+  product-version: "4.3.5"
+  chromium-version: "156.0.8078.74"
+  generated: "2026-10-28"
 ---
 
 # DotNetBrowser
@@ -17,9 +17,9 @@ the DOM, JavaScript, the network, printing, and more. Using it requires a
 license key; a free 30-day evaluation license is available from
 https://www.teamdev.com/dotnetbrowser#evaluate.
 
-This skill describes DotNetBrowser 4.3.4 (Chromium
-156.0.8078.48). Everything here was generated from the product on
-2026-10-22. Prefer the bundled references over memory: the API changes
+This skill describes DotNetBrowser 4.3.5 (Chromium
+156.0.8078.74). Everything here was generated from the product on
+2026-10-28. Prefer the bundled references over memory: the API changes
 between major versions, and code written for DotNetBrowser 1.x or 2.x is
 mostly wrong for 4.x.
 
@@ -34,7 +34,7 @@ file.
 | `references/api/INDEX.md` | Find a covered public type: namespace, kind, one-line summary, file name. |
 | `references/api/<Namespace>.<Type>.md` | Complete members of one type (587 types): signatures, remarks, parameters. |
 | `references/site/INDEX.md` | Find a guide, quick start, tutorial, release note, migration guide, or blog post. |
-| `references/site/**/index.md` | The pages themselves (140 pages), with C# and VB.NET samples. |
+| `references/site/**/index.md` | The pages themselves (142 pages), with C# and VB.NET samples. |
 | `references/site/llms.txt` | The same list with live URLs, for when a newer page might exist online. |
 
 Workflow for most tasks:
@@ -42,7 +42,7 @@ Workflow for most tasks:
 1. Check the project's DotNetBrowser package version, target framework, and UI
    framework version (including centrally managed package versions). Preserve
    them unless the task calls for an upgrade. If the package version differs
-   from 4.3.4, verify APIs against that version's documentation
+   from 4.3.5, verify APIs against that version's documentation
    or installed assemblies before using these references.
 2. Read every topic note below that matches the task.
 3. Search `references/site/INDEX.md` for the needed topic, then read the
@@ -210,4 +210,4 @@ All pages below are under `references/site/docs/guides/`.
 | Pop-ups, dialogs, context menu, downloads, permissions | `gs/popups/`, `gs/dialogs/`, `gs/context-menu/`, `gs/downloads/`, `gs/permissions/` |
 | Deployment, Chromium binaries, trimming and Native AOT | `gs/deployment/index.md`, `gs/chromium/index.md`, `gs/aot-support/index.md` |
 | Logging, common exceptions, startup failures, crashes | `troubleshoot/logging/index.md`, `troubleshoot/common-exceptions/index.md`, `troubleshoot/startup-failure/index.md`, `troubleshoot/unexpected-termination/index.md` |
-| Migrating from 3.x, from CefSharp or WebView2 | `../../migration/from-v3-to-v4/overview/index.md`, `../../blog/migrating-from-cefsharp-to-dotnetbrowser/index.md`, `../../blog/from-webview2-to-dotnetbrowser-part-1/index.md` |
+| Migrating from 3.x, from CefSharp or WebView2 | `../../migration/from-v3-to-v4/overview/index.md`, `../../blog/migrating-from-cefsharp-to-dotnetbrowser/index.md`, `../../blog/from-webview2-to-dotnetbrowser-part-1/index.md`, `../../blog/from-webview2-to-dotnetbrowser-part-2/index.md` |

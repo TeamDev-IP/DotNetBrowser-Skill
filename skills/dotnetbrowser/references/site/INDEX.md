@@ -1,6 +1,6 @@
 # DotNetBrowser documentation index
 
-Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-10-22 for DotNetBrowser 4.3.4. Local files are relative to this file. Entries without a local file exist only online. Links inside the pages point to the live site; see ../lookup.md for how to resolve them to local files.
+Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-10-28 for DotNetBrowser 4.3.5. Local files are relative to this file. Entries without a local file exist only online. Links inside the pages point to the live site; see ../lookup.md for how to resolve them to local files.
 
 ## Overview
 
@@ -96,6 +96,7 @@ Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-10-22 for DotNetBrowse
 
 | Title | Description | Local file | Live URL |
 |---|---|---|---|
+| DotNetBrowser 4.3.5 | DotNetBrowser 4.3.5 - Chromium 156 with Avalonia memory leak fixes. | releases/2026/v4-3-5/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-5/index.md |
 | DotNetBrowser 4.3.4 | DotNetBrowser 4.3.4 - Chromium 156 with text input and image fixes. | releases/2026/v4-3-4/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-4/index.md |
 | DotNetBrowser 4.3.3 | DotNetBrowser 4.3.3 - Chromium 155 with screen capture fixes. | releases/2026/v4-3-3/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-3/index.md |
 | DotNetBrowser 4.3.2 | DotNetBrowser 4.3.2 - Memory management and stability fixes. | releases/2026/v4-3-2/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-2/index.md |
@@ -157,6 +158,7 @@ Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-10-22 for DotNetBrowse
 | Embedded browser control for .NET | In this article, we explain the embedded browser controls for .NET: what they are and what they are good for. | blog/embedded-browser-control-for-dotnet/index.md | https://teamdev.com/dotnetbrowser/blog/embedded-browser-control-for-dotnet/index.md |
 | Embedding a web view into an Excel add-in | Embed a web view into Excel using DotNetBrowser and a COM add-in. | blog/embedding-web-view-to-excel-add-in/index.md | https://teamdev.com/dotnetbrowser/blog/embedding-web-view-to-excel-add-in/index.md |
 | From WebView2 to DotNetBrowser: Part 1 | This article shows how to migrate existing project from WebView2 to DotNetBrowser. | blog/from-webview2-to-dotnetbrowser-part-1/index.md | https://teamdev.com/dotnetbrowser/blog/from-webview2-to-dotnetbrowser-part-1/index.md |
+| From WebView2 to DotNetBrowser: Part 2 | This article shows how to migrate proxy, cookies, profiles, context menus, downloads, printing, DevTools, and extensions from WebView2 to DotNetBrowser. | blog/from-webview2-to-dotnetbrowser-part-2/index.md | https://teamdev.com/dotnetbrowser/blog/from-webview2-to-dotnetbrowser-part-2/index.md |
 | How to generate PDF in C# | The step-by-step tutorial on how to generate PDF files in C# with DotNetBrowser. | blog/how-to-generate-pdf-in-c-sharp/index.md | https://teamdev.com/dotnetbrowser/blog/how-to-generate-pdf-in-c-sharp/index.md |
 | How to render web content as a texture in Unity3D | The step-by-step tutorial on how to render web content as a texture in Unity3D with DotNetBrowser. | blog/how-to-render-web-content-as-a-texture-in-unity3d/index.md | https://teamdev.com/dotnetbrowser/blog/how-to-render-web-content-as-a-texture-in-unity3d/index.md |
 | How to use a local AI model in DotNetBrowser | This article demonstrates how to use a local AI model in DotNetBrowser applications. | blog/how-to-use-local-llm-in-dotnetbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/how-to-use-local-llm-in-dotnetbrowser/index.md |

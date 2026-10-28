@@ -412,7 +412,7 @@ Using `IBrowserSettings` you can configure different content settings for a sing
 - disable images, plugins, JavaScript, local storage, application cache;
 - allow running insecure content or allow JavaScript access clipboard.
 
-You can find the list of other supported settings in [API specification](https://api.dotnetbrowser.dev/4.3.4/api/DotNetBrowser.Browser.IBrowserSettings).
+You can find the list of other supported settings in [API specification](https://api.dotnetbrowser.dev/4.3.5/api/DotNetBrowser.Browser.IBrowserSettings).
 
 ### Default encoding
 
