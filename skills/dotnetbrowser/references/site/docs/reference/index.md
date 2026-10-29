@@ -9,6 +9,7 @@ This page provides the links to the official automatically-generated API referen
 For information on the API changes, refer to the [Release Notes](https://teamdev.com/dotnetbrowser/releases/) page.
 
 
+- [4.3.5](https://api.dotnetbrowser.dev/4.3.5/api/DotNetBrowser.html)
 - [4.3.4](https://api.dotnetbrowser.dev/4.3.4/api/DotNetBrowser.html)
 - [4.3.3](https://api.dotnetbrowser.dev/4.3.3/api/DotNetBrowser.html)
 - [4.3.2](https://api.dotnetbrowser.dev/4.3.2/api/DotNetBrowser.html)

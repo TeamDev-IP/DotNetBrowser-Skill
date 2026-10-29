@@ -1,8 +1,8 @@
-<!-- Excerpt of https://teamdev.com/llms.txt (DotNetBrowser section), fetched 2026-10-22. -->
+<!-- Excerpt of https://teamdev.com/llms.txt (DotNetBrowser section), fetched 2026-10-28. -->
 
 ## DotNetBrowser
 
-Current version: 4.3.4. Chromium build: 156.0.8078.48. Release date: 2026-10-22.
+Current version: 4.3.5. Chromium build: 156.0.8078.74. Release date: 2026-10-28.
 
 - [DotNetBrowser | .NET web browser for WPF, Avalonia UI, and WinForms apps](https://teamdev.com/dotnetbrowser/): Add Chromium web browser to your .NET app. Display modern web pages in WPF,  Avalonia UI, WinUI 3, and WinForms. Work with DOM, JS, network, printing, etc.
 
@@ -90,6 +90,7 @@ Current version: 4.3.4. Chromium build: 156.0.8078.48. Release date: 2026-10-22.
 
 ### Releases
 
+- [DotNetBrowser 4.3.5](https://teamdev.com/dotnetbrowser/releases/2026/v4-3-5/index.md): DotNetBrowser 4.3.5 - Chromium 156 with Avalonia memory leak fixes.
 - [DotNetBrowser 4.3.4](https://teamdev.com/dotnetbrowser/releases/2026/v4-3-4/index.md): DotNetBrowser 4.3.4 - Chromium 156 with text input and image fixes.
 - [DotNetBrowser 4.3.3](https://teamdev.com/dotnetbrowser/releases/2026/v4-3-3/index.md): DotNetBrowser 4.3.3 - Chromium 155 with screen capture fixes.
 - [DotNetBrowser 4.3.2](https://teamdev.com/dotnetbrowser/releases/2026/v4-3-2/index.md): DotNetBrowser 4.3.2 - Memory management and stability fixes.
@@ -147,6 +148,7 @@ Current version: 4.3.4. Chromium build: 156.0.8078.48. Release date: 2026-10-22.
 - [Embedded browser control for .NET](https://teamdev.com/dotnetbrowser/blog/embedded-browser-control-for-dotnet/index.md): In this article, we explain the embedded browser controls for .NET: what they  are and what they are good for.
 - [Embedding a web view into an Excel add-in](https://teamdev.com/dotnetbrowser/blog/embedding-web-view-to-excel-add-in/index.md): Embed a web view into Excel using DotNetBrowser and a COM add-in.
 - [From WebView2 to DotNetBrowser: Part 1](https://teamdev.com/dotnetbrowser/blog/from-webview2-to-dotnetbrowser-part-1/index.md): This article shows how to migrate existing project from WebView2  to DotNetBrowser.
+- [From WebView2 to DotNetBrowser: Part 2](https://teamdev.com/dotnetbrowser/blog/from-webview2-to-dotnetbrowser-part-2/index.md): This article shows how to migrate proxy, cookies, profiles, context menus, downloads, printing, DevTools, and extensions from WebView2 to DotNetBrowser.
 - [How to generate PDF in C#](https://teamdev.com/dotnetbrowser/blog/how-to-generate-pdf-in-c-sharp/index.md): The step-by-step tutorial on how to generate PDF files in C# with DotNetBrowser.
 - [How to render web content as a texture in Unity3D](https://teamdev.com/dotnetbrowser/blog/how-to-render-web-content-as-a-texture-in-unity3d/index.md): The step-by-step tutorial on how to render web content as a texture in Unity3D  with DotNetBrowser.
 - [How to use a local AI model in DotNetBrowser](https://teamdev.com/dotnetbrowser/blog/how-to-use-local-llm-in-dotnetbrowser/index.md): This article demonstrates how to use a local AI model in DotNetBrowser applications.

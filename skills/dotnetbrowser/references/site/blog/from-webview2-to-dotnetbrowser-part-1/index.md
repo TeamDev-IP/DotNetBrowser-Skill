@@ -443,7 +443,7 @@ the form boundary plus each part's `Content-Disposition` and
 `Content-Type`.
 
 You can override the default headers and add more in the
-<a href="https://api.dotnetbrowser.dev/4.3.4/api/DotNetBrowser.Navigation.LoadUrlParameters.HttpHeaders.html#DotNetBrowser_Navigation_LoadUrlParameters_HttpHeaders">
+<a href="https://api.dotnetbrowser.dev/4.3.5/api/DotNetBrowser.Navigation.LoadUrlParameters.HttpHeaders.html#DotNetBrowser_Navigation_LoadUrlParameters_HttpHeaders">
 HttpHeaders</a>
 parameter.
 

@@ -23,8 +23,8 @@ Reference two NuGet packages in the project that runs the test scenario:
   the API shown here is unchanged in Selenium 4.
 * `Selenium.WebDriver.ChromeDriver` — the ChromeDriver executable.
 
-DotNetBrowser 4.3.4 is based on Chromium
-156.0.8078.48, so use a
+DotNetBrowser 4.3.5 is based on Chromium
+156.0.8078.74, so use a
 `Selenium.WebDriver.ChromeDriver` package built for that release.
 
 ## Enabling the endpoint

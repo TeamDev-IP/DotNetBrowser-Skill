@@ -8,7 +8,7 @@ Single-platform UI variants exist too, for example `DotNetBrowser.Wpf.x64`.
 See `references/site/docs/guides/installation/nuget/index.md` for the full
 list. For a new project using this skill's version, install the matching
 templates:
-`dotnet new install DotNetBrowser.Templates::4.3.4`, then
+`dotnet new install DotNetBrowser.Templates::4.3.5`, then
 `dotnet new dotnetbrowser.wpf.app` (also `winforms`, `winui`, `avalonia`,
 `avalonia12`, `blazor.avalonia`, `console`).
 

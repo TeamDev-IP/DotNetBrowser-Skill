@@ -38,4 +38,4 @@ browser.PrintPdfContentHandler =
 ```
 
 
-[fit]: https://api.dotnetbrowser.dev/2.27.0/html/P_DotNetBrowser_Print_Settings_IFit_1_Fit.htm
+[fit]: https://api.dotnetbrowser.dev/2.27.20/html/P_DotNetBrowser_Print_Settings_IFit_1_Fit.htm

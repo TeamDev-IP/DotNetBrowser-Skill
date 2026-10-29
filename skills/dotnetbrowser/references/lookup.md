@@ -55,7 +55,7 @@ live-only links (FAQ, Roadmap). Pages are the raw Markdown of the site:
   empty. The surrounding text describes what they showed.
 - Samples come in C# and VB.NET pairs; use whichever matches the project.
 - Release notes are under `references/site/releases/`; a version newer than
-  4.3.4 may exist online. Use the URLs in
+  4.3.5 may exist online. Use the URLs in
   `references/site/llms.txt` (every page is also served as Markdown at that
   URL) when the user runs a newer version.
 

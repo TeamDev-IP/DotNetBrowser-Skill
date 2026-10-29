@@ -212,7 +212,8 @@ We perform a regular review of the licenses associated with the Chromium compone
 
 Below you can find the links to Chromium components licenses associated with DotNetBrowser releases:
 
-- [Chromium 156.0.8078.48 Licenses](https://docs.google.com/spreadsheets/d/1zUTnqtVry58HDjd59TF6dfVIrVlkTmz6tUjFKckwtZE) (4.3.4 and higher)
+- [Chromium 156.0.8078.74 Licenses](https://docs.google.com/spreadsheets/d/1Dg7W8JxOL2eJm1lJY2QZMec8D0Fx_cY-N1oMzqWbqwk) (4.3.5 and higher)
+- [Chromium 156.0.8078.48 Licenses](https://docs.google.com/spreadsheets/d/1zUTnqtVry58HDjd59TF6dfVIrVlkTmz6tUjFKckwtZE) (4.3.4)
 - [Chromium 155.0.8059.40 Licenses](https://docs.google.com/spreadsheets/d/1EBT0xVvO0HAAJ_uK5RpYH5X30262EZ3CWokAQT3Ymwk) (4.3.3)
 - [Chromium 154.0.8037.58 Licenses](https://docs.google.com/spreadsheets/d/1Yw97AFCebZsu4bxayTCOtC5dTO2ItPAR-aAks5C18Aw) (4.3.2)
 - [Chromium 153.0.8010.37 Licenses](https://docs.google.com/spreadsheets/d/1C72QstsYU8Lel0JkcunBlE113zgpqAE0XF6OnDT4cHA) (4.3.1)
