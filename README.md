@@ -28,7 +28,29 @@ add it. In Claude Code, you can also install it from this repository:
 /plugin install dotnetbrowser@teamdev-dotnetbrowser
 ```
 
-### Other agents (Codex, Cursor, GitHub Copilot, and more)
+### Codex (ChatGPT desktop app, Codex CLI)
+
+Add this repository as a plugin marketplace:
+
+```bash
+codex plugin marketplace add TeamDev-IP/DotNetBrowser-Skill
+```
+
+Then install the plugin. In the ChatGPT desktop app, open the Plugins
+Directory, choose **TeamDev DotNetBrowser**, and install **DotNetBrowser**. In
+the Codex CLI, run:
+
+```bash
+codex plugin add dotnetbrowser@teamdev-dotnetbrowser
+```
+
+To update to a newer version, refresh the marketplace and restart Codex:
+
+```bash
+codex plugin marketplace upgrade teamdev-dotnetbrowser
+```
+
+### Other agents (Cursor, GitHub Copilot, and more)
 
 Install with the [skills](https://skills.sh) CLI:
 

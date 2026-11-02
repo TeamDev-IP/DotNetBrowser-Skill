@@ -16,6 +16,8 @@ repository after every release so it always holds the latest one.
    - `.claude-plugin/plugin.json`: `version` and `description`
    - `.claude-plugin/marketplace.json`: `description` (the version is set only
      in `plugin.json`)
+   - `.codex-plugin/plugin.json`: `version`, `description`, and
+     `interface.longDescription`
    - `README.md`: the "DotNetBrowser x.y.z" mention
 
    Clients only receive an update when `version` changes. For a fix to this
@@ -29,9 +31,10 @@ repository after every release so it always holds the latest one.
    ```
 
    The `Check` workflow runs on every pull request, on `main`, and on tags. It
-   validates the plugin, checks the directory limits below, and checks that
-   the version matches in every place listed in step 3, in `SKILL.md`, and in
-   the tag.
+   validates the Claude plugin, checks the Codex plugin and marketplace
+   files and the paths they reference, checks the directory limits below, and
+   checks that the version matches in every place listed in step 3, in
+   `SKILL.md`, and in the tag.
 
 5. Commit, merge to `main`, and tag the commit with the version:
 
@@ -42,8 +45,9 @@ repository after every release so it always holds the latest one.
 
    The Claude directory picks up the new commit,
    scans it, and the new version is published from the
-   [developer portal](https://claude.ai/directory/manage). skills.sh serves the
-   `main` branch directly.
+   [developer portal](https://claude.ai/directory/manage). Codex users get the
+   new version from `main` with `codex plugin marketplace upgrade`. skills.sh
+   serves the `main` branch directly.
 
 ## Directory limits to keep in mind
 
