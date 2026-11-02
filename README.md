@@ -70,8 +70,8 @@ in the [installation guide](https://teamdev.com/dotnetbrowser/docs/guides/instal
 Ask your agent about a DotNetBrowser task, for example "Show a login page in a
 WPF window and fill in the form from C#" or "Intercept requests to our API and
 add a header". The agent loads the skill on its own when a task involves
-DotNetBrowser. In Claude Code you can also invoke it directly with
-`/dotnetbrowser:dotnetbrowser`.
+DotNetBrowser. To invoke it directly, use `/dotnetbrowser:dotnetbrowser` in
+Claude Code, or type `$` in Codex and choose **Dotnetbrowser**.
 
 ## Data and behavior
 
