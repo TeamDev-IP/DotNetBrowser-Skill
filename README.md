@@ -36,9 +36,9 @@ Add this repository as a plugin marketplace:
 codex plugin marketplace add TeamDev-IP/DotNetBrowser-Skill
 ```
 
-Then install the plugin. In the ChatGPT desktop app, open the Plugins
-Directory, choose **TeamDev DotNetBrowser**, and install **DotNetBrowser**. In
-the Codex CLI, run:
+Then install the plugin. In the ChatGPT desktop app, restart it so it picks up
+the marketplace, open the Plugins Directory, choose **TeamDev DotNetBrowser**,
+and install **DotNetBrowser**. In the Codex CLI, run:
 
 ```bash
 codex plugin add dotnetbrowser@teamdev-dotnetbrowser
