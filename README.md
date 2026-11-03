@@ -28,7 +28,29 @@ add it. In Claude Code, you can also install it from this repository:
 /plugin install dotnetbrowser@teamdev-dotnetbrowser
 ```
 
-### Other agents (Codex, Cursor, GitHub Copilot, and more)
+### Codex (ChatGPT desktop app, Codex CLI)
+
+Add this repository as a plugin marketplace:
+
+```bash
+codex plugin marketplace add TeamDev-IP/DotNetBrowser-Skill
+```
+
+Then install the plugin. In the ChatGPT desktop app, restart it so it picks up
+the marketplace, open the Plugins Directory, choose **TeamDev DotNetBrowser**,
+and install **DotNetBrowser**. In the Codex CLI, run:
+
+```bash
+codex plugin add dotnetbrowser@teamdev-dotnetbrowser
+```
+
+To update to a newer version, refresh the marketplace and restart Codex:
+
+```bash
+codex plugin marketplace upgrade teamdev-dotnetbrowser
+```
+
+### Other agents (Cursor, GitHub Copilot, and more)
 
 Install with the [skills](https://skills.sh) CLI:
 
@@ -48,8 +70,8 @@ in the [installation guide](https://teamdev.com/dotnetbrowser/docs/guides/instal
 Ask your agent about a DotNetBrowser task, for example "Show a login page in a
 WPF window and fill in the form from C#" or "Intercept requests to our API and
 add a header". The agent loads the skill on its own when a task involves
-DotNetBrowser. In Claude Code you can also invoke it directly with
-`/dotnetbrowser:dotnetbrowser`.
+DotNetBrowser. To invoke it directly, use `/dotnetbrowser:dotnetbrowser` in
+Claude Code, or type `$` in Codex and choose **Dotnetbrowser**.
 
 ## Data and behavior
 

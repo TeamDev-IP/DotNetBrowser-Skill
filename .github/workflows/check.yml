@@ -19,10 +19,54 @@ jobs:
         with:
           node-version: 22
 
-      - name: Validate the plugin and marketplace
+      - name: Validate the Claude plugin and marketplace
         run: |
           npm install --global @anthropic-ai/claude-code
           claude plugin validate .
+
+      - name: Check the Codex plugin and marketplace
+        run: |
+          status=0
+          fail() { echo "::error::$1"; status=1; }
+
+          plugin=.codex-plugin/plugin.json
+          market=.agents/plugins/marketplace.json
+          jq -e . "$plugin" > /dev/null || fail "$plugin is not valid JSON."
+          jq -e . "$market" > /dev/null || fail "$market is not valid JSON."
+
+          for field in .name .version .description .author.name .skills \
+              .interface.displayName .interface.shortDescription \
+              .interface.longDescription .interface.developerName \
+              .interface.category .interface.composerIcon .interface.logo; do
+            [ -n "$(jq -r "$field // empty" "$plugin")" ] || fail "$plugin has no $field."
+          done
+          jq -e '.interface.capabilities | type == "array"' "$plugin" > /dev/null \
+            || fail "$plugin has no interface.capabilities array."
+
+          [ "$(jq -r .name "$plugin")" = "$(jq -r .name .claude-plugin/plugin.json)" ] \
+            || fail "The plugin name differs between .codex-plugin and .claude-plugin."
+          [ "$(jq -r .name "$market")" = "$(jq -r .name .claude-plugin/marketplace.json)" ] \
+            || fail "The marketplace name differs between .agents/plugins and .claude-plugin."
+          [ "$(jq -r '.plugins | length' "$market")" = 1 ] \
+            && [ "$(jq -r '.plugins[0].name' "$market")" = "$(jq -r .name "$plugin")" ] \
+            || fail "$market must list exactly the plugin named in $plugin."
+          for field in .source.source .source.path .policy.installation \
+              .policy.authentication .category; do
+            [ -n "$(jq -r ".plugins[0]$field // empty" "$market")" ] \
+              || fail "The $market plugin entry has no $field."
+          done
+
+          # Manifest paths are relative to the plugin root, which is the
+          # marketplace entry's source path.
+          root=$(jq -r '.plugins[0].source.path' "$market")
+          for path in $(jq -r '.skills, .interface.composerIcon, .interface.logo' "$plugin"); do
+            case "$path" in ./*) ;; *) fail "$plugin path $path must start with ./" ;; esac
+            [ -e "$root/$path" ] || fail "$plugin references a missing path: $path"
+          done
+          [ -f "$root/$(jq -r .skills "$plugin")/dotnetbrowser/SKILL.md" ] \
+            || fail "The Codex skills folder has no dotnetbrowser/SKILL.md."
+
+          exit $status
 
       - name: Check directory limits
         run: |
@@ -74,6 +118,12 @@ jobs:
             || fail "plugin.json description does not name DotNetBrowser $product."
           jq -r '.plugins[0].description' .claude-plugin/marketplace.json | grep -qF "DotNetBrowser $product," \
             || fail "marketplace.json description does not name DotNetBrowser $product."
+          [ "$(jq -r .version .codex-plugin/plugin.json)" = "$version" ] \
+            || fail ".codex-plugin/plugin.json version is not $version."
+          jq -r .description .codex-plugin/plugin.json | grep -qF "DotNetBrowser $product," \
+            || fail ".codex-plugin/plugin.json description does not name DotNetBrowser $product."
+          jq -r .interface.longDescription .codex-plugin/plugin.json | grep -qF "DotNetBrowser $product." \
+            || fail ".codex-plugin/plugin.json longDescription does not name DotNetBrowser $product."
           grep -qF "DotNetBrowser $product**" README.md \
             || fail "README.md does not name DotNetBrowser $product."
           grep -qE "^  product-version: \"$product\"$" skills/dotnetbrowser/SKILL.md \
