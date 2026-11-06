@@ -28,7 +28,7 @@ most important things you need to know.
 | Supported OS                 | Windows-only                                                                                                                                 | Windows, macOS, Linux                                                                                                                   |
 | Supported UI toolkits        | WinForms, WPF, WinUI 3, MAUI                                                                                                                 | WinForms, WPF, WinUI 3, Avalonia                                                                                                        |
 | [Data collection][privacy]   | Yes                                                                                                                                          | No                                                                                                                                      |
-| Headless mode                | No                                                                                                                                           | Yes, works in the console or as a service                                                                                               |
+| Headless mode                | No                                                                                                                                           | Yes, works in the console or [as a service][blog-windows-service]                                                                       |
 | [Technical support][support] | Public GitHub repository                                                                                                                     | Yes, confidential, with SLA                                                                                                             |
 
 </div>
@@ -414,6 +414,7 @@ It takes 5 minutes to start using DotNetBrowser:
 [webview2-extensions]: https://learn.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2profile.addbrowserextensionasync
 [webview2-sdk-extensions]: https://learn.microsoft.com/microsoft-edge/webview2/release-notes/sdk/1-0-2210-55
 [webview2-service]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/3458
+[blog-windows-service]: https://teamdev.com/dotnetbrowser/blog/chromium-in-windows-service/
 [webview2-osr]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/547
 [webview2-macos]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/1314
 [webview2-linux]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/645

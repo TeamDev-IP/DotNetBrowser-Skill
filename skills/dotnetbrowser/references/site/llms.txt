@@ -1,8 +1,8 @@
-<!-- Excerpt of https://teamdev.com/llms.txt (DotNetBrowser section), fetched 2026-10-28. -->
+<!-- Excerpt of https://teamdev.com/llms.txt (DotNetBrowser section), fetched 2026-11-06. -->
 
 ## DotNetBrowser
 
-Current version: 4.3.5. Chromium build: 156.0.8078.74. Release date: 2026-10-28.
+Current version: 4.4.0. Chromium build: 157.0.8103.39. Release date: 2026-11-06.
 
 - [DotNetBrowser | .NET web browser for WPF, Avalonia UI, and WinForms apps](https://teamdev.com/dotnetbrowser/): Add Chromium web browser to your .NET app. Display modern web pages in WPF,  Avalonia UI, WinUI 3, and WinForms. Work with DOM, JS, network, printing, etc.
 
@@ -90,6 +90,7 @@ Current version: 4.3.5. Chromium build: 156.0.8078.74. Release date: 2026-10-28.
 
 ### Releases
 
+- [DotNetBrowser 4.4.0](https://teamdev.com/dotnetbrowser/releases/2026/v4-4-0/index.md): DotNetBrowser 4.4.0 - Chromium 157 with dialog and startup fixes.
 - [DotNetBrowser 4.3.5](https://teamdev.com/dotnetbrowser/releases/2026/v4-3-5/index.md): DotNetBrowser 4.3.5 - Chromium 156 with Avalonia memory leak fixes.
 - [DotNetBrowser 4.3.4](https://teamdev.com/dotnetbrowser/releases/2026/v4-3-4/index.md): DotNetBrowser 4.3.4 - Chromium 156 with text input and image fixes.
 - [DotNetBrowser 4.3.3](https://teamdev.com/dotnetbrowser/releases/2026/v4-3-3/index.md): DotNetBrowser 4.3.3 - Chromium 155 with screen capture fixes.
@@ -150,7 +151,9 @@ Current version: 4.3.5. Chromium build: 156.0.8078.74. Release date: 2026-10-28.
 - [From WebView2 to DotNetBrowser: Part 1](https://teamdev.com/dotnetbrowser/blog/from-webview2-to-dotnetbrowser-part-1/index.md): This article shows how to migrate existing project from WebView2  to DotNetBrowser.
 - [From WebView2 to DotNetBrowser: Part 2](https://teamdev.com/dotnetbrowser/blog/from-webview2-to-dotnetbrowser-part-2/index.md): This article shows how to migrate proxy, cookies, profiles, context menus, downloads, printing, DevTools, and extensions from WebView2 to DotNetBrowser.
 - [How to generate PDF in C#](https://teamdev.com/dotnetbrowser/blog/how-to-generate-pdf-in-c-sharp/index.md): The step-by-step tutorial on how to generate PDF files in C# with DotNetBrowser.
+- [How to monitor product prices and stock with C# and DotNetBrowser](https://teamdev.com/dotnetbrowser/blog/monitor-product-prices/index.md): This article shows how to build a C# background job that watches a sneaker shop's product pages for price and stock changes and sends an alert.
 - [How to render web content as a texture in Unity3D](https://teamdev.com/dotnetbrowser/blog/how-to-render-web-content-as-a-texture-in-unity3d/index.md): The step-by-step tutorial on how to render web content as a texture in Unity3D  with DotNetBrowser.
+- [How to run a Chromium browser in a Windows service with C#](https://teamdev.com/dotnetbrowser/blog/chromium-in-windows-service/index.md): This article shows how to run Chromium in a Windows service with DotNetBrowser and render web pages to PDF with no signed-in user.
 - [How to use a local AI model in DotNetBrowser](https://teamdev.com/dotnetbrowser/blog/how-to-use-local-llm-in-dotnetbrowser/index.md): This article demonstrates how to use a local AI model in DotNetBrowser applications.
 - [Kiosk app on Raspberry Pi with Avalonia and DotNetBrowser](https://teamdev.com/dotnetbrowser/blog/kiosk-on-raspberry-with-avalonia-dotnetbrowser/index.md): A practical tutorial on building a kiosk app for Raspberry Pi with Avalonia and DotNetBrowser.
 - [Kiosk-App auf dem Raspberry Pi mit Avalonia und DotNetBrowser](https://teamdev.com/dotnetbrowser/blog/kiosk-auf-dem-raspberry-mit-avalonia-dotnetbrowser/index.md): Praxis-Tutorial zur Kiosk-App auf dem Raspberry Pi mit Avalonia und DotNetBrowser.

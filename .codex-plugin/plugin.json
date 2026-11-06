@@ -1,7 +1,7 @@
 {
   "name": "dotnetbrowser",
-  "version": "4.3.5",
-  "description": "Official TeamDev skill for DotNetBrowser 4.3.5, the Chromium-based browser component for .NET (WPF, Windows Forms, WinUI 3, Avalonia UI, console). Coding guidance, full API reference, and offline docs, release notes, and migration guides.",
+  "version": "4.4.0",
+  "description": "Official TeamDev skill for DotNetBrowser 4.4.0, the Chromium-based browser component for .NET (WPF, Windows Forms, WinUI 3, Avalonia UI, console). Coding guidance, full API reference, and offline docs, release notes, and migration guides.",
   "author": {
     "name": "TeamDev",
     "url": "https://teamdev.com/dotnetbrowser"
@@ -23,7 +23,7 @@
   "interface": {
     "displayName": "DotNetBrowser",
     "shortDescription": "Chromium browser for .NET apps",
-    "longDescription": "Write, review, and debug DotNetBrowser code: NuGet packages, engine and browser lifecycle, BrowserView, handlers and events, navigation, DOM access, the JavaScript bridge, printing, network interception, deployment, and licensing. Bundles the full API reference and an offline copy of the guides, release notes, and migration guides for DotNetBrowser 4.3.5.",
+    "longDescription": "Write, review, and debug DotNetBrowser code: NuGet packages, engine and browser lifecycle, BrowserView, handlers and events, navigation, DOM access, the JavaScript bridge, printing, network interception, deployment, and licensing. Bundles the full API reference and an offline copy of the guides, release notes, and migration guides for DotNetBrowser 4.4.0.",
     "developerName": "TeamDev",
     "category": "Developer Tools",
     "capabilities": [

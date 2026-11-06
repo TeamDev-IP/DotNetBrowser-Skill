@@ -17,6 +17,7 @@ public class EngineInitializationException : Exception, ISerializable
 
 #### Derived
 
+[AutoDeElevationException](DotNetBrowser.Engine.AutoDeElevationException.md), 
 [ChromiumBinariesMissingException](DotNetBrowser.Engine.ChromiumBinariesMissingException.md), 
 [LicenseException](DotNetBrowser.Engine.LicenseException.md), 
 [MissingDependencyException](DotNetBrowser.Engine.MissingDependencyException.md), 

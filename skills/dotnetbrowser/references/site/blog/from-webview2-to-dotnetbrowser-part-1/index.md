@@ -2,6 +2,8 @@
 
 This guide is for .NET developers evaluating a transition 
 from WebView2 to DotNetBrowser. This is the first part of a two-part series.
+[Part 2][part-2] covers proxy, cookies, profiles, context menus, downloads,
+printing, DevTools, and Chrome extensions.
 
 Each section of this guide focuses on one area of functionality that commonly
 appears in applications embedding a `WebView2` control.
@@ -443,7 +445,7 @@ the form boundary plus each part's `Content-Disposition` and
 `Content-Type`.
 
 You can override the default headers and add more in the
-<a href="https://api.dotnetbrowser.dev/4.3.5/api/DotNetBrowser.Navigation.LoadUrlParameters.HttpHeaders.html#DotNetBrowser_Navigation_LoadUrlParameters_HttpHeaders">
+<a href="https://api.dotnetbrowser.dev/4.4.0/api/DotNetBrowser.Navigation.LoadUrlParameters.HttpHeaders.html#DotNetBrowser_Navigation_LoadUrlParameters_HttpHeaders">
 HttpHeaders</a>
 parameter.
 
@@ -1047,7 +1049,7 @@ In this guide, we have covered how to create and close the browser,
 navigate pages, interact with JavaScript, handle dialogs and pop-up windows, and
 intercept network traffic.
 
-In the upcoming part 2, we'll continue explaining how to transition from
+In [Part 2][part-2], we continue explaining how to transition from
 WebView2 to DotNetBrowser and cover the following advanced topics:
 
 * Proxy and authentication flows
@@ -1062,6 +1064,7 @@ WebView2 to DotNetBrowser and cover the following advanced topics:
 
 
 [dotnetbrowser-vs-wv2]: https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-webview2/
+[part-2]: https://teamdev.com/dotnetbrowser/blog/from-webview2-to-dotnetbrowser-part-2/
 [nuget]: https://teamdev.com/dotnetbrowser/docs/guides/installation/nuget/
 [dll]: https://teamdev.com/dotnetbrowser/docs/guides/installation/zip/
 [vsix]: https://teamdev.com/dotnetbrowser/docs/guides/installation/vsix/

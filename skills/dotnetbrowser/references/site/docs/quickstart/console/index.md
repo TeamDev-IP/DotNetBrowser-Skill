@@ -65,4 +65,8 @@ dotnet run
 
 ![Console](https://teamdev.com/dotnetbrowser/img/articles/quickstart/console/console.webp)
 
+To run DotNetBrowser in a Windows service, see
+[How to run a Chromium browser in a Windows service with C#][blog-windows-service].
+
 [guides-agent-skill]: https://teamdev.com/dotnetbrowser/docs/guides/installation/agent-skill/
+[blog-windows-service]: https://teamdev.com/dotnetbrowser/blog/chromium-in-windows-service/
