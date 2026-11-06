@@ -55,7 +55,7 @@ dotnet add package DotNetBrowser.AgentSkills --version <version>
 ```
 
 Replace `<version>` with the version of your DotNetBrowser packages, for
-example `4.3.5`. The command adds the package with
+example `4.4.0`. The command adds the package with
 `PrivateAssets="all"`, so it does not flow to projects that reference yours.
 In Visual Studio, you can add the package with the NuGet Package Manager
 instead, as described in [Installing from NuGet][guides-nuget]. This also works
@@ -156,7 +156,7 @@ Keep in mind:
 
 ### From ZIP
 
-[Download the DotNetBrowser 4.3.5 agent skill][docs-skill-zip]
+[Download the DotNetBrowser 4.4.0 agent skill][docs-skill-zip]
 and unpack it. The archive contains the `dotnetbrowser` folder.
 
 Copy this folder, as is, into the agent's skills directory in the repository
@@ -231,7 +231,7 @@ folder.
 
 [docs-agent-skills]: https://agentskills.io
 [docs-skill-github]: https://github.com/TeamDev-IP/DotNetBrowser-Skill
-[docs-skill-zip]: https://teamdev.download/downloads/dotnetbrowser/4.3.5/dotnetbrowser-4.3.5-agent-skill.zip
+[docs-skill-zip]: https://teamdev.download/downloads/dotnetbrowser/4.4.0/dotnetbrowser-4.4.0-agent-skill.zip
 [guides-from-nuget]: #from-nuget
 [guides-nuget]: https://teamdev.com/dotnetbrowser/docs/guides/installation/nuget/
 [guides-quickstart]: https://teamdev.com/dotnetbrowser/docs/quickstart/

@@ -1,6 +1,6 @@
 # DotNetBrowser API index
 
-DotNetBrowser 4.3.5, generated 2026-10-28. 587 types in 93 namespaces. Every file in this directory is one public type with all of its members. Find the type below and open the file from the last column; the namespace page lists the same types with their summaries.
+DotNetBrowser 4.4.0, generated 2026-11-06. 588 types in 93 namespaces. Every file in this directory is one public type with all of its members. Find the type below and open the file from the last column; the namespace page lists the same types with their summaries.
 
 ## DotNetBrowser
 
@@ -601,6 +601,7 @@ Namespace page: DotNetBrowser.Engine.md
 
 | Type | Summary | File |
 |---|---|---|
+| `AutoDeElevationException` | Thrown when Chromium is launched with admin permissions on Windows and restarts itself without them, which DotNetBrowser does not support. | DotNetBrowser.Engine.AutoDeElevationException.md |
 | `BinariesExtractionOptions` | The options that are used to configure the Chromium binaries extraction process. | DotNetBrowser.Engine.BinariesExtractionOptions.md |
 | `ChromiumBinariesMissingException` | Thrown when the engine initialization fails due to missing compatible Chromium binaries. | DotNetBrowser.Engine.ChromiumBinariesMissingException.md |
 | `ConnectionClosedException` | The exception thrown when the connection to the Chromium engine appears to be closed. | DotNetBrowser.Engine.ConnectionClosedException.md |

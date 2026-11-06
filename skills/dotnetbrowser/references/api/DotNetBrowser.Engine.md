@@ -6,6 +6,11 @@
 
 ### Classes
 
+ [AutoDeElevationException](DotNetBrowser.Engine.AutoDeElevationException.md)
+
+Thrown when Chromium is launched with admin permissions on Windows and restarts itself
+without them, which DotNetBrowser does not support.
+
  [BinariesExtractionOptions](DotNetBrowser.Engine.BinariesExtractionOptions.md)
 
 The options that are used to configure the Chromium binaries extraction process.

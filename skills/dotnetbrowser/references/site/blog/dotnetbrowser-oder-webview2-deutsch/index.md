@@ -30,7 +30,7 @@ wichtigsten Punkte erklärt.
 | Unterstützte Betriebssysteme | Nur Windows                                                                                                                                  | Windows, macOS, Linux                                                                                                                   |
 | Unterstützte UI-Toolkits     | WinForms, WPF, WinUI 3, MAUI                                                                                                                 | WinForms, WPF, WinUI 3, Avalonia                                                                                                        |
 | [Datensammlung][privacy]     | Ja                                                                                                                                           | Nein                                                                                                                                    |
-| Headless Mode                | Nein                                                                                                                                         | Ja, läuft in der Konsole oder als Service                                                                                               |
+| Headless Mode                | Nein                                                                                                                                         | Ja, läuft in der Konsole oder [als Service][blog-windows-service]                                                                       |
 | [Support][support]           | Öffentliches GitHub-Repository                                                                                                               | Ja, vertraulich, mit SLA                                                                                                                |
 
 </div>
@@ -440,6 +440,7 @@ Es dauert 5 Minuten, um mit DotNetBrowser zu starten:
 [js-to-net]: https://teamdev.com/dotnetbrowser/docs/guides/gs/javascript/#javascript-to-net
 [browser-view-rendering]: https://teamdev.com/dotnetbrowser/docs/guides/gs/browser-view/#rendering
 [webview2-service]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/3458
+[blog-windows-service]: https://teamdev.com/dotnetbrowser/blog/chromium-in-windows-service/
 [webview2-osr]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/547
 [webview2-macos]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/1314
 [webview2-linux]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/645

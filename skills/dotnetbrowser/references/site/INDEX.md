@@ -1,6 +1,6 @@
 # DotNetBrowser documentation index
 
-Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-10-28 for DotNetBrowser 4.3.5. Local files are relative to this file. Entries without a local file exist only online. Links inside the pages point to the live site; see ../lookup.md for how to resolve them to local files.
+Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-11-06 for DotNetBrowser 4.4.0. Local files are relative to this file. Entries without a local file exist only online. Links inside the pages point to the live site; see ../lookup.md for how to resolve them to local files.
 
 ## Overview
 
@@ -96,6 +96,7 @@ Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-10-28 for DotNetBrowse
 
 | Title | Description | Local file | Live URL |
 |---|---|---|---|
+| DotNetBrowser 4.4.0 | DotNetBrowser 4.4.0 - Chromium 157 with dialog and startup fixes. | releases/2026/v4-4-0/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-4-0/index.md |
 | DotNetBrowser 4.3.5 | DotNetBrowser 4.3.5 - Chromium 156 with Avalonia memory leak fixes. | releases/2026/v4-3-5/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-5/index.md |
 | DotNetBrowser 4.3.4 | DotNetBrowser 4.3.4 - Chromium 156 with text input and image fixes. | releases/2026/v4-3-4/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-4/index.md |
 | DotNetBrowser 4.3.3 | DotNetBrowser 4.3.3 - Chromium 155 with screen capture fixes. | releases/2026/v4-3-3/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-3/index.md |
@@ -160,7 +161,9 @@ Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-10-28 for DotNetBrowse
 | From WebView2 to DotNetBrowser: Part 1 | This article shows how to migrate existing project from WebView2 to DotNetBrowser. | blog/from-webview2-to-dotnetbrowser-part-1/index.md | https://teamdev.com/dotnetbrowser/blog/from-webview2-to-dotnetbrowser-part-1/index.md |
 | From WebView2 to DotNetBrowser: Part 2 | This article shows how to migrate proxy, cookies, profiles, context menus, downloads, printing, DevTools, and extensions from WebView2 to DotNetBrowser. | blog/from-webview2-to-dotnetbrowser-part-2/index.md | https://teamdev.com/dotnetbrowser/blog/from-webview2-to-dotnetbrowser-part-2/index.md |
 | How to generate PDF in C# | The step-by-step tutorial on how to generate PDF files in C# with DotNetBrowser. | blog/how-to-generate-pdf-in-c-sharp/index.md | https://teamdev.com/dotnetbrowser/blog/how-to-generate-pdf-in-c-sharp/index.md |
+| How to monitor product prices and stock with C# and DotNetBrowser | This article shows how to build a C# background job that watches a sneaker shop's product pages for price and stock changes and sends an alert. | blog/monitor-product-prices/index.md | https://teamdev.com/dotnetbrowser/blog/monitor-product-prices/index.md |
 | How to render web content as a texture in Unity3D | The step-by-step tutorial on how to render web content as a texture in Unity3D with DotNetBrowser. | blog/how-to-render-web-content-as-a-texture-in-unity3d/index.md | https://teamdev.com/dotnetbrowser/blog/how-to-render-web-content-as-a-texture-in-unity3d/index.md |
+| How to run a Chromium browser in a Windows service with C# | This article shows how to run Chromium in a Windows service with DotNetBrowser and render web pages to PDF with no signed-in user. | blog/chromium-in-windows-service/index.md | https://teamdev.com/dotnetbrowser/blog/chromium-in-windows-service/index.md |
 | How to use a local AI model in DotNetBrowser | This article demonstrates how to use a local AI model in DotNetBrowser applications. | blog/how-to-use-local-llm-in-dotnetbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/how-to-use-local-llm-in-dotnetbrowser/index.md |
 | Kiosk app on Raspberry Pi with Avalonia and DotNetBrowser | A practical tutorial on building a kiosk app for Raspberry Pi with Avalonia and DotNetBrowser. | blog/kiosk-on-raspberry-with-avalonia-dotnetbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/kiosk-on-raspberry-with-avalonia-dotnetbrowser/index.md |
 | Kiosk-App auf dem Raspberry Pi mit Avalonia und DotNetBrowser | Praxis-Tutorial zur Kiosk-App auf dem Raspberry Pi mit Avalonia und DotNetBrowser. | blog/kiosk-auf-dem-raspberry-mit-avalonia-dotnetbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/kiosk-auf-dem-raspberry-mit-avalonia-dotnetbrowser/index.md |

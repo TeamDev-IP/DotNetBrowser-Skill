@@ -185,6 +185,9 @@ only be considered as a last resort.
 
 ## Chrome extensions
 
-DotNetBrowser does not support the extensions designed for the Chrome application.
+DotNetBrowser supports Chrome extensions. See the [Chrome Extensions](https://teamdev.com/dotnetbrowser/docs/guides/gs/extensions/) guide to learn how
+to install, update, and uninstall them.
 
-The library integrates only with the web browser control that renders the web content. Thus, it does not have the Chrome GUI, with elements like tool bar and context menu, required to integrate the extensions.
+The library integrates only with the web browser control that renders the web content, so it does not have the Chrome
+GUI with a toolbar and menus. To show extension buttons and popups in your application, use the
+[extension action](https://teamdev.com/dotnetbrowser/docs/guides/gs/extensions/#extension-action) API.

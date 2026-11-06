@@ -24,13 +24,13 @@ The dispose options of the browser.
 
 Extension methods for <xref href="DotNetBrowser.Browser.IBrowserView" data-throw-if-not-resolved="false"></xref> interface.
 
- [UserAgentBrandVersion.Builder](DotNetBrowser.Browser.UserAgentBrandVersion.Builder.md)
-
-A builder class to construct <xref href="DotNetBrowser.Browser.UserAgentBrandVersion" data-throw-if-not-resolved="false"></xref>.
-
  [UserAgentMetadata.Builder](DotNetBrowser.Browser.UserAgentMetadata.Builder.md)
 
 A builder class to construct <xref href="DotNetBrowser.Browser.UserAgentMetadata" data-throw-if-not-resolved="false"></xref>.
+
+ [UserAgentBrandVersion.Builder](DotNetBrowser.Browser.UserAgentBrandVersion.Builder.md)
+
+A builder class to construct <xref href="DotNetBrowser.Browser.UserAgentBrandVersion" data-throw-if-not-resolved="false"></xref>.
 
  [CspParameters](DotNetBrowser.Browser.CspParameters.md)
 

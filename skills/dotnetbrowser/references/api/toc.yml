@@ -567,6 +567,8 @@
   href: DotNetBrowser.Engine.md
   items:
   - name: Classes
+  - name: AutoDeElevationException
+    href: DotNetBrowser.Engine.AutoDeElevationException.md
   - name: BinariesExtractionOptions
     href: DotNetBrowser.Engine.BinariesExtractionOptions.md
   - name: ChromiumBinariesMissingException
