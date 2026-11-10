@@ -511,7 +511,8 @@ the output in one folder, and recovers when Chromium exits. For
 the same job in a console app, see the [console quick
 start][docs-console]. On Linux, see the [headless Linux
 guide][guides-headless-linux] and our article on [deploying DotNetBrowser with
-Docker][blog-docker].
+Docker][blog-docker]. For a service that watches web pages and sends
+alerts, see [how to monitor product prices and stock][blog-price-monitor].
 
 The complete source is available in the [example
 repository][github-source]. To try it with your own pages, get a [free
@@ -529,6 +530,7 @@ evaluation license][docs-evaluate]:
 [blog-webview2]: https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-webview2/
 [blog-screenshots]: https://teamdev.com/dotnetbrowser/blog/taking-screenshots-of-web-pages/
 [blog-docker]: https://teamdev.com/dotnetbrowser/blog/deploying-dotnetbrowser-applications-with-docker/
+[blog-price-monitor]: https://teamdev.com/dotnetbrowser/blog/monitor-product-prices/
 [github-source]: https://github.com/TeamDev-IP/DotNetBrowser-Examples/tree/v4/csharp/windows-service
 [docs-webview2-security]: https://learn.microsoft.com/microsoft-edge/webview2/concepts/security
 [docs-webview2-3458]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/3458#issuecomment-1544291479

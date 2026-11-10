@@ -19,7 +19,7 @@ For comparisons with free solutions, check out the following blog posts:
 
 |                                       | EO.WebBrowser | DotNetBrowser                         |
 |:--------------------------------------|:--------------|:--------------------------------------|
-| Chromium security upgrades (per year) | 3             | 12                                    |
+| Chromium security upgrades (per year) | 3             | 20+                                   |
 | Supported UI frameworks               | WinForms, WPF | Avalonia, WinForms, WinUI 3, WPF |
 | Operating systems                     | Windows-only  | Windows, macOS, Linux                 |
 | LGPL compliance                       | Undisclosed   | [LGPL compliance page][lgpl]          |
@@ -37,10 +37,10 @@ the web view does it.
 
 Why is that important? It's all about security. Researchers regularly find
 vulnerabilities of different severity in browsers, and Chromium does a great job
-of fixing them in time. That drives a high release cadence: monthly major
-releases and biweekly security updates.
+of fixing them in time. That drives a high release cadence: since September
+2026, Chrome has shipped a new major version [every two weeks][chrome-cadence].
 
-DotNetBrowser releases at least **12 times a year**, covering every major 
+DotNetBrowser releases **every one to three weeks**, covering every major
 Chromium update and important minor updates. EO.WebBrowser updates Chromium 
 from **2 to 3 times a year** on average. 
 
@@ -64,7 +64,7 @@ interface and headlessly.
 
 ## Runtimes
 
-DotNetBrowser officially supports .NET Framework 4.6.2+ and .NET 5-9, 
+DotNetBrowser officially supports .NET Framework 4.6.2+ and .NET 5-10,
 as described the [system requirements][requirements].
 
 EO.WebBrowser supports .NET Framework 2+ and theoretically .NET 5-9, 
@@ -102,8 +102,8 @@ suffers from the so-called airspace issue: you can't overlay the web view with
 other controls in frameworks like WPF and Avalonia UI.
 
 Rendering to a lightweight component, on the other hand, allows other controls
-to appear on top of the web view. This rendering mode is present exclusively 
-in DotNetBrowser. You can read about choosing the correct mode in the 
+to appear on top of the web view. Of the two libraries, only DotNetBrowser has
+this mode. You can read about choosing the correct mode in the 
 [guide on rendering modes][rendering-modes].
 
 ![WPF Canvas rendered on top of DotNetBrowser](https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-eo-webbrowser/dotnetbrowser-overlay.webp)
@@ -144,3 +144,4 @@ or compliance procedures.
 [extensions-article]: https://teamdev.com/dotnetbrowser/blog/chrome-extensions-in-dotnetbrowser/
 [rendering-modes]: https://teamdev.com/dotnetbrowser/docs/guides/gs/browser-view/#rendering
 [requirements]: https://teamdev.com/dotnetbrowser/docs/guides/requirements/
+[chrome-cadence]: https://developer.chrome.com/blog/chrome-two-week-release

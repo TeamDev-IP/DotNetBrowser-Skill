@@ -1,8 +1,8 @@
-<!-- Excerpt of https://teamdev.com/llms.txt (DotNetBrowser section), fetched 2026-11-06. -->
+<!-- Excerpt of https://teamdev.com/llms.txt (DotNetBrowser section), fetched 2026-11-10. -->
 
 ## DotNetBrowser
 
-Current version: 4.4.0. Chromium build: 157.0.8103.39. Release date: 2026-11-06.
+Current version: 4.4.1. Chromium build: 157.0.8103.51. Release date: 2026-11-10.
 
 - [DotNetBrowser | .NET web browser for WPF, Avalonia UI, and WinForms apps](https://teamdev.com/dotnetbrowser/): Add Chromium web browser to your .NET app. Display modern web pages in WPF,  Avalonia UI, WinUI 3, and WinForms. Work with DOM, JS, network, printing, etc.
 
@@ -90,6 +90,7 @@ Current version: 4.4.0. Chromium build: 157.0.8103.39. Release date: 2026-11-06.
 
 ### Releases
 
+- [DotNetBrowser 4.4.1](https://teamdev.com/dotnetbrowser/releases/2026/v4-4-1/index.md): DotNetBrowser 4.4.1 - Chromium 157.0.8103.51 with 9 security fixes.
 - [DotNetBrowser 4.4.0](https://teamdev.com/dotnetbrowser/releases/2026/v4-4-0/index.md): DotNetBrowser 4.4.0 - Chromium 157 with dialog and startup fixes.
 - [DotNetBrowser 4.3.5](https://teamdev.com/dotnetbrowser/releases/2026/v4-3-5/index.md): DotNetBrowser 4.3.5 - Chromium 156 with Avalonia memory leak fixes.
 - [DotNetBrowser 4.3.4](https://teamdev.com/dotnetbrowser/releases/2026/v4-3-4/index.md): DotNetBrowser 4.3.4 - Chromium 156 with text input and image fixes.
@@ -141,7 +142,7 @@ Current version: 4.4.0. Chromium build: 157.0.8103.39. Release date: 2026-11-06.
 - [Deploying DotNetBrowser applications with Docker](https://teamdev.com/dotnetbrowser/blog/deploying-dotnetbrowser-applications-with-docker/index.md): This article demonstrates how to deploy a DotNetBrowser application using Docker.
 - [DotNetBrowser 2 reaches end-of-life](https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-2-reaches-end-of-life/index.md): DotNetBrowser 2 is reaching end-of-life and we explain what changes and how to switch to DotNetBrowser 3.
 - [DotNetBrowser oder WebView2: Ein Vergleich für Entwickler](https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-oder-webview2-deutsch/index.md): Dieser Artikel vergleicht DotNetBrowser und WebView2 und argumentiert,  dass DotNetBrowser für den kommerziellen Einsatz besser geeignet ist.
-- [DotNetBrowser or CefSharp](https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-cefsharp/index.md): This article compares DotNetBrowser and CefSharp and helps choosing between  them.
+- [DotNetBrowser or CefSharp](https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-cefsharp/index.md): This article compares DotNetBrowser and CefSharp and helps you choose between them.
 - [DotNetBrowser or EO.WebBrowser](https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-eo-webbrowser/index.md): This article compares DotNetBrowser and EO.WebBrowser and helps to choose  between them.
 - [DotNetBrowser or WebView2](https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-webview2/index.md): This article compares DotNetBrowser and WebView2 and argues that DotNetBrowser is better for commercial use.
 - [DotNetBrowser Security: What’s Changed](https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-security-whats-changed/index.md): CRA information page, SBOMs, a vulnerability disclosure policy, and Chromium security updates in DotNetBrowser.

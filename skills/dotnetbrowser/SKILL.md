@@ -1,11 +1,11 @@
 ---
 name: dotnetbrowser
-description: Use when writing, reviewing, or debugging .NET code that embeds a Chromium browser with DotNetBrowser (WPF, Windows Forms, WinUI 3, Avalonia UI, or headless/console) - choosing NuGet packages, engine and browser lifecycle, BrowserView, handlers and events, navigation, DOM, JavaScript bridge, printing, network interception, deployment, licensing, and API lookups. Bundles API references and an offline snapshot of the guides, release notes, migration guides, and blog for DotNetBrowser 4.4.0.
+description: Use when writing, reviewing, or debugging .NET code that embeds a Chromium browser with DotNetBrowser (WPF, Windows Forms, WinUI 3, Avalonia UI, or headless/console) - choosing NuGet packages, engine and browser lifecycle, BrowserView, handlers and events, navigation, DOM, JavaScript bridge, printing, network interception, deployment, licensing, and API lookups. Bundles API references and an offline snapshot of the guides, release notes, migration guides, and blog for DotNetBrowser 4.4.1.
 metadata:
   product: DotNetBrowser
-  product-version: "4.4.0"
-  chromium-version: "157.0.8103.39"
-  generated: "2026-11-06"
+  product-version: "4.4.1"
+  chromium-version: "157.0.8103.51"
+  generated: "2026-11-10"
 ---
 
 # DotNetBrowser
@@ -17,9 +17,9 @@ the DOM, JavaScript, the network, printing, and more. Using it requires a
 license key; a free 30-day evaluation license is available from
 https://www.teamdev.com/dotnetbrowser#evaluate.
 
-This skill describes DotNetBrowser 4.4.0 (Chromium
-157.0.8103.39). Everything here was generated from the product on
-2026-11-06. Prefer the bundled references over memory: the API changes
+This skill describes DotNetBrowser 4.4.1 (Chromium
+157.0.8103.51). Everything here was generated from the product on
+2026-11-10. Prefer the bundled references over memory: the API changes
 between major versions, and code written for DotNetBrowser 1.x or 2.x is
 mostly wrong for 4.x.
 
@@ -34,7 +34,7 @@ file.
 | `references/api/INDEX.md` | Find a covered public type: namespace, kind, one-line summary, file name. |
 | `references/api/<Namespace>.<Type>.md` | Complete members of one type (588 types): signatures, remarks, parameters. |
 | `references/site/INDEX.md` | Find a guide, quick start, tutorial, release note, migration guide, or blog post. |
-| `references/site/**/index.md` | The pages themselves (145 pages), with C# and VB.NET samples. |
+| `references/site/**/index.md` | The pages themselves (146 pages), with C# and VB.NET samples. |
 | `references/site/llms.txt` | The same list with live URLs, for when a newer page might exist online. |
 
 Workflow for most tasks:
@@ -42,7 +42,7 @@ Workflow for most tasks:
 1. Check the project's DotNetBrowser package version, target framework, and UI
    framework version (including centrally managed package versions). Preserve
    them unless the task calls for an upgrade. If the package version differs
-   from 4.4.0, verify APIs against that version's documentation
+   from 4.4.1, verify APIs against that version's documentation
    or installed assemblies before using these references.
 2. Read every topic note below that matches the task.
 3. Search `references/site/INDEX.md` for the needed topic, then read the

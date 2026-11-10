@@ -1,11 +1,12 @@
 # DotNetBrowser or CefSharp
 
-When selecting the browser component for WPF or WinForms applications, 
+When selecting a browser component for .NET desktop applications, 
 [DotNetBrowser](https://teamdev.com/dotnetbrowser?utm_campaign=dotnetbrowser-vs-cefsharp&utm_medium=article&utm_source=product-blog) 
 and CefSharp are among the obvious choices.
 
 In this article, we explain the difference between DotNetBrowser and CefSharp
-and how to choose between them.
+and how to choose between them. If you already use CefSharp and want to switch,
+the [migration guide][migration-guide] walks you through the process.
 
 ## In a nutshell
 
@@ -15,16 +16,18 @@ and how to choose between them.
 |:-----------------------------------------|:-----------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
 | License                                  | Open-source                                                                                                            | Commercial                                                                                                                              |
 | Supported OS                             | Windows-only                                                                                                           | Windows, macOS, Linux                                                                                                                   |
-| Supported UI toolkits                    | WinForms, WPF                                                                                                          | WinForms, WPF, Avalonia, Win UI 3                                                                                                       |
-| [Process memory isolation][architecture] | No                                                                                                                     | Yes                                                                                                                                     |
-| Releases (per year)                      | 19                                                                                                                     | 12                                                                                                                                      |
-| [Technical support][support]             | No                                                                                                                     | Yes, confidential, with SLA.                                                                                                            |
+| Supported UI toolkits                    | WinForms, WPF                                                                                                          | WinForms, WPF, WinUI 3, Avalonia                                                                                                   |
+| Headless mode                            | Yes, with the separate CefSharp.OffScreen package                                                                      | Yes, works in the console or [as a service][blog-windows-service]                                                                       |
+| [Process memory isolation][architecture] | Partial: Chromium's main (browser) process runs inside the .NET process                                                | Yes                                                                                                                                     |
+| [Days behind Chrome stable][support]     | 14–21                                                                                                                  | 2–7                                                                                                                                     |
+| [Technical support][support]             | Community: GitHub issues and discussions                                                                               | Yes, confidential, with SLA                                                                                                             |
 
 </div>
 
 Choose open-source CefSharp when:
 
 * You have to use free software.
+* Your app runs only on Windows, and community support is enough for you.
 
 Choose commercial DotNetBrowser when:
 
@@ -33,15 +36,18 @@ Choose commercial DotNetBrowser when:
 * You want to report issues confidentially and have them fixed.
 * You need to run on Linux and macOS.
 * You need to embed a browser into Office applications.
-* You have requirements for software security.
+* You need the Chromium sandbox, Chromium outside your .NET process, and
+  security fixes within days of each Chrome release.
 
 ## Linux and macOS
 
-DotNetBrowser runs natively on Linux and macOS, both on x86-64 and ARM 
-platforms.
+DotNetBrowser runs natively on Linux and macOS, both on x64 and ARM64. On
+Windows, it runs on x86, x64, and ARM64.
 
-DotNetBrowser supports Avalonia UI framework and can be used in [Blazor Hybrid
-applications][blazor-hybrid].
+DotNetBrowser supports Avalonia UI, including Avalonia 12, and can be used in
+[Blazor Hybrid applications][blazor-hybrid].
+
+CefSharp runs only on Windows, on x86, x64, and ARM64.
 
 ![DotNetBrowser on macOS in Avalonia](https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-cefsharp/macos.webp)
 <p class="image-caption">DotNetBrowser with Avalonia on macOS</p>
@@ -59,14 +65,17 @@ own approach to integrating with Chromium directly.
 
 ### In-process vs. out-of-process 
 
-CefSharp starts the Chromium engine inside the .NET process. 
-The library requires the engine to be started and shutdown in the main 
-application thread and only once in the process lifetime.
+Chromium runs as several processes, and the main one, the browser process,
+manages the rest.
 
-DotNetBrowser starts the Chromium engine as a separate process. 
-There is no requirement to do this on the main UI thread — even the 
-worker thread will do. You can start and shutdown Chromium anytime. You can use 
-several Chromium engines simultaneously. 
+CefSharp runs the browser process inside your .NET process, and the others as
+separate processes. The library requires Chromium to be started and shut down in
+the main application thread and only once in the process lifetime.
+
+DotNetBrowser starts all Chromium processes, including the browser process,
+outside your .NET process, as one Chromium engine. You can start the engine on
+any thread, including a worker thread, shut it down anytime, and run several
+engines at once.
 
 ![DotNetBrowser architecture](https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-cefsharp/dotnetbrowser-architecture.webp#small)
 <p class="image-caption">DotNetBrowser architecture</p>
@@ -76,34 +85,40 @@ several Chromium engines simultaneously.
 
 ### Stability and security
 
-The CefSharp model allows you to start the application faster, but it has major 
-drawbacks:
+Running the browser process inside the .NET process has drawbacks:
  
- * CefSharp doesn't support the built-in Chromium sandbox.
- * CefSharp consumes the memory and CPU of the .NET process.
- * If CefSharp crashes, the whole application crashes too.
- * The .NET process becomes susceptible to security vulnerabilities in Chromium, 
-   as they use the same address space.
+ * CefSharp doesn't support the Chromium sandbox: all its processes, renderers
+   included, run unsandboxed.
+ * The browser process consumes the memory and CPU of the .NET process.
+ * A crash in the browser process takes the whole application down.
+ * The .NET process becomes susceptible to security vulnerabilities in the
+   browser process, as they use the same address space.
 
-In DotNetBrowser, an error inside Chromium doesn't lead to a crash in your 
-.NET application. Instead, you can detect and handle the crash appropriately:
+CefSharp has a separate [CefSharp.OutOfProcess][cefsharp-out-of-process]
+project that moves the browser process out, but it isn't published on NuGet.
+
+In DotNetBrowser, the [Chromium sandbox][sandbox] is on by default on Windows,
+Linux, and macOS. If Chromium crashes, your .NET application keeps running,
+and you can detect and handle the crash:
 
 ```cs
 engine.Disposed += (s, e) => 
 {
     long exitCode = e.ExitCode;
-    // If the exit code is non-zere, the engine crashed.
+    // The engine has crashed if this exit code is non-zero.
 };
 ```
 
 ## Distribution and deployment
 
-CefSharp requires the Microsoft Visual C++ Runtime to be installed in the 
-environment.
+CefSharp needs the Microsoft Visual C++ 2022 Runtime, installed on the target
+machine or shipped next to your app. It works with .NET Framework 4.6.2 or
+later, and its `.NETCore` packages need .NET 6 or later.
 
 DotNetBrowser comes with all required Chromium binaries and DLLs already 
-packaged. You don't need to pre-install Microsoft Visual C++ Runtime to work 
-with DotNetBrowser.
+packaged. You don't need to install or ship the Microsoft Visual C++ Runtime
+to work with DotNetBrowser. It works with .NET Framework 4.6.2 to 4.8.1 and
+.NET 5 to 10. See the [system requirements][requirements].
 
 ## Embedding into Office
 
@@ -114,31 +129,38 @@ CefSharp works only in the default AppDomain.
 
 ## Proprietary codecs
 
-Proprietary codes work in DotNetBrowser out of the box. They're disabled by 
-default, but you can enable them in the code:
+DotNetBrowser supports the proprietary H.264, HEVC, and AAC codecs. They're
+disabled by default because you need licenses to use them in your product. Once
+you have the licenses, enable the codecs in the code:
 
 ```cs
 IEngine engine = EngineFactory.Create(new EngineOptions.Builder
 {
-    ProprietaryFeatures = ProprietaryFeatures.H264 | ProprietaryFeatures.Aac
+    ProprietaryFeatures = ProprietaryFeatures.H264 
+                          | ProprietaryFeatures.Hevc 
+                          | ProprietaryFeatures.Aac
 }.Build());
 ```
 
-CefSharp is distributed without proprietary codec supports.
+Read more in the [media guide][media-guide].
+
+CefSharp ships without proprietary codecs.
 
 ## High DPI
 
-In CefSharp, the default DPI awareness for the browser subprocess is 
-Per-Monitor. This requires the whole application to be DPI aware, which may be 
-an issue for older software.
+In CefSharp, if your application doesn't declare its DPI awareness,
+`Cef.Initialize` makes the whole .NET process Per-Monitor DPI aware. This may
+be an issue for older software that isn't ready for it.
 
 DotNetBrowser automatically detects DPI awareness of the .NET process and 
 complies with it.
 
 ## DOM access
 
-In CefSharp, the only way to access DOM is to use JavaScript. DotNetBrowser 
-provides API for manipulating DOM directly your code:
+CefSharp has no DOM API of its own. You access the DOM through JavaScript or
+the separate [CefSharp.Dom][cefsharp-dom] package, which works over the DevTools
+protocol. DotNetBrowser provides an API for manipulating the DOM directly from
+your code:
 
 ```cs
 IDocument document = browser.MainFrame.Document;
@@ -154,7 +176,7 @@ DotNetBrowser supports Chrome extensions. Developers can install extensions from
 CRX files, or let their users use the Chrome Web Store.
 
 DotNetBrowser provides full control over the pop-ups opened by extensions, 
-and allow you to use extension actions.
+and allows you to use extension actions.
 
 Read more in the [guide on extensions][extensions-guide] 
 and [try it in practice][extensions-article]. 
@@ -162,18 +184,21 @@ and [try it in practice][extensions-article].
 ![uBlock extension in DotNetBrowser](https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-cefsharp/ublock-in-dotnetbrowser.webp#small)
 <p class="image-caption">An extension launched in DotNetBrowser</p>
 
-CefSharp has a very limited support for extensions.
+CefSharp lost its .NET API for extensions in version 128, when CEF dropped the
+extension API. You can still load unpacked extensions with Chromium's
+`--load-extension` switch, but your code can't list, remove, or control them. In
+the WinForms and `Wpf.HwndHost` controls, you can opt in to the Chrome runtime
+style, which gives users the `chrome://extensions` page to manage extensions.
+The `Wpf` and `OffScreen` controls don't support this style, so they have no
+extensions page.
 
 ## Support and updates
 
 CefSharp is an open-source project. If you see a bug or need a feature, you can
-file a report or contribute. In 2024, the project had 19 major and minor
-releases.
+file a report or contribute. Questions go to GitHub Discussions.
 
 DotNetBrowser is a commercial product designed and created for commercial
-companies. In 2024, the project has 12 major releases with Chromium upgrades.
-
-We have a private helpdesk system where reports from clients remain
+companies. We have a private helpdesk system where reports from clients remain
 confidential. The guaranteed first response time, or SLA, is one business day.
 
 The technical support includes:
@@ -185,9 +210,30 @@ The technical support includes:
 
 All your support requests will be processed by DotNetBrowser software engineers.
 
-A new version of DotNetBrowser is released almost every month. We upgrade
-Chromium to the latest stable version (with the latest security patches and
-fixed vulnerabilities) within 3–4 weeks after its official release.
+A new version of DotNetBrowser is released every one to three weeks. Since
+September 2026, Chrome has shipped a new major version
+[every two weeks][chrome-cadence], and we upgrade Chromium within days of each
+release. The table shows how many days after each Chrome release the two
+libraries shipped the same Chromium major version, as of November 5, 2026:
+
+| Chromium | Chrome stable | DotNetBrowser       | CefSharp               |
+|:---------|:--------------|:--------------------|:-----------------------|
+| 150      | June 30       | 4.2.0, 7 days       | 150.0.110, 17 days     |
+| 151      | July 28       | 4.2.2, 6 days       | 151.3.170, 19 days     |
+| 152      | August 25     | 4.3.0, 3 days       | 152.0.60, 21 days      |
+| 153      | September 8   | 4.3.1, 7 days       | No CEF build           |
+| 154      | September 22  | 4.3.2, 6 days       | 154.0.340, 20 days     |
+| 155      | October 6     | 4.3.3, 2 days       | No CEF build           |
+| 156      | October 20    | 4.3.4, 2 days       | 156.0.150, 14 days     |
+
+CefSharp depends on CEF, so it can follow only the Chromium versions that CEF
+ships. The dates come from the [Chrome schedule][chrome-schedule], our [release
+notes][dotnetbrowser-releases], and CefSharp's first release of each version on
+[GitHub][cefsharp-releases] or [NuGet][cefsharp-nuget].
+
+Both projects track Chromium vulnerabilities. CefSharp publishes
+[security advisories][cefsharp-advisories] on GitHub, and every DotNetBrowser
+release note lists the Chromium security fixes it brings.
 
 ## Try for free
 
@@ -198,13 +244,32 @@ Get your free license and choose one of our getting started guides. It takes
 
 * [DotNetBrowser in WPF][in-wpf]
 * [DotNetBrowser in WinForms][in-winforms]
+* [DotNetBrowser in Avalonia][in-avalonia]
+* [DotNetBrowser in WinUI 3][in-winui3]
 * [DotNetBrowser in the console][in-console]
+
+Moving an existing CefSharp app? Follow the [migration guide][migration-guide].
 
 [in-wpf]: https://teamdev.com/dotnetbrowser/docs/quickstart/wpf/?utm_campaign=embedded-browser&utm_medium=article&utm_source=product-blog
 [in-winforms]: https://teamdev.com/dotnetbrowser/docs/quickstart/winforms/?utm_campaign=embedded-browser&utm_medium=article&utm_source=product-blog
+[in-avalonia]: https://teamdev.com/dotnetbrowser/docs/quickstart/avalonia/?utm_campaign=embedded-browser&utm_medium=article&utm_source=product-blog
+[in-winui3]: https://teamdev.com/dotnetbrowser/docs/quickstart/winui3/?utm_campaign=embedded-browser&utm_medium=article&utm_source=product-blog
 [in-console]: https://teamdev.com/dotnetbrowser/docs/quickstart/console/?utm_campaign=embedded-browser&utm_medium=article&utm_source=product-blog
 [blazor-hybrid]: https://teamdev.com/dotnetbrowser/blog/blazor-hybrid-apps-in-avalonia-ui/
 [extensions-article]: https://teamdev.com/dotnetbrowser/blog/chrome-extensions-in-dotnetbrowser/
 [extensions-guide]: https://teamdev.com/dotnetbrowser/docs/guides/gs/extensions/
 [architecture]: https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-cefsharp/#architecture
 [support]: https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-cefsharp/#support-and-updates
+[migration-guide]: https://teamdev.com/dotnetbrowser/blog/migrating-from-cefsharp-to-dotnetbrowser/
+[blog-windows-service]: https://teamdev.com/dotnetbrowser/blog/chromium-in-windows-service/
+[sandbox]: https://teamdev.com/dotnetbrowser/docs/guides/gs/chromium/#sandbox
+[requirements]: https://teamdev.com/dotnetbrowser/docs/guides/requirements/
+[media-guide]: https://teamdev.com/dotnetbrowser/docs/guides/gs/media/
+[dotnetbrowser-releases]: https://teamdev.com/dotnetbrowser/releases/
+[chrome-cadence]: https://developer.chrome.com/blog/chrome-two-week-release
+[chrome-schedule]: https://chromiumdash.appspot.com/schedule
+[cefsharp-releases]: https://github.com/cefsharp/CefSharp/releases
+[cefsharp-nuget]: https://www.nuget.org/packages/CefSharp.Common/#versions-body-tab
+[cefsharp-advisories]: https://github.com/cefsharp/CefSharp/security/advisories
+[cefsharp-dom]: https://github.com/cefsharp/CefSharp.Dom
+[cefsharp-out-of-process]: https://github.com/cefsharp/CefSharp.OutOfProcess
