@@ -35,6 +35,9 @@ ENTRYPOINT xvfb-run --server-args='-screen 0 800x600x24+32' dotnet Example.Conso
 
 Check live demo development container configuration in our [quickstart repository.](https://github.com/TeamDev-IP/DotNetBrowser-QuickStart#development-container)
 
+To run DotNetBrowser as a systemd service, with Xvfb as a separate service, see
+[How to monitor product prices and stock with C# and DotNetBrowser][blog-price-monitor].
+
 ## About the “headless” command line flag
 
 Chromium 58 and higher [support](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md)
@@ -65,3 +68,5 @@ as loading different web pages by URL, HTML, navigating backward and
 forward, executing JavaScript, etc.
 
 This is why this flag is **NOT** supported by DotNetBrowser, and we recommend you to start the X server in order to use DotNetBrowser in a headless Linux environment.
+
+[blog-price-monitor]: https://teamdev.com/dotnetbrowser/blog/monitor-product-prices/

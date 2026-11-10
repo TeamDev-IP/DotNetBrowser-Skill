@@ -305,7 +305,7 @@ You can configure how Chromium controls the third-party cookies:
 * Block third-party cookies in incognito mode.
 
 See available options in 
-[CookieControlsMode](https://api.dotnetbrowser.dev/4.4.0/api/DotNetBrowser.Profile.CookieControlsMode)
+[CookieControlsMode](https://api.dotnetbrowser.dev/4.4.1/api/DotNetBrowser.Profile.CookieControlsMode)
 enum.
 
 For example:

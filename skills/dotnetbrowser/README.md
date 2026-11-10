@@ -26,8 +26,10 @@ The skill is also available as the `DotNetBrowser.AgentSkills` NuGet package.
 Add it to your project and set the `DotNetBrowserAgentSkillsAgent` property to
 `ClaudeCode`, `Codex`, `Cursor`, or `Copilot`, or the
 `DotNetBrowserAgentSkillsDirectory` property to your agent's skills directory;
-the skill is then installed when you build the project. The package README on
-nuget.org describes the details and how to install the skill without building.
+the skill is then installed when you build the project. You can also copy the
+skill from the package with the `dotnet-package-skills` tool; use one way or
+the other, not both. The package README on nuget.org describes the
+details and how to install the skill without building.
 
 ## Updating
 

@@ -50,8 +50,9 @@ need custom settings, you call it manually first.
 
 Note that this method **must** be called from the main thread and only once per
 process lifetime. Both limitations stem from
-CefSharp's [in-process architecture][blog-architecture], which runs the Chromium
-engine in your .NET process and limits you to a single engine per process.
+CefSharp's [in-process architecture][blog-architecture], which runs Chromium's
+browser process inside your .NET process and limits you to a single engine per
+process.
 
 In DotNetBrowser, you also start by initializing the Chromium engine, but no
 limitations apply:
@@ -416,9 +417,9 @@ secureBrowser.Navigation.LoadUrl("https://internal.system");
 
 ### Runtime isolation
 
-CefSharp runs a Chromium engine **inside** the .NET process. The Chromium engine
-is a singleton, and can be created only once per process lifetime. If 
-the engine crashes, not just the browser instances, but 
+CefSharp runs Chromium's main process, the browser process, **inside** the .NET
+process. Chromium can be started only once per process lifetime. If
+the browser process crashes, not just the browser instances, but
 **the whole application** goes down.
 
 DotNetBrowser runs Chromium engines **in separate processes**, which keeps

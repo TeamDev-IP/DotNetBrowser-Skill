@@ -7,9 +7,9 @@ This guide describes how to add DotNetBrowser downloaded in ZIP archive to .NET 
 
 To include DotNetBrowser into your project, download the required archive, extract assemblies and include them into your project.
 
-[Download DotNetBrowser 4.4.0 (.NET Framework)](https://teamdev.download/downloads/dotnetbrowser/4.4.0/dotnetbrowser-net462-4.4.0.zip)<br>
-[Download DotNetBrowser 4.4.0 (.NET Core)](https://teamdev.download/downloads/dotnetbrowser/4.4.0/dotnetbrowser-netcore30-4.4.0.zip)<br>
-[Download DotNetBrowser 4.4.0 (Cross-platform)](https://teamdev.download/downloads/dotnetbrowser/4.4.0/dotnetbrowser-netstandard20-4.4.0.zip)
+[Download DotNetBrowser 4.4.1 (.NET Framework)](https://teamdev.download/downloads/dotnetbrowser/4.4.1/dotnetbrowser-net462-4.4.1.zip)<br>
+[Download DotNetBrowser 4.4.1 (.NET Core)](https://teamdev.download/downloads/dotnetbrowser/4.4.1/dotnetbrowser-netcore30-4.4.1.zip)<br>
+[Download DotNetBrowser 4.4.1 (Cross-platform)](https://teamdev.download/downloads/dotnetbrowser/4.4.1/dotnetbrowser-netstandard20-4.4.1.zip)
 
 ## Assemblies list
 

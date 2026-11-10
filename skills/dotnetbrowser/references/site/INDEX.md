@@ -1,6 +1,6 @@
 # DotNetBrowser documentation index
 
-Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-11-06 for DotNetBrowser 4.4.0. Local files are relative to this file. Entries without a local file exist only online. Links inside the pages point to the live site; see ../lookup.md for how to resolve them to local files.
+Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-11-10 for DotNetBrowser 4.4.1. Local files are relative to this file. Entries without a local file exist only online. Links inside the pages point to the live site; see ../lookup.md for how to resolve them to local files.
 
 ## Overview
 
@@ -96,6 +96,7 @@ Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-11-06 for DotNetBrowse
 
 | Title | Description | Local file | Live URL |
 |---|---|---|---|
+| DotNetBrowser 4.4.1 | DotNetBrowser 4.4.1 - Chromium 157.0.8103.51 with 9 security fixes. | releases/2026/v4-4-1/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-4-1/index.md |
 | DotNetBrowser 4.4.0 | DotNetBrowser 4.4.0 - Chromium 157 with dialog and startup fixes. | releases/2026/v4-4-0/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-4-0/index.md |
 | DotNetBrowser 4.3.5 | DotNetBrowser 4.3.5 - Chromium 156 with Avalonia memory leak fixes. | releases/2026/v4-3-5/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-5/index.md |
 | DotNetBrowser 4.3.4 | DotNetBrowser 4.3.4 - Chromium 156 with text input and image fixes. | releases/2026/v4-3-4/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-4/index.md |
@@ -151,7 +152,7 @@ Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-11-06 for DotNetBrowse
 | Deploying DotNetBrowser applications with Docker | This article demonstrates how to deploy a DotNetBrowser application using Docker. | blog/deploying-dotnetbrowser-applications-with-docker/index.md | https://teamdev.com/dotnetbrowser/blog/deploying-dotnetbrowser-applications-with-docker/index.md |
 | DotNetBrowser 2 reaches end-of-life | DotNetBrowser 2 is reaching end-of-life and we explain what changes and how to switch to DotNetBrowser 3. | blog/dotnetbrowser-2-reaches-end-of-life/index.md | https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-2-reaches-end-of-life/index.md |
 | DotNetBrowser oder WebView2: Ein Vergleich für Entwickler | Dieser Artikel vergleicht DotNetBrowser und WebView2 und argumentiert, dass DotNetBrowser für den kommerziellen Einsatz besser geeignet ist. | blog/dotnetbrowser-oder-webview2-deutsch/index.md | https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-oder-webview2-deutsch/index.md |
-| DotNetBrowser or CefSharp | This article compares DotNetBrowser and CefSharp and helps choosing between them. | blog/dotnetbrowser-or-cefsharp/index.md | https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-cefsharp/index.md |
+| DotNetBrowser or CefSharp | This article compares DotNetBrowser and CefSharp and helps you choose between them. | blog/dotnetbrowser-or-cefsharp/index.md | https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-cefsharp/index.md |
 | DotNetBrowser or EO.WebBrowser | This article compares DotNetBrowser and EO.WebBrowser and helps to choose between them. | blog/dotnetbrowser-or-eo-webbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-eo-webbrowser/index.md |
 | DotNetBrowser or WebView2 | This article compares DotNetBrowser and WebView2 and argues that DotNetBrowser is better for commercial use. | blog/dotnetbrowser-or-webview2/index.md | https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-or-webview2/index.md |
 | DotNetBrowser Security: What’s Changed | CRA information page, SBOMs, a vulnerability disclosure policy, and Chromium security updates in DotNetBrowser. | blog/dotnetbrowser-security-whats-changed/index.md | https://teamdev.com/dotnetbrowser/blog/dotnetbrowser-security-whats-changed/index.md |
