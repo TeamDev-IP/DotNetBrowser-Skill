@@ -76,7 +76,7 @@ jobs:
           # reviewer. Every tracked file counts, not only the skill.
           count=$(git ls-files | awk 'END { print NR }')
           if [ "$count" -gt 512 ]; then
-            echo "::error::The plugin has $count files, more than 512."; status=1
+            echo "::error::The plugin has $count files, more than 512. Remove files or have the skill generator merge pages."; status=1
           fi
 
           # Every file other than an image or a font must stay under 256 KiB.
