@@ -72,14 +72,29 @@ jobs:
         run: |
           status=0
 
-          # Every non-image file must stay under 256 KiB.
-          large=$(git ls-files -z \
-            | grep -zviE '\.(png|jpe?g|gif|webp|svg|ico)$' \
+          # The directory holds a plugin with more than 512 files for a
+          # reviewer. Every tracked file counts, not only the skill.
+          count=$(git ls-files | awk 'END { print NR }')
+          if [ "$count" -gt 512 ]; then
+            echo "::error::The plugin has $count files, more than 512. Remove files or have the skill generator merge pages."; status=1
+          fi
+
+          # Every file other than an image or a font must stay under 256 KiB.
+          sizes=$(git ls-files -z \
+            | grep -zviE '\.(png|jpe?g|gif|webp|svg|ico|woff2?|ttf|otf)$' \
             | xargs -0 stat -c '%s %n' \
-            | awk '$1 >= 262144')
+            | sort -rn)
+          large=$(echo "$sizes" | awk '$1 >= 262144')
           if [ -n "$large" ]; then
             echo "::error::Files of 256 KiB or more:"; echo "$large"; status=1
           fi
+
+          # Logged so that growth is noticed before it fails a release. Images
+          # and fonts are left out, because the 256 KiB limit doesn't apply to them.
+          largest=$(echo "$sizes" | head -n 1)
+          echo "The plugin has $count files; the limit is 512." \
+            "The largest file that the 256 KiB limit applies to is ${largest#* }," \
+            "$(( ${largest%% *} / 1024 )) KiB."
 
           forbidden=$(git ls-files \
             | grep -E '(^|/)(\.DS_Store|Thumbs\.db|desktop\.ini|__MACOSX)(/|$)' || true)
