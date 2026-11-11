@@ -52,8 +52,9 @@ repository after every release so it always holds the latest one.
 ## Directory limits to keep in mind
 
 - Every non-image file must stay under 256 KiB.
-- The plugin has more than 512 files, so each version is held for a reviewer
-  before it goes live. This is expected.
+- The plugin must have 512 files or fewer; a larger one is held for a reviewer
+  before it goes live. The skill generator keeps the skill within 400 files,
+  which leaves room for the files of this repository.
 - Don't commit `.DS_Store`, `Thumbs.db`, `desktop.ini`, `__MACOSX`, symbolic
   links, Git LFS files, or `filter`/`export-ignore` rules in `.gitattributes`;
   the directory rejects them.

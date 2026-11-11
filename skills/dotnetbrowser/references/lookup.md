@@ -5,15 +5,29 @@ Paths are relative to the skill folder, the one that holds `SKILL.md`.
 ## API reference
 
 `references/api/INDEX.md` lists every namespace, then every type by kind
-(Classes, Interfaces, Enums) with a summary and its file. It is long: search
-it for the type name rather than reading it whole. Conventions:
+(Classes, Interfaces, Enums) with a summary and its file and lines, in the
+form `<Namespace>.md:<first>-<last>`. It is long: search it for the type name
+rather than reading it whole. Then read only those lines: a namespace file
+holds every type of the namespace and can be over 100 KiB. Conventions:
 
-- Files are named by full type name: `DotNetBrowser.Browser.IBrowser.md`.
-  Generic types use an arity suffix instead of `<...>`:
-  `DotNetBrowser.Handlers.Handler-2.md` is `Handler<TParameters, TResponse>`.
-  Nested types are dotted: `DotNetBrowser.Engine.EngineOptions.Builder.md`.
-- Each file has the declaration, inheritance, then every property, method, and
-  event with its signature. Remarks may still contain raw
+- Each namespace is one file named after it: `DotNetBrowser.Browser.md` holds
+  `IBrowser` and the other types of `DotNetBrowser.Browser`. Nested types are
+  in their namespace's file: `EngineOptions.Builder` is in
+  `DotNetBrowser.Engine.md`. Some short names exist in several namespaces,
+  such as `BrowserView`: pick the row by its file.
+- Every type and member has an anchor: its full name with `_` instead of `.`,
+  and the number of type parameters for a generic type. A type's section
+  starts with its anchor, such as
+  `## <a id="DotNetBrowser_Browser_IBrowser"></a> Interface IBrowser`;
+  `Handler<TParameters, TResponse>` is `DotNetBrowser_Handlers_Handler_2`.
+  To find a full name without the index, search `references/api/` for
+  `id="` followed by that anchor; a method's anchor continues with its
+  parameter types.
+- Links between types point to the anchor in the namespace file:
+  `DotNetBrowser.Js.md#DotNetBrowser_Js_IJsObject` is the line with
+  `id="DotNetBrowser_Js_IJsObject"`.
+- Each section has the declaration, inheritance, then every property, method,
+  and event with its signature. Remarks may still contain raw
   `<xref href="DotNetBrowser.X.Y">` tags: read them as a reference to type `Y`.
 - Handler parameter and response types, and enums used only by them (for
   example `DotNetBrowser.Net.Handlers.ResourceType`), live in `*.Handlers`
@@ -21,15 +35,15 @@ it for the type name rather than reading it whole. Conventions:
   can sit in different namespaces: `RequestPrintParameters` is in
   `DotNetBrowser.Browser.Handlers`, `PrintHtmlContentParameters` in
   `DotNetBrowser.Print.Handlers`.
-- Extension methods are documented on their `*Extensions` class, not on the
-  extended type's page.
+- Extension methods are documented on their `*Extensions` class, not in the
+  extended type's section.
 - Guide samples usually omit `using` directives. Take each type's namespace
   from `references/api/INDEX.md`.
 - The API reference covers the engine and the WPF, Windows Forms, WinUI 3,
-  and Avalonia UI 11 packages. **`DotNetBrowser.AvaloniaUi.v12` has no pages
-  of its own:** use the Avalonia UI 11 pages. DotNetBrowser's API is the same
-  in both packages; members that come from Avalonia UI, inherited or
-  overridden (for example `BrowserView.OnGotFocus`), follow Avalonia UI 12.
+  and Avalonia UI 11 packages. **`DotNetBrowser.AvaloniaUi.v12` has no
+  reference of its own:** use the Avalonia UI 11 types. DotNetBrowser's API
+  is the same in both packages; members that come from Avalonia UI, inherited
+  or overridden (for example `BrowserView.OnGotFocus`), follow Avalonia UI 12.
 
 ## Guides and other site pages
 
@@ -43,10 +57,10 @@ live-only links (FAQ, Roadmap). Pages are the raw Markdown of the site:
   `https://teamdev.com/dotnetbrowser/` prefix and the fragment, and append
   `index.md`. A few links are relative to that site root
   (`docs/guides/...`); resolve them the same way. Resolve
-  `https://api.dotnetbrowser.dev/<version>/api/DotNetBrowser.X.Y` to
-  `references/api/DotNetBrowser.X.Y.md` when `<version>` is this skill's
-  version (if that file does not exist, the last segment is a member: open
-  the type's file and search for it). Links to other versions describe an
+  `https://api.dotnetbrowser.dev/<version>/api/DotNetBrowser.X.Y` by searching
+  `references/api/` for `id="DotNetBrowser_X_Y`, the anchor of that type or
+  member, when `<version>` is this skill's version. Drop a trailing `.html`;
+  a `#fragment` is already the anchor. Links to other versions describe an
   older API. Prefer the bundled file; use the live URL only when it is not
   bundled.
 - Pages that are not in `references/site/INDEX.md` (for example release notes

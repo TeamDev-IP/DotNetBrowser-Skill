@@ -12,6 +12,6 @@ Paths are relative to the skill folder, the one that holds `SKILL.md`.
   a script that throws gives `null` (or, for a non-nullable value type `T`,
   `NullReferenceException`) instead of a JavaScript exception. To observe a
   thrown JavaScript error, use `IJsFunction.Invoke` or `InvokeAsync`, which
-  report `JsException`; see `references/api/DotNetBrowser.Js.IJsFunction.md`.
+  report `JsException`; see `IJsFunction` in `references/api/DotNetBrowser.Js.md`.
 
 The guide is `references/site/docs/guides/gs/javascript/index.md`.

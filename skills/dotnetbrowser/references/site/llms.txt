@@ -1,4 +1,4 @@
-<!-- Excerpt of https://teamdev.com/llms.txt (DotNetBrowser section), fetched 2026-11-10. -->
+<!-- Excerpt of https://teamdev.com/llms.txt (DotNetBrowser section), fetched 2026-11-11. -->
 
 ## DotNetBrowser
 

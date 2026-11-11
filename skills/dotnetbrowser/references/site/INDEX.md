@@ -1,6 +1,6 @@
 # DotNetBrowser documentation index
 
-Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-11-10 for DotNetBrowser 4.4.1. Local files are relative to this file. Entries without a local file exist only online. Links inside the pages point to the live site; see ../lookup.md for how to resolve them to local files.
+Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-11-11 for DotNetBrowser 4.4.1. Local files are relative to this file. Entries without a local file exist only online. Links inside the pages point to the live site; see ../lookup.md for how to resolve them to local files.
 
 ## Overview
 
