@@ -56,7 +56,8 @@ repository after every release so it always holds the latest one.
   repository; a larger one is held for a reviewer before it goes live. The
   skill generator keeps the skill within 400 files, which leaves room for the
   files of this repository. The `Check` workflow logs the file count and the
-  largest file, so watch them grow from release to release.
+  largest file that the 256 KiB limit applies to, so watch them grow from
+  release to release.
 - Don't commit `.DS_Store`, `Thumbs.db`, `desktop.ini`, `__MACOSX`, symbolic
   links, Git LFS files, or `filter`/`export-ignore` rules in `.gitattributes`;
   the directory rejects them.
