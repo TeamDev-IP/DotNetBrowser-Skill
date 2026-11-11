@@ -93,7 +93,7 @@ jobs:
           # and fonts are left out, because the 256 KiB limit doesn't apply to them.
           largest=$(echo "$sizes" | head -n 1)
           echo "The plugin has $count files; the limit is 512." \
-            "The largest file under the 256 KiB limit is ${largest#* }," \
+            "The largest file that the 256 KiB limit applies to is ${largest#* }," \
             "$(( ${largest%% *} / 1024 )) KiB."
 
           forbidden=$(git ls-files \
