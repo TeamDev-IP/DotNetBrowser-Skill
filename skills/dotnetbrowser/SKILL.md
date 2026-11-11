@@ -5,7 +5,7 @@ metadata:
   product: DotNetBrowser
   product-version: "4.4.1"
   chromium-version: "157.0.8103.51"
-  generated: "2026-11-10"
+  generated: "2026-11-11"
 ---
 
 # DotNetBrowser
@@ -19,7 +19,7 @@ https://www.teamdev.com/dotnetbrowser#evaluate.
 
 This skill describes DotNetBrowser 4.4.1 (Chromium
 157.0.8103.51). Everything here was generated from the product on
-2026-11-10. Prefer the bundled references over memory: the API changes
+2026-11-11. Prefer the bundled references over memory: the API changes
 between major versions, and code written for DotNetBrowser 1.x or 2.x is
 mostly wrong for 4.x.
 
@@ -31,8 +31,8 @@ file.
 | Path | Use it for |
 | --- | --- |
 | `references/<topic>.md` | Detailed rules for one area; see "Topic notes" below. |
-| `references/api/INDEX.md` | Find a covered public type: namespace, kind, one-line summary, file name. |
-| `references/api/<Namespace>.<Type>.md` | Complete members of one type (588 types): signatures, remarks, parameters. |
+| `references/api/INDEX.md` | Find a covered public type: namespace, kind, one-line summary, file, and lines. |
+| `references/api/<Namespace>.md` | Every type of one namespace (588 types in all) with complete members: signatures, remarks, parameters. |
 | `references/site/INDEX.md` | Find a guide, quick start, tutorial, release note, migration guide, or blog post. |
 | `references/site/**/index.md` | The pages themselves (146 pages), with C# and VB.NET samples. |
 | `references/site/llms.txt` | The same list with live URLs, for when a newer page might exist online. |
@@ -52,7 +52,8 @@ Workflow for most tasks:
 4. Before the first API lookup, read `references/lookup.md`: it explains file
    names and what the API reference does not cover. Then search
    `references/api/INDEX.md` for the types the guide mentions and read the
-   relevant sections for exact signatures and overloads.
+   lines it gives for each type: they hold the exact signatures and
+   overloads.
 5. If tool output is truncated, retrieve the missing sections before relying
    on it.
 6. Write code that follows the guide's sample; do not invent members.
