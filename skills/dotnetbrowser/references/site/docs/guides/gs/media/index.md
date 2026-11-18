@@ -147,6 +147,70 @@ End Sub
 
 
 
+### Capturing audio
+
+You can capture the audio played by a browser as raw PCM data. Start a capture
+session and subscribe to its events before playback begins. Buffers captured
+before the handler is added are not delivered to it.
+
+The following example configures a stereo capture session and reads the samples
+of the first channel:
+
+
+**C#**
+```csharp
+var options = new AudioCaptureOptions
+{
+    ChannelLayout = AudioChannelLayout.Stereo,
+    SampleRate = 48000,
+    FramesPerBuffer = 1024,
+    MuteSource = true
+};
+var session = browser.Audio.StartCapture(options);
+session.DataCaptured += (sender, e) =>
+{
+    float[] samples = e.GetChannelData(0);
+    // Process the samples from the first channel.
+};
+```
+
+**VB**
+```vb
+Dim options = New AudioCaptureOptions With {
+    .ChannelLayout = AudioChannelLayout.Stereo,
+    .SampleRate = 48000,
+    .FramesPerBuffer = 1024,
+    .MuteSource = True
+}
+Dim session = browser.Audio.StartCapture(options)
+AddHandler session.DataCaptured, Sub(sender, e)
+    Dim samples As Single() = e.GetChannelData(0)
+    ' Process the samples from the first channel.
+End Sub
+```
+
+
+
+Each buffer contains 32-bit floating-point samples for each channel. The
+`DataCaptured` event provides the channel count, frame count, and timestamp.
+Buffers are delivered in order on a dedicated thread. Keep the handler fast to
+avoid a buildup of buffers in memory.
+
+Stopping or disposing a session waits up to three seconds for a running event
+handler. Avoid synchronous calls from the handler to the thread stopping the
+session; use asynchronous dispatch instead.
+
+The options specify the channel layout, sample rate, and number of frames per
+buffer. Each buffer must last between 10 and 500 milliseconds. `MuteSource`
+stops audio playback while capture is active without changing the captured
+audio. A session keeps a copy of its options; stop it and start another session
+to change them. To use the default options, call `StartCapture()` without an
+argument.
+
+A browser can have one active capture session. Call `session.Stop()` when
+capture is no longer needed. The session is also disposed when capture fails or
+the browser is disposed. Subscribe to `Failed` to receive a capture failure.
+
 ## DRM
 ### Widevine
 

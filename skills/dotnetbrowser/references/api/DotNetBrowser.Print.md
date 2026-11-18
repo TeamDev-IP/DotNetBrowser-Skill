@@ -76,13 +76,13 @@ A printing operation that is currently in-progress.
 
 The collection of the available printers.
 
- [SystemPrinter.ISettings<T\>](DotNetBrowser.Print.md#DotNetBrowser_Print_SystemPrinter_ISettings_1)
-
-Print settings available when printing HTML or PDF content on a physical printer.
-
  [PdfPrinter.ISettings<T\>](DotNetBrowser.Print.md#DotNetBrowser_Print_PdfPrinter_ISettings_1)
 
 The print settings available when printing HTML or PDF content on the PDF printer.
+
+ [SystemPrinter.ISettings<T\>](DotNetBrowser.Print.md#DotNetBrowser_Print_SystemPrinter_ISettings_1)
+
+Print settings available when printing HTML or PDF content on a physical printer.
 
 ### Enums
 
