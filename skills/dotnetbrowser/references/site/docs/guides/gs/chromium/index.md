@@ -183,6 +183,48 @@ If you are unable to modify the environment configuration to enable user namespa
 [disable](https://teamdev.com/dotnetbrowser/docs/guides/gs/chromium/#sandbox) the Chromium sandbox. This approach significantly reduces security and should
 only be considered as a last resort.
 
+## Task Manager
+
+The Chromium Task Manager shows the processes used by an engine and their
+resource usage, including memory, CPU, and network. Each engine has one Task
+Manager window that covers all of its browsers. The window is read-only and
+cannot end processes.
+
+To open the window, use the engine's `TaskManager` property:
+
+
+**C#**
+```csharp
+engine.TaskManager.Show();
+```
+
+**VB**
+```vb
+engine.TaskManager.Show()
+```
+
+
+
+To close the window, call `Hide()`:
+
+
+**C#**
+```csharp
+engine.TaskManager.Hide();
+```
+
+**VB**
+```vb
+engine.TaskManager.Hide()
+```
+
+
+
+`Show()` and `Hide()` do not wait for the window to open or close. Calling
+`Show()` when the window is already open asks Chromium to bring it forward.
+On Windows, it does not take the foreground from the application. The window
+also closes when the engine is disposed.
+
 ## Chrome extensions
 
 DotNetBrowser supports Chrome extensions. See the [Chrome Extensions](https://teamdev.com/dotnetbrowser/docs/guides/gs/extensions/) guide to learn how

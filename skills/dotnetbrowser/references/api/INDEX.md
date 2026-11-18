@@ -1,6 +1,6 @@
 # DotNetBrowser API index
 
-DotNetBrowser 4.4.1, generated 2026-11-11. 588 types in 93 namespaces. Each namespace is one file: a list of its types, then every type with all of its members. Find the type below and read only the lines from the last column: `<Namespace>.md:<first>-<last>` is lines `<first>` to `<last>` of `<Namespace>.md`.
+DotNetBrowser 4.5.0, generated 2026-11-18. 596 types in 93 namespaces. Each namespace is one file: a list of its types, then every type with all of its members. Find the type below and read only the lines from the last column: `<Namespace>.md:<first>-<last>` is lines `<first>` to `<last>` of `<Namespace>.md`.
 
 ## DotNetBrowser
 
@@ -539,39 +539,40 @@ DotNetBrowser 4.4.1, generated 2026-11-11. 588 types in 93 namespaces. Each name
 
 | Type | Summary | File and lines |
 |---|---|---|
-| `AutoDeElevationException` | Thrown when Chromium is launched with admin permissions on Windows and restarts itself without them, which DotNetBrowser does not support. | DotNetBrowser.Engine.md:109-162 |
-| `BinariesExtractionOptions` | The options that are used to configure the Chromium binaries extraction process. | DotNetBrowser.Engine.md:164-280 |
-| `ChromiumBinariesMissingException` | Thrown when the engine initialization fails due to missing compatible Chromium binaries. | DotNetBrowser.Engine.md:282-341 |
-| `ConnectionClosedException` | The exception thrown when the connection to the Chromium engine appears to be closed. | DotNetBrowser.Engine.md:343-387 |
-| `EngineFactory` | Factory class that is used to create `IEngine` instances. | DotNetBrowser.Engine.md:389-603 |
-| `EngineInitializationException` | The base class for those exceptions that can be thrown during `IEngine` initialization. | DotNetBrowser.Engine.md:605-689 |
-| `EngineOptions` | The options that are used to configure `IEngine` instances. | DotNetBrowser.Engine.md:691-1193 |
-| `EngineOptions.Builder` | A builder class to construct engine options. | DotNetBrowser.Engine.md:1195-1719 |
-| `InvalidLicenseException` | Thrown when the given license is invalid. | DotNetBrowser.Engine.md:1721-1777 |
-| `LicenseException` | The base class for those exceptions that can be thrown during license checking. | DotNetBrowser.Engine.md:1779-1844 |
-| `MissingDependencyException` | Thrown when Chromium fails to find the required system libraries on Linux. | DotNetBrowser.Engine.md:1846-1897 |
-| `NoLicenseException` | Thrown when no license found. | DotNetBrowser.Engine.md:1899-1951 |
-| `PasswordStore` | Defines password store types that are used to specify which encryption storage backend to use to encrypt cookies on Linux. | DotNetBrowser.Engine.md:1953-2098 |
-| `SandboxNotSupportedException` | Thrown when the current environment does not support creating processes within a new user namespace, preventing Chromium from being launched in sandbox mode. | DotNetBrowser.Engine.md:2100-2154 |
-| `UserDataCreationException` | Thrown when the user data directory cannot be created. | DotNetBrowser.Engine.md:2156-2226 |
-| `UserDataInUseException` | Thrown when the user data directory is already in use by another Chromium engine instance. | DotNetBrowser.Engine.md:2228-2297 |
+| `AutoDeElevationException` | Thrown when Chromium is launched with admin permissions on Windows and restarts itself without them, which DotNetBrowser does not support. | DotNetBrowser.Engine.md:113-166 |
+| `BinariesExtractionOptions` | The options that are used to configure the Chromium binaries extraction process. | DotNetBrowser.Engine.md:168-284 |
+| `ChromiumBinariesMissingException` | Thrown when the engine initialization fails due to missing compatible Chromium binaries. | DotNetBrowser.Engine.md:286-345 |
+| `ConnectionClosedException` | The exception thrown when the connection to the Chromium engine appears to be closed. | DotNetBrowser.Engine.md:347-391 |
+| `EngineFactory` | Factory class that is used to create `IEngine` instances. | DotNetBrowser.Engine.md:393-607 |
+| `EngineInitializationException` | The base class for those exceptions that can be thrown during `IEngine` initialization. | DotNetBrowser.Engine.md:609-693 |
+| `EngineOptions` | The options that are used to configure `IEngine` instances. | DotNetBrowser.Engine.md:695-1197 |
+| `EngineOptions.Builder` | A builder class to construct engine options. | DotNetBrowser.Engine.md:1199-1723 |
+| `InvalidLicenseException` | Thrown when the given license is invalid. | DotNetBrowser.Engine.md:1725-1781 |
+| `LicenseException` | The base class for those exceptions that can be thrown during license checking. | DotNetBrowser.Engine.md:1783-1848 |
+| `MissingDependencyException` | Thrown when Chromium fails to find the required system libraries on Linux. | DotNetBrowser.Engine.md:1850-1901 |
+| `NoLicenseException` | Thrown when no license found. | DotNetBrowser.Engine.md:1903-1955 |
+| `PasswordStore` | Defines password store types that are used to specify which encryption storage backend to use to encrypt cookies on Linux. | DotNetBrowser.Engine.md:1957-2102 |
+| `SandboxNotSupportedException` | Thrown when the current environment does not support creating processes within a new user namespace, preventing Chromium from being launched in sandbox mode. | DotNetBrowser.Engine.md:2104-2158 |
+| `UserDataCreationException` | Thrown when the user data directory cannot be created. | DotNetBrowser.Engine.md:2160-2230 |
+| `UserDataInUseException` | Thrown when the user data directory is already in use by another Chromium engine instance. | DotNetBrowser.Engine.md:2232-2301 |
 
 ### Interfaces
 
 | Type | Summary | File and lines |
 |---|---|---|
-| `IEngine` | Provides access to the Chromium engine functionality. | DotNetBrowser.Engine.md:2299-2464 |
-| `IWidevine` | The Widevine DRM (Digital Rights Management) component. | DotNetBrowser.Engine.md:2466-2613 |
+| `IEngine` | Provides access to the Chromium engine functionality. | DotNetBrowser.Engine.md:2303-2480 |
+| `ITaskManager` | Allows working with the Chromium Task Manager window. | DotNetBrowser.Engine.md:2482-2557 |
+| `IWidevine` | The Widevine DRM (Digital Rights Management) component. | DotNetBrowser.Engine.md:2559-2706 |
 
 ### Enums
 
 | Type | Summary | File and lines |
 |---|---|---|
-| `BinariesVerificationLevel` | The level of the Chromium binaries verification. | DotNetBrowser.Engine.md:2615-2650 |
-| `ProprietaryFeatures` | The list of supported proprietary features. | DotNetBrowser.Engine.md:2652-2704 |
-| `RenderingMode` | The supported rendering modes. | DotNetBrowser.Engine.md:2706-2727 |
-| `Theme` | The Chromium theme, which affects the appearanceof web pages and their contents, as well as Chromium dialogs, such as Print Preview and DevTools. | DotNetBrowser.Engine.md:2729-2757 |
-| `WidevineActivationStatus` | Represents the result of attempting to activate the Widevine component. | DotNetBrowser.Engine.md:2759-2797 |
+| `BinariesVerificationLevel` | The level of the Chromium binaries verification. | DotNetBrowser.Engine.md:2708-2743 |
+| `ProprietaryFeatures` | The list of supported proprietary features. | DotNetBrowser.Engine.md:2745-2797 |
+| `RenderingMode` | The supported rendering modes. | DotNetBrowser.Engine.md:2799-2820 |
+| `Theme` | The Chromium theme, which affects the appearanceof web pages and their contents, as well as Chromium dialogs, such as Print Preview and DevTools. | DotNetBrowser.Engine.md:2822-2850 |
+| `WidevineActivationStatus` | Represents the result of attempting to activate the Widevine component. | DotNetBrowser.Engine.md:2852-2890 |
 
 ## DotNetBrowser.Engine.Events
 
@@ -889,21 +890,25 @@ DotNetBrowser 4.4.1, generated 2026-11-11. 588 types in 93 namespaces. Each name
 
 | Type | Summary | File and lines |
 |---|---|---|
-| `MediaDevice` | The details of the media input device (audio/video). | DotNetBrowser.Media.md:36-97 |
+| `AudioCaptureOptions` | The options of an audio capture session. | DotNetBrowser.Media.md:52-223 |
+| `MediaDevice` | The details of the media input device (audio/video). | DotNetBrowser.Media.md:225-286 |
 
 ### Interfaces
 
 | Type | Summary | File and lines |
 |---|---|---|
-| `IAudio` | Allows controlling audio on the loaded web page and receive notifications when audio has been started or stopped playing. | DotNetBrowser.Media.md:99-199 |
-| `IMediaDevices` | An engine service that allows accessing all the available media input devices. | DotNetBrowser.Media.md:201-297 |
+| `IAudio` | Allows controlling audio on the loaded web page and receive notifications when audio has been started or stopped playing. | DotNetBrowser.Media.md:288-491 |
+| `IAudioCaptureOptions` | The read-only options of an audio capture session. | DotNetBrowser.Media.md:493-565 |
+| `IAudioCaptureSession` | A session that captures the audio of a browser. | DotNetBrowser.Media.md:567-731 |
+| `IMediaDevices` | An engine service that allows accessing all the available media input devices. | DotNetBrowser.Media.md:733-829 |
 
 ### Enums
 
 | Type | Summary | File and lines |
 |---|---|---|
-| `MediaDeviceType` | The media device types. | DotNetBrowser.Media.md:299-326 |
-| `MediaType` | List of the known media types. It's used in `ShowContextMenuParameters`. | DotNetBrowser.Media.md:328-379 |
+| `AudioChannelLayout` | The number and the order of the captured audio channels. | DotNetBrowser.Media.md:831-877 |
+| `MediaDeviceType` | The media device types. | DotNetBrowser.Media.md:879-906 |
+| `MediaType` | List of the known media types. It's used in `ShowContextMenuParameters`. | DotNetBrowser.Media.md:908-959 |
 
 ## DotNetBrowser.Media.Events
 
@@ -911,9 +916,12 @@ DotNetBrowser 4.4.1, generated 2026-11-11. 588 types in 93 namespaces. Each name
 
 | Type | Summary | File and lines |
 |---|---|---|
-| `AudioEventArgs` | The base class for `IAudio` related events. | DotNetBrowser.Media.Events.md:17-64 |
-| `AudioPlaybackStartedEventArgs` | Event arguments for the `AudioPlaybackStarted` event. | DotNetBrowser.Media.Events.md:66-95 |
-| `AudioPlaybackStoppedEventArgs` | Event arguments for the `AudioPlaybackStopped` event. | DotNetBrowser.Media.Events.md:97-126 |
+| `AudioCaptureEventArgs` | The base class for `IAudioCaptureSession` related events. | DotNetBrowser.Media.Events.md:29-74 |
+| `AudioCaptureFailedEventArgs` | Event arguments for the `Failed` event. | DotNetBrowser.Media.Events.md:76-117 |
+| `AudioDataCapturedEventArgs` | Event arguments for the `DataCaptured` event. | DotNetBrowser.Media.Events.md:119-232 |
+| `AudioEventArgs` | The base class for `IAudio` related events. | DotNetBrowser.Media.Events.md:234-281 |
+| `AudioPlaybackStartedEventArgs` | Event arguments for the `AudioPlaybackStarted` event. | DotNetBrowser.Media.Events.md:283-312 |
+| `AudioPlaybackStoppedEventArgs` | Event arguments for the `AudioPlaybackStopped` event. | DotNetBrowser.Media.Events.md:314-343 |
 
 ## DotNetBrowser.Media.Handlers
 

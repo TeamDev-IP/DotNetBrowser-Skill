@@ -1,6 +1,6 @@
 # DotNetBrowser documentation index
 
-Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-11-11 for DotNetBrowser 4.4.1. Local files are relative to this file. Entries without a local file exist only online. Links inside the pages point to the live site; see ../lookup.md for how to resolve them to local files.
+Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-11-18 for DotNetBrowser 4.5.0. Local files are relative to this file. Entries without a local file exist only online. Links inside the pages point to the live site; see ../lookup.md for how to resolve them to local files.
 
 ## Overview
 
@@ -96,6 +96,7 @@ Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-11-11 for DotNetBrowse
 
 | Title | Description | Local file | Live URL |
 |---|---|---|---|
+| DotNetBrowser 4.5.0 | DotNetBrowser 4.5.0 - Audio capture, Task Manager, macOS sandbox. | releases/2026/v4-5-0/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-5-0/index.md |
 | DotNetBrowser 4.4.1 | DotNetBrowser 4.4.1 - Chromium 157.0.8103.51 with 9 security fixes. | releases/2026/v4-4-1/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-4-1/index.md |
 | DotNetBrowser 4.4.0 | DotNetBrowser 4.4.0 - Chromium 157 with dialog and startup fixes. | releases/2026/v4-4-0/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-4-0/index.md |
 | DotNetBrowser 4.3.5 | DotNetBrowser 4.3.5 - Chromium 156 with Avalonia memory leak fixes. | releases/2026/v4-3-5/index.md | https://teamdev.com/dotnetbrowser/releases/2026/v4-3-5/index.md |
@@ -166,6 +167,7 @@ Snapshot of https://teamdev.com/dotnetbrowser/ taken 2026-11-11 for DotNetBrowse
 | How to render web content as a texture in Unity3D | The step-by-step tutorial on how to render web content as a texture in Unity3D with DotNetBrowser. | blog/how-to-render-web-content-as-a-texture-in-unity3d/index.md | https://teamdev.com/dotnetbrowser/blog/how-to-render-web-content-as-a-texture-in-unity3d/index.md |
 | How to run a Chromium browser in a Windows service with C# | This article shows how to run Chromium in a Windows service with DotNetBrowser and render web pages to PDF with no signed-in user. | blog/chromium-in-windows-service/index.md | https://teamdev.com/dotnetbrowser/blog/chromium-in-windows-service/index.md |
 | How to use a local AI model in DotNetBrowser | This article demonstrates how to use a local AI model in DotNetBrowser applications. | blog/how-to-use-local-llm-in-dotnetbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/how-to-use-local-llm-in-dotnetbrowser/index.md |
+| HTML rich text editor for WPF, WinForms and Avalonia apps | This article shows how to add an HTML rich text editor to a WPF, WinForms, or Avalonia UI app by hosting the Quill editor in DotNetBrowser. | blog/html-rich-text-editor/index.md | https://teamdev.com/dotnetbrowser/blog/html-rich-text-editor/index.md |
 | Kiosk app on Raspberry Pi with Avalonia and DotNetBrowser | A practical tutorial on building a kiosk app for Raspberry Pi with Avalonia and DotNetBrowser. | blog/kiosk-on-raspberry-with-avalonia-dotnetbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/kiosk-on-raspberry-with-avalonia-dotnetbrowser/index.md |
 | Kiosk-App auf dem Raspberry Pi mit Avalonia und DotNetBrowser | Praxis-Tutorial zur Kiosk-App auf dem Raspberry Pi mit Avalonia und DotNetBrowser. | blog/kiosk-auf-dem-raspberry-mit-avalonia-dotnetbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/kiosk-auf-dem-raspberry-mit-avalonia-dotnetbrowser/index.md |
 | Migrating from CefSharp to DotNetBrowser | A migration guide from CefSharp to DotNetBrowser. | blog/migrating-from-cefsharp-to-dotnetbrowser/index.md | https://teamdev.com/dotnetbrowser/blog/migrating-from-cefsharp-to-dotnetbrowser/index.md |

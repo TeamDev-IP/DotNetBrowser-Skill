@@ -79,6 +79,10 @@ Thrown when the user data directory is already in use by another Chromium engine
 
 Provides access to the Chromium engine functionality.
 
+ [ITaskManager](DotNetBrowser.Engine.md#DotNetBrowser_Engine_ITaskManager)
+
+Allows working with the Chromium Task Manager window.
+
  [IWidevine](DotNetBrowser.Engine.md#DotNetBrowser_Engine_IWidevine)
 
 The Widevine DRM (Digital Rights Management) component.
@@ -2409,6 +2413,18 @@ IProfiles Profiles { get; }
 
  [IProfiles](DotNetBrowser.Profile.md#DotNetBrowser_Profile_IProfiles)
 
+#### <a id="DotNetBrowser_Engine_IEngine_TaskManager"></a> TaskManager
+
+Gets the service that allows working with the Chromium Task Manager window.
+
+```csharp
+ITaskManager TaskManager { get; }
+```
+
+##### Property Value
+
+ [ITaskManager](DotNetBrowser.Engine.md#DotNetBrowser_Engine_ITaskManager)
+
 #### <a id="DotNetBrowser_Engine_IEngine_Theme"></a> Theme
 
 Gets or sets the current Chromium theme.
@@ -2462,6 +2478,83 @@ The new <xref href="DotNetBrowser.Browser.IBrowser" data-throw-if-not-resolved="
 ##### Remarks
 
 This browser instance will be bound to the default Chromium profile.
+
+## <a id="DotNetBrowser_Engine_ITaskManager"></a> Interface ITaskManager
+
+Namespace: [DotNetBrowser.Engine](DotNetBrowser.Engine.md)  
+Assembly: DotNetBrowser.dll  
+
+Allows working with the Chromium Task Manager window.
+
+```csharp
+public interface ITaskManager
+```
+
+### Remarks
+
+<p>
+    The Task Manager shows the processes of the <xref href="DotNetBrowser.Engine.IEngine" data-throw-if-not-resolved="false"></xref> and the resources they use, such as
+    memory, CPU, and network. There is a single window per <xref href="DotNetBrowser.Engine.IEngine" data-throw-if-not-resolved="false"></xref>, which covers all of its
+    browsers.
+</p>
+<p>
+    The window is intended for monitoring, so it doesn't allow ending processes. It closes when the
+    <xref href="DotNetBrowser.Engine.IEngine" data-throw-if-not-resolved="false"></xref> is disposed.
+</p>
+
+### Properties
+
+#### <a id="DotNetBrowser_Engine_ITaskManager_Engine"></a> Engine
+
+Gets the <xref href="DotNetBrowser.Engine.IEngine" data-throw-if-not-resolved="false"></xref> instance that this Task Manager belongs to.
+
+```csharp
+IEngine Engine { get; }
+```
+
+##### Property Value
+
+ [IEngine](DotNetBrowser.Engine.md#DotNetBrowser_Engine_IEngine)
+
+### Methods
+
+#### <a id="DotNetBrowser_Engine_ITaskManager_Hide"></a> Hide\(\)
+
+Closes the Chromium Task Manager window if it is shown.
+
+```csharp
+void Hide()
+```
+
+##### Remarks
+
+The method doesn't wait for the window to close.
+
+##### Exceptions
+
+ [ObjectDisposedException](https://learn.microsoft.com/dotnet/api/system.objectdisposedexception)
+
+The <xref href="DotNetBrowser.Engine.IEngine" data-throw-if-not-resolved="false"></xref> has already been disposed.
+
+#### <a id="DotNetBrowser_Engine_ITaskManager_Show"></a> Show\(\)
+
+Opens the Chromium Task Manager in a new window. If the window is already shown, attempts to bring it
+to the front.
+
+```csharp
+void Show()
+```
+
+##### Remarks
+
+The method doesn't wait for the window to appear. Whether an already shown window comes to the front
+depends on the platform. For example, Windows doesn't let it take the foreground from the application.
+
+##### Exceptions
+
+ [ObjectDisposedException](https://learn.microsoft.com/dotnet/api/system.objectdisposedexception)
+
+The <xref href="DotNetBrowser.Engine.IEngine" data-throw-if-not-resolved="false"></xref> has already been disposed.
 
 ## <a id="DotNetBrowser_Engine_IWidevine"></a> Interface IWidevine
 
